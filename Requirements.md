@@ -80,3 +80,11 @@ Als Nutzer möchte ich Abzeichen und Auszeichnungen erhalten, um meine Motivatio
 - Die Quiz-Seite muss innerhalb von 1 Sekunde geladen werden.
 - Die Webanwendung muss für mobile Geräte optimiert sein.
 - Alle Anmeldungen und Änderungen an Benutzerkonten werden protokolliert.
+
+## Technologie Stack
+
+Note: Der Technologie Stack kann im Verlauf vom Projekt noch geändert werden
+
+- Angular
+- MongoDB
+- Docker & Docker Compose
