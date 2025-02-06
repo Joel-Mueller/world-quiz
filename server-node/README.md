@@ -1,4 +1,4 @@
-# Commands
+# Notes
 
 Install the dependencies in package.json
 
@@ -22,4 +22,16 @@ Start the server
 
 ```shell
 npm start
+```
+
+Transpile TS code to JS
+
+```shell
+npx tsc
+```
+
+Start a js file
+
+```shell
+node dist/app.js
 ```

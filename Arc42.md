@@ -37,7 +37,7 @@ Canada_STATES = 10
 SWITZERLAND_CANTON = 11
 AUSTRALIA_STATES = 12
 
-Front or Back:
+Category:
 NAME = 1
 CAPITAL = 2
 FLAG = 3
