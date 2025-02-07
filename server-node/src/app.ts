@@ -1,14 +1,12 @@
 import express from 'express';
-import { PlaceReader } from './csv_reader';
+import { readPlaces } from './csv_reader';
 
 
 const app = express();
 const port = 3000;
 
-let reader : PlaceReader = new PlaceReader()
-
 app.get('/', (req, res) => {
-  res.send(reader.hello());
+  res.send(readPlaces());
 });
 
 app.listen(port, () => {
