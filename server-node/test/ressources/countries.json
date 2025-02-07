@@ -1,0 +1,2124 @@
+[
+  {
+    "name": "England",
+    "info": "Constituent country of the United Kingdom.",
+    "capital": "London",
+    "flag": "ug-flag-england.svg",
+    "map": "ug-map-england.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Scotland",
+    "info": "Constituent country of the United Kingdom.",
+    "capital": "Edinburgh",
+    "flag": "ug-flag-scotland.svg",
+    "map": "ug-map-scotland.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "United Kingdom",
+    "capital": "London",
+    "flag": "ug-flag-united_kingdom.svg",
+    "map": "ug-map-united_kingdom.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Northern Ireland",
+    "info": "Constituent country of the United Kingdom.",
+    "capital": "Belfast",
+    "map": "ug-map-northern_ireland.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "France",
+    "capital": "Paris",
+    "flag": "ug-flag-france.svg",
+    "map": "ug-map-france.png",
+    "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Wales",
+    "info": "Constituent country of the United Kingdom.",
+    "capital": "Cardiff",
+    "flag": "ug-flag-wales.svg",
+    "map": "ug-map-wales.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Georgia",
+    "capital": "Tbilisi",
+    "flag": "ug-flag-georgia.svg",
+    "map": "ug-map-georgia.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Germany",
+    "capital": "Berlin",
+    "flag": "ug-flag-germany.svg",
+    "map": "ug-map-germany.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Greece",
+    "capital": "Athens",
+    "flag": "ug-flag-greece.svg",
+    "map": "ug-map-greece.png",
+    "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Greenland",
+    "info": "Constituent country in the Kingdom of Denmark.",
+    "capital": "Nuuk",
+    "flag": "ug-flag-greenland.svg",
+    "map": "ug-map-greenland.png",
+    "tags": ["North_America"]
+  },
+  {
+    "name": "Hungary",
+    "capital": "Budapest",
+    "flag": "ug-flag-hungary.svg",
+    "map": "ug-map-hungary.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Albania",
+    "capital": "Tirana",
+    "flag": "ug-flag-albania.svg",
+    "map": "ug-map-albania.png",
+    "tags": ["Europe", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Andorra",
+    "capital": "Andorra la Vella",
+    "flag": "ug-flag-andorra.svg",
+    "map": "ug-map-andorra.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Austria",
+    "capital": "Vienna",
+    "flag": "ug-flag-austria.svg",
+    "map": "ug-map-austria.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Azerbaijan",
+    "capital": "Baku",
+    "flag": "ug-flag-azerbaijan.svg",
+    "map": "ug-map-azerbaijan.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Belarus",
+    "capital": "Minsk",
+    "flag": "ug-flag-belarus.svg",
+    "map": "ug-map-belarus.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Belgium",
+    "capital": "Brussels",
+    "flag": "ug-flag-belgium.svg",
+    "map": "ug-map-belgium.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "capital": "Sarajevo",
+    "flag": "ug-flag-bosnia_and_herzegovina.svg",
+    "map": "ug-map-bosnia_and_herzegovina.png",
+    "tags": ["Europe", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Bulgaria",
+    "capital": "Sofia",
+    "flag": "ug-flag-bulgaria.svg",
+    "map": "ug-map-bulgaria.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Croatia",
+    "capital": "Zagreb",
+    "flag": "ug-flag-croatia.svg",
+    "map": "ug-map-croatia.png",
+    "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Czech Republic",
+    "info": "Also known as Czechia.",
+    "capital": "Prague",
+    "flag": "ug-flag-czech_republic.svg",
+    "map": "ug-map-czech_republic.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Denmark",
+    "capital": "Copenhagen",
+    "flag": "ug-flag-denmark.svg",
+    "map": "ug-map-denmark.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Estonia",
+    "capital": "Tallinn",
+    "flag": "ug-flag-estonia.svg",
+    "map": "ug-map-estonia.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Faroe Islands",
+    "info": "Constituent country in the Kingdom of Denmark.",
+    "capital": "Tórshavn",
+    "flag": "ug-flag-faroe_islands.svg",
+    "map": "ug-map-faroe_islands.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Finland",
+    "capital": "Helsinki",
+    "flag": "ug-flag-finland.svg",
+    "map": "ug-map-finland.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Iceland",
+    "capital": "Reykjavík",
+    "flag": "ug-flag-iceland.svg",
+    "map": "ug-map-iceland.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Ireland",
+    "capital": "Dublin",
+    "flag": "ug-flag-ireland.svg",
+    "map": "ug-map-ireland.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Italy",
+    "capital": "Rome",
+    "flag": "ug-flag-italy.svg",
+    "map": "ug-map-italy.png",
+    "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Latvia",
+    "capital": "Riga",
+    "flag": "ug-flag-latvia.svg",
+    "map": "ug-map-latvia.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Liechtenstein",
+    "capital": "Vaduz",
+    "flag": "ug-flag-liechtenstein.svg",
+    "map": "ug-map-liechtenstein.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Lithuania",
+    "capital": "Vilnius",
+    "flag": "ug-flag-lithuania.svg",
+    "map": "ug-map-lithuania.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Luxembourg",
+    "capital": "Luxembourg City",
+    "capitalInfo": "Officially Luxembourg.",
+    "flag": "ug-flag-luxembourg.svg",
+    "map": "ug-map-luxembourg.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "North Macedonia",
+    "info": "Formerly known as Macedonia.",
+    "capital": "Skopje",
+    "flag": "ug-flag-north_macedonia.svg",
+    "map": "ug-map-north_macedonia.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Malta",
+    "capital": "Valletta",
+    "flag": "ug-flag-malta.svg",
+    "map": "ug-map-malta.png",
+    "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Moldova",
+    "capital": "Chișinău",
+    "flag": "ug-flag-moldova.svg",
+    "map": "ug-map-moldova.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Monaco",
+    "capital": "Monaco",
+    "flag": "ug-flag-monaco.svg",
+    "map": "ug-map-monaco.png",
+    "tags": ["Europe", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Montenegro",
+    "capital": "Podgorica",
+    "capitalInfo": "Cetinje is an honorary capital.",
+    "flag": "ug-flag-montenegro.svg",
+    "map": "ug-map-montenegro.png",
+    "tags": ["Europe", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Netherlands",
+    "capital": "Amsterdam",
+    "capitalInfo": "While Amsterdam is the official capital, The Hague is the seat of the executive and legislative branches.",
+    "flag": "ug-flag-netherlands.svg",
+    "map": "ug-map-netherlands.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Norway",
+    "capital": "Oslo",
+    "flag": "ug-flag-norway.svg",
+    "map": "ug-map-norway.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Poland",
+    "capital": "Warsaw",
+    "flag": "ug-flag-poland.svg",
+    "map": "ug-map-poland.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Portugal",
+    "capital": "Lisbon",
+    "flag": "ug-flag-portugal.svg",
+    "map": "ug-map-portugal.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Romania",
+    "capital": "Bucharest",
+    "flag": "ug-flag-romania.svg",
+    "map": "ug-map-romania.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Russia",
+    "capital": "Moscow",
+    "flag": "ug-flag-russia.svg",
+    "map": "ug-map-russia.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "San Marino",
+    "capital": "City of San Marino",
+    "flag": "ug-flag-san_marino.svg",
+    "map": "ug-map-san_marino.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Serbia",
+    "capital": "Belgrade",
+    "flag": "ug-flag-serbia.svg",
+    "map": "ug-map-serbia.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Slovakia",
+    "capital": "Bratislava",
+    "flag": "ug-flag-slovakia.svg",
+    "map": "ug-map-slovakia.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Slovenia",
+    "capital": "Ljubljana",
+    "flag": "ug-flag-slovenia.svg",
+    "map": "ug-map-slovenia.png",
+    "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Spain",
+    "capital": "Madrid",
+    "flag": "ug-flag-spain.svg",
+    "map": "ug-map-spain.png",
+    "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Sweden",
+    "capital": "Stockholm",
+    "flag": "ug-flag-sweden.svg",
+    "map": "ug-map-sweden.png",
+    "tags": ["Europe", "European_Union", "Sovereign_State"]
+  },
+  {
+    "name": "Switzerland",
+    "capital": "Bern",
+    "capitalInfo": "Switzerland has no official capital; Bern is the de facto capital.",
+    "flag": "ug-flag-switzerland.svg",
+    "map": "ug-map-switzerland.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Turkey",
+    "info": "Also known as Türkiye",
+    "capital": "Ankara",
+    "flag": "ug-flag-turkey.svg",
+    "map": "ug-map-turkey.png",
+    "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Ukraine",
+    "capital": "Kyiv",
+    "capitalInfo": "Also known as Kiev.",
+    "flag": "ug-flag-ukraine.svg",
+    "map": "ug-map-ukraine.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Vatican City",
+    "capital": "Vatican City",
+    "flag": "ug-flag-vatican_city.svg",
+    "map": "ug-map-vatican_city.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Armenia",
+    "capital": "Yerevan",
+    "flag": "ug-flag-armenia.svg",
+    "map": "ug-map-armenia.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Cyprus",
+    "capital": "Nicosia",
+    "flag": "ug-flag-cyprus.svg",
+    "map": "ug-map-cyprus.png",
+    "tags": [
+      "Asia",
+      "European_Union",
+      "Mediterranean",
+      "Middle_East",
+      "Sovereign_State"
+    ]
+  },
+  {
+    "name": "Kazakhstan",
+    "capital": "Astana",
+    "capitalInfo": "Known as Nur-Sultan until September 2022.",
+    "flag": "ug-flag-kazakhstan.svg",
+    "map": "ug-map-kazakhstan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Egypt",
+    "capital": "Cairo",
+    "flag": "ug-flag-egypt.svg",
+    "map": "ug-map-egypt.png",
+    "tags": ["Africa", "Mediterranean", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Algeria",
+    "capital": "Algiers",
+    "flag": "ug-flag-algeria.svg",
+    "map": "ug-map-algeria.png",
+    "tags": ["Africa", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Angola",
+    "capital": "Luanda",
+    "flag": "ug-flag-angola.svg",
+    "map": "ug-map-angola.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Benin",
+    "capital": "Porto-Novo",
+    "capitalInfo": "While Porto-Novo is the official capital, Cotonou is the de facto seat of government.",
+    "flag": "ug-flag-benin.svg",
+    "map": "ug-map-benin.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Botswana",
+    "capital": "Gaborone",
+    "flag": "ug-flag-botswana.svg",
+    "map": "ug-map-botswana.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Burkina Faso",
+    "capital": "Ouagadougou",
+    "flag": "ug-flag-burkina_faso.svg",
+    "map": "ug-map-burkina_faso.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Cameroon",
+    "capital": "Yaoundé",
+    "flag": "ug-flag-cameroon.svg",
+    "map": "ug-map-cameroon.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Burundi",
+    "capital": "Gitega",
+    "capitalInfo": "Official capital was moved from Bujumbura to Gitega in 2019.",
+    "flag": "ug-flag-burundi.svg",
+    "map": "ug-map-burundi.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Cape Verde",
+    "info": "Also known as Cabo Verde.",
+    "capital": "Praia",
+    "flag": "ug-flag-cape_verde.svg",
+    "map": "ug-map-cape_verde.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "São Tomé and Príncipe",
+    "capital": "São Tomé",
+    "flag": "ug-flag-sao_tome_and_principe.svg",
+    "map": "ug-map-sao_tome_and_principe.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Central African Republic",
+    "capital": "Bangui",
+    "flag": "ug-flag-central_african_republic.svg",
+    "map": "ug-map-central_african_republic.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Chad",
+    "capital": "N'Djamena",
+    "flag": "ug-flag-chad.svg",
+    "map": "ug-map-chad.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Equatorial Guinea",
+    "capital": "Malabo",
+    "capitalInfo": "Ciudad de la Paz is being built to replace Malabo as capital.",
+    "flag": "ug-flag-equatorial_guinea.svg",
+    "map": "ug-map-equatorial_guinea.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Kenya",
+    "capital": "Nairobi",
+    "flag": "ug-flag-kenya.svg",
+    "map": "ug-map-kenya.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Comoros",
+    "capital": "Moroni",
+    "flag": "ug-flag-comoros.svg",
+    "map": "ug-map-comoros.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Ivory Coast",
+    "info": "Officially Côte d'Ivoire.",
+    "capital": "Yamoussoukro",
+    "capitalInfo": "While Yamoussoukro is the official capital, Abidjan is the de facto seat of government.",
+    "flag": "ug-flag-ivory_coast.svg",
+    "map": "ug-map-ivory_coast.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Democratic Republic of the Congo",
+    "info": "Formerly Zaire.",
+    "capital": "Kinshasa",
+    "flag": "ug-flag-democratic_republic_of_the_congo.svg",
+    "map": "ug-map-democratic_republic_of_the_congo.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Djibouti",
+    "capital": "Djibouti",
+    "flag": "ug-flag-djibouti.svg",
+    "map": "ug-map-djibouti.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Guinea-Bissau",
+    "capital": "Bissau",
+    "flag": "ug-flag-guinea-bissau.svg",
+    "map": "ug-map-guinea-bissau.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Eritrea",
+    "capital": "Asmara",
+    "flag": "ug-flag-eritrea.svg",
+    "map": "ug-map-eritrea.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Ethiopia",
+    "capital": "Addis Ababa",
+    "flag": "ug-flag-ethiopia.svg",
+    "map": "ug-map-ethiopia.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Gabon",
+    "capital": "Libreville",
+    "flag": "ug-flag-gabon.svg",
+    "map": "ug-map-gabon.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "The Gambia",
+    "capital": "Banjul",
+    "flag": "ug-flag-the_gambia.svg",
+    "map": "ug-map-the_gambia.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Lesotho",
+    "capital": "Maseru",
+    "flag": "ug-flag-lesotho.svg",
+    "map": "ug-map-lesotho.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Liberia",
+    "capital": "Monrovia",
+    "flag": "ug-flag-liberia.svg",
+    "map": "ug-map-liberia.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Madagascar",
+    "capital": "Antananarivo",
+    "flag": "ug-flag-madagascar.svg",
+    "map": "ug-map-madagascar.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Malawi",
+    "capital": "Lilongwe",
+    "flag": "ug-flag-malawi.svg",
+    "map": "ug-map-malawi.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Mali",
+    "capital": "Bamako",
+    "flag": "ug-flag-mali.svg",
+    "map": "ug-map-mali.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Mauritania",
+    "capital": "Nouakchott",
+    "flag": "ug-flag-mauritania.svg",
+    "map": "ug-map-mauritania.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Mauritius",
+    "capital": "Port Louis",
+    "flag": "ug-flag-mauritius.svg",
+    "map": "ug-map-mauritius.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Morocco",
+    "capital": "Rabat",
+    "flag": "ug-flag-morocco.svg",
+    "map": "ug-map-morocco.png",
+    "tags": ["Africa", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Mozambique",
+    "capital": "Maputo",
+    "flag": "ug-flag-mozambique.svg",
+    "map": "ug-map-mozambique.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Namibia",
+    "capital": "Windhoek",
+    "flag": "ug-flag-namibia.svg",
+    "map": "ug-map-namibia.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Niger",
+    "capital": "Niamey",
+    "flag": "ug-flag-niger.svg",
+    "map": "ug-map-niger.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Nigeria",
+    "capital": "Abuja",
+    "flag": "ug-flag-nigeria.svg",
+    "map": "ug-map-nigeria.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Republic of the Congo",
+    "capital": "Brazzaville",
+    "flag": "ug-flag-republic_of_the_congo.svg",
+    "map": "ug-map-republic_of_the_congo.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Rwanda",
+    "capital": "Kigali",
+    "flag": "ug-flag-rwanda.svg",
+    "map": "ug-map-rwanda.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Senegal",
+    "capital": "Dakar",
+    "flag": "ug-flag-senegal.svg",
+    "map": "ug-map-senegal.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Seychelles",
+    "capital": "Victoria",
+    "flag": "ug-flag-seychelles.svg",
+    "map": "ug-map-seychelles.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Sierra Leone",
+    "capital": "Freetown",
+    "flag": "ug-flag-sierra_leone.svg",
+    "map": "ug-map-sierra_leone.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "South Africa",
+    "capital": "Pretoria, Cape Town, Bloemfontein",
+    "capitalInfo": "South Africa has no legally defined capital: the branches of government are split over three cities: Pretoria (executive), Cape Town (legislative) and Bloemfontein (judicial).",
+    "flag": "ug-flag-south_africa.svg",
+    "map": "ug-map-south_africa.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Sudan",
+    "capital": "Khartoum",
+    "flag": "ug-flag-sudan.svg",
+    "map": "ug-map-sudan.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Eswatini",
+    "info": "Known as Swaziland until 2018.",
+    "capital": "Mbabane",
+    "capitalInfo": "While Mbabane is the official, executive capital, Lobamba is the traditional, spiritual and legislative capital.",
+    "flag": "ug-flag-eswatini.svg",
+    "map": "ug-map-eswatini.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Tanzania",
+    "capital": "Dodoma",
+    "capitalInfo": "While Dodoma is the official capital, Dar es Salaam is the de facto seat of government.",
+    "flag": "ug-flag-tanzania.svg",
+    "map": "ug-map-tanzania.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Togo",
+    "capital": "Lomé",
+    "flag": "ug-flag-togo.svg",
+    "map": "ug-map-togo.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Tunisia",
+    "capital": "Tunis",
+    "flag": "ug-flag-tunisia.svg",
+    "map": "ug-map-tunisia.png",
+    "tags": ["Africa", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Uganda",
+    "capital": "Kampala",
+    "flag": "ug-flag-uganda.svg",
+    "map": "ug-map-uganda.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Sahrawi Arab Democratic Republic",
+    "info": "Partially recognised state claimed by Morocco. Also known as Western Sahara.",
+    "capital": "Laayoune",
+    "capitalInfo": "While Laayoune, also known as El Aaiún, is the declared capital, Tifariti is the de facto seat of government.",
+    "flag": "ug-flag-sahrawi_arab_democratic_republic.svg",
+    "map": "ug-map-sahrawi_arab_democratic_republic.png",
+    "tags": ["Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Zambia",
+    "capital": "Lusaka",
+    "flag": "ug-flag-zambia.svg",
+    "map": "ug-map-zambia.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Zimbabwe",
+    "capital": "Harare",
+    "flag": "ug-flag-zimbabwe.svg",
+    "map": "ug-map-zimbabwe.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Canary Islands",
+    "info": "Autonomous community of Spain.",
+    "map": "ug-map-canary_islands.png",
+    "tags": ["Africa"]
+  },
+  {
+    "name": "Afghanistan",
+    "capital": "Kabul",
+    "flag": "ug-flag-afghanistan.svg",
+    "map": "ug-map-afghanistan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Bahrain",
+    "capital": "Manama",
+    "flag": "ug-flag-bahrain.svg",
+    "map": "ug-map-bahrain.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Bangladesh",
+    "capital": "Dhaka",
+    "flag": "ug-flag-bangladesh.svg",
+    "map": "ug-map-bangladesh.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Bhutan",
+    "capital": "Thimphu",
+    "flag": "ug-flag-bhutan.svg",
+    "map": "ug-map-bhutan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Brunei",
+    "capital": "Bandar Seri Begawan",
+    "flag": "ug-flag-brunei.svg",
+    "map": "ug-map-brunei.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "China",
+    "capital": "Beijing",
+    "flag": "ug-flag-china.svg",
+    "map": "ug-map-china.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Cambodia",
+    "capital": "Phnom Penh",
+    "flag": "ug-flag-cambodia.svg",
+    "map": "ug-map-cambodia.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Indonesia",
+    "capital": "Jakarta",
+    "flag": "ug-flag-indonesia.svg",
+    "map": "ug-map-indonesia.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "India",
+    "capital": "New Delhi",
+    "flag": "ug-flag-india.svg",
+    "map": "ug-map-india.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Hong Kong",
+    "info": "Special Administrative Region of China.",
+    "flag": "ug-flag-hong_kong.svg",
+    "map": "ug-map-hong_kong.png",
+    "tags": ["Asia"]
+  },
+  {
+    "name": "Iran",
+    "capital": "Tehran",
+    "flag": "ug-flag-iran.svg",
+    "map": "ug-map-iran.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Israel",
+    "capital": "Jerusalem",
+    "capitalInfo": "Disputed; claimed by Palestine.",
+    "flag": "ug-flag-israel.svg",
+    "map": "ug-map-israel.png",
+    "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Iraq",
+    "capital": "Baghdad",
+    "flag": "ug-flag-iraq.svg",
+    "map": "ug-map-iraq.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "South Korea",
+    "capital": "Seoul",
+    "flag": "ug-flag-south_korea.svg",
+    "map": "ug-map-south_korea.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "North Korea",
+    "capital": "Pyongyang",
+    "flag": "ug-flag-north_korea.svg",
+    "map": "ug-map-north_korea.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Jordan",
+    "capital": "Amman",
+    "flag": "ug-flag-jordan.svg",
+    "map": "ug-map-jordan.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Japan",
+    "capital": "Tokyo",
+    "flag": "ug-flag-japan.svg",
+    "map": "ug-map-japan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Lebanon",
+    "capital": "Beirut",
+    "flag": "ug-flag-lebanon.svg",
+    "map": "ug-map-lebanon.png",
+    "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Laos",
+    "capital": "Vientiane",
+    "flag": "ug-flag-laos.svg",
+    "map": "ug-map-laos.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Kyrgyzstan",
+    "capital": "Bishkek",
+    "flag": "ug-flag-kyrgyzstan.svg",
+    "map": "ug-map-kyrgyzstan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Kuwait",
+    "capital": "Kuwait City",
+    "flag": "ug-flag-kuwait.svg",
+    "map": "ug-map-kuwait.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Myanmar",
+    "info": "Also known as Burma.",
+    "capital": "Naypyidaw",
+    "flag": "ug-flag-myanmar.svg",
+    "map": "ug-map-myanmar.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Mongolia",
+    "capital": "Ulaanbaatar",
+    "flag": "ug-flag-mongolia.svg",
+    "map": "ug-map-mongolia.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Maldives",
+    "capital": "Malé",
+    "flag": "ug-flag-maldives.svg",
+    "map": "ug-map-maldives.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "flag": "ug-flag-malaysia.svg",
+    "map": "ug-map-malaysia.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Oman",
+    "capital": "Muscat",
+    "flag": "ug-flag-oman.svg",
+    "map": "ug-map-oman.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Nepal",
+    "capital": "Kathmandu",
+    "flag": "ug-flag-nepal-nobox.svg",
+    "map": "ug-map-nepal.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Palestine",
+    "capital": "Jerusalem",
+    "capitalInfo": "Disputed; claimed by Israel; Ramallah is the administrative centre.",
+    "flag": "ug-flag-palestine.svg",
+    "map": "ug-map-palestine.png",
+    "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Pakistan",
+    "capital": "Islamabad",
+    "flag": "ug-flag-pakistan.svg",
+    "map": "ug-map-pakistan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Qatar",
+    "capital": "Doha",
+    "flag": "ug-flag-qatar.svg",
+    "map": "ug-map-qatar.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Saudi Arabia",
+    "capital": "Riyadh",
+    "flag": "ug-flag-saudi_arabia.svg",
+    "map": "ug-map-saudi_arabia.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Singapore",
+    "capital": "Singapore",
+    "flag": "ug-flag-singapore.svg",
+    "map": "ug-map-singapore.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Syria",
+    "capital": "Damascus",
+    "flag": "ug-flag-syria.svg",
+    "map": "ug-map-syria.png",
+    "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Taiwan",
+    "info": "Partially recognised state claimed by China.",
+    "capital": "Taipei",
+    "flag": "ug-flag-taiwan.svg",
+    "map": "ug-map-taiwan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Sri Lanka",
+    "capital": "Sri Jayawardenepura Kotte",
+    "capitalInfo": "Colombo is often referred to as the capital but Sri Jayawardenepura Kotte, a suburb of Colombo, is the official, legislative capital.",
+    "flag": "ug-flag-sri_lanka.svg",
+    "map": "ug-map-sri_lanka.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Tajikistan",
+    "capital": "Dushanbe",
+    "flag": "ug-flag-tajikistan.svg",
+    "map": "ug-map-tajikistan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Thailand",
+    "capital": "Bangkok",
+    "flag": "ug-flag-thailand.svg",
+    "map": "ug-map-thailand.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "East Timor",
+    "info": "Also known as Timor-Leste.",
+    "capital": "Dili",
+    "flag": "ug-flag-east_timor.svg",
+    "map": "ug-map-east_timor.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "United Arab Emirates",
+    "capital": "Abu Dhabi",
+    "flag": "ug-flag-united_arab_emirates.svg",
+    "map": "ug-map-united_arab_emirates.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Turkmenistan",
+    "capital": "Ashgabat",
+    "flag": "ug-flag-turkmenistan.svg",
+    "map": "ug-map-turkmenistan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Yemen",
+    "capital": "Sana'a",
+    "flag": "ug-flag-yemen.svg",
+    "map": "ug-map-yemen.png",
+    "tags": ["Asia", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Vietnam",
+    "capital": "Hanoi",
+    "flag": "ug-flag-vietnam.svg",
+    "map": "ug-map-vietnam.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Uzbekistan",
+    "capital": "Tashkent",
+    "flag": "ug-flag-uzbekistan.svg",
+    "map": "ug-map-uzbekistan.png",
+    "tags": ["Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Fiji",
+    "capital": "Suva",
+    "flag": "ug-flag-fiji.svg",
+    "map": "ug-map-fiji.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Papua New Guinea",
+    "capital": "Port Moresby",
+    "flag": "ug-flag-papua_new_guinea.svg",
+    "map": "ug-map-papua_new_guinea.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Australia",
+    "capital": "Canberra",
+    "flag": "ug-flag-australia.svg",
+    "map": "ug-map-australia.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Solomon Islands",
+    "capital": "Honiara",
+    "flag": "ug-flag-solomon_islands.svg",
+    "map": "ug-map-solomon_islands.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Argentina",
+    "capital": "Buenos Aires",
+    "flag": "ug-flag-argentina.svg",
+    "map": "ug-map-argentina.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Bolivia",
+    "capital": "Sucre",
+    "capitalInfo": "While Sucre is the constitutional capital, La Paz is the seat of government.",
+    "flag": "ug-flag-bolivia-blur.svg",
+    "map": "ug-map-bolivia.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Brazil",
+    "capital": "Brasília",
+    "flag": "ug-flag-brazil.svg",
+    "map": "ug-map-brazil.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Chile",
+    "capital": "Santiago",
+    "flag": "ug-flag-chile.svg",
+    "map": "ug-map-chile.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Colombia",
+    "capital": "Bogotá",
+    "flag": "ug-flag-colombia.svg",
+    "map": "ug-map-colombia.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Ecuador",
+    "capital": "Quito",
+    "flag": "ug-flag-ecuador.svg",
+    "map": "ug-map-ecuador.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Guyana",
+    "capital": "Georgetown",
+    "flag": "ug-flag-guyana.svg",
+    "map": "ug-map-guyana.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Paraguay",
+    "capital": "Asunción",
+    "flag": "ug-flag-paraguay-blur.svg",
+    "map": "ug-map-paraguay.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Peru",
+    "capital": "Lima",
+    "flag": "ug-flag-peru.svg",
+    "map": "ug-map-peru.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Suriname",
+    "capital": "Paramaribo",
+    "flag": "ug-flag-suriname.svg",
+    "map": "ug-map-suriname.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Uruguay",
+    "capital": "Montevideo",
+    "flag": "ug-flag-uruguay.svg",
+    "map": "ug-map-uruguay.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Venezuela",
+    "capital": "Caracas",
+    "flag": "ug-flag-venezuela.svg",
+    "map": "ug-map-venezuela.png",
+    "tags": ["South_America", "Sovereign_State"]
+  },
+  {
+    "name": "Cook Islands",
+    "capital": "Avarua",
+    "flag": "ug-flag-cook_islands.svg",
+    "map": "ug-map-cook_islands.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Federated States of Micronesia",
+    "capital": "Palikir",
+    "flag": "ug-flag-federated_states_of_micronesia.svg",
+    "map": "ug-map-federated_states_of_micronesia.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Guam",
+    "info": "Unincorporated territory of the United States.",
+    "capital": "Hagåtña",
+    "flag": "ug-flag-guam-blur.svg",
+    "map": "ug-map-guam.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Vanuatu",
+    "capital": "Port Vila",
+    "flag": "ug-flag-vanuatu.svg",
+    "map": "ug-map-vanuatu.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Canada",
+    "capital": "Ottawa",
+    "flag": "ug-flag-canada.svg",
+    "map": "ug-map-canada.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "United States of America",
+    "capital": "Washington, D.C.",
+    "flag": "ug-flag-united_states_of_america.svg",
+    "map": "ug-map-united_states_of_america.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Mexico",
+    "capital": "Mexico City",
+    "flag": "ug-flag-mexico.svg",
+    "map": "ug-map-mexico.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Puerto Rico",
+    "info": "Unincorporated territory of the United States.",
+    "capital": "San Juan",
+    "flag": "ug-flag-puerto_rico.svg",
+    "map": "ug-map-puerto_rico.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Cuba",
+    "capital": "Havana",
+    "flag": "ug-flag-cuba.svg",
+    "map": "ug-map-cuba.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Dominican Republic",
+    "capital": "Santo Domingo",
+    "flag": "ug-flag-dominican_republic.svg",
+    "map": "ug-map-dominican_republic.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Haiti",
+    "capital": "Port-au-Prince",
+    "flag": "ug-flag-haiti.svg",
+    "map": "ug-map-haiti.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Jamaica",
+    "capital": "Kingston",
+    "flag": "ug-flag-jamaica.svg",
+    "map": "ug-map-jamaica.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "capital": "Port of Spain",
+    "flag": "ug-flag-trinidad_and_tobago.svg",
+    "map": "ug-map-trinidad_and_tobago.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Bermuda",
+    "info": "Overseas territory of the United Kingdom.",
+    "map": "ug-map-bermuda.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Guadeloupe",
+    "info": "Overseas department of France.",
+    "map": "ug-map-guadeloupe.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "The Bahamas",
+    "capital": "Nassau",
+    "flag": "ug-flag-the_bahamas.svg",
+    "map": "ug-map-the_bahamas.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Barbados",
+    "capital": "Bridgetown",
+    "flag": "ug-flag-barbados.svg",
+    "map": "ug-map-barbados.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Belize",
+    "capital": "Belmopan",
+    "flag": "ug-flag-belize.svg",
+    "map": "ug-map-belize.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Costa Rica",
+    "capital": "San José",
+    "flag": "ug-flag-costa_rica-blur.svg",
+    "map": "ug-map-costa_rica.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "El Salvador",
+    "capital": "San Salvador",
+    "flag": "ug-flag-el_salvador-blur.svg",
+    "map": "ug-map-el_salvador.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Guatemala",
+    "capital": "Guatemala City",
+    "flag": "ug-flag-guatemala.svg",
+    "map": "ug-map-guatemala.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Honduras",
+    "capital": "Tegucigalpa",
+    "flag": "ug-flag-honduras.svg",
+    "map": "ug-map-honduras.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Nicaragua",
+    "capital": "Managua",
+    "flag": "ug-flag-nicaragua-blur.svg",
+    "map": "ug-map-nicaragua.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Panama",
+    "capital": "Panama City",
+    "flag": "ug-flag-panama.svg",
+    "map": "ug-map-panama.png",
+    "tags": ["North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "capital": "St. John's",
+    "flag": "ug-flag-antigua_and_barbuda.svg",
+    "map": "ug-map-antigua_and_barbuda.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Dominica",
+    "capital": "Roseau",
+    "flag": "ug-flag-dominica.svg",
+    "map": "ug-map-dominica.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "capital": "Kingstown",
+    "flag": "ug-flag-saint_vincent_and_the_grenadines.svg",
+    "map": "ug-map-saint_vincent_and_the_grenadines.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Somalia",
+    "capital": "Mogadishu",
+    "flag": "ug-flag-somalia.svg",
+    "map": "ug-map-somalia.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Zanzibar",
+    "info": "Semi-autonomous region of Tanzania.",
+    "map": "ug-map-zanzibar.png",
+    "tags": ["Africa"]
+  },
+  {
+    "name": "Ghana",
+    "capital": "Accra",
+    "flag": "ug-flag-ghana.svg",
+    "map": "ug-map-ghana.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "Guinea",
+    "capital": "Conakry",
+    "flag": "ug-flag-guinea.svg",
+    "map": "ug-map-guinea.png",
+    "tags": ["Africa", "Sovereign_State", "West_Africa"]
+  },
+  {
+    "name": "New Zealand",
+    "capital": "Wellington",
+    "flag": "ug-flag-new_zealand.svg",
+    "map": "ug-map-new_zealand.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "French Polynesia",
+    "info": "Overseas territory of France.",
+    "capital": "Papeete",
+    "flag": "ug-flag-french_polynesia.svg",
+    "map": "ug-map-french_polynesia.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Philippines",
+    "capital": "Manila",
+    "flag": "ug-flag-philippines.svg",
+    "map": "ug-map-philippines.png",
+    "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
+  },
+  {
+    "name": "Kosovo",
+    "info": "Partially recognised state claimed by Serbia.",
+    "capital": "Pristina",
+    "flag": "ug-flag-kosovo.svg",
+    "map": "ug-map-kosovo.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Libya",
+    "capital": "Tripoli",
+    "flag": "ug-flag-libya.svg",
+    "map": "ug-map-libya.png",
+    "tags": ["Africa", "Mediterranean", "Sovereign_State"]
+  },
+  {
+    "name": "Palau",
+    "capital": "Ngerulmud",
+    "flag": "ug-flag-palau.svg",
+    "map": "ug-map-palau.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Saint Lucia",
+    "capital": "Castries",
+    "flag": "ug-flag-saint_lucia.svg",
+    "map": "ug-map-saint_lucia.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Bali",
+    "info": "Island of Indonesia.",
+    "map": "ug-map-bali.png",
+    "tags": ["Asia"]
+  },
+  {
+    "name": "Grenada",
+    "capital": "St. George's",
+    "flag": "ug-flag-grenada.svg",
+    "map": "ug-map-grenada.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "British Virgin Islands",
+    "info": "Overseas territory of the United Kingdom.",
+    "map": "ug-map-british_virgin_islands.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "info": "Overseas territory of the United Kingdom.",
+    "map": "ug-map-turks_and_caicos_islands.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Cayman Islands",
+    "info": "Overseas territory of the United Kingdom.",
+    "map": "ug-map-cayman_islands.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Anguilla",
+    "info": "Overseas territory of the United Kingdom.",
+    "map": "ug-map-anguilla.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Azores",
+    "info": "Autonomous region of Portugal.",
+    "map": "ug-map-azores.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Curaçao",
+    "info": "Constituent country of the Kingdom of the Netherlands.",
+    "capital": "Willemstad",
+    "flag": "ug-flag-curacao.svg",
+    "map": "ug-map-curacao.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "French Guiana",
+    "info": "Overseas department of France.",
+    "map": "ug-map-french_guiana.png",
+    "tags": ["South_America"]
+  },
+  {
+    "name": "Gibraltar",
+    "info": "Overseas territory of the United Kingdom.",
+    "map": "ug-map-gibraltar.png",
+    "tags": ["Europe", "Mediterranean"]
+  },
+  {
+    "name": "Guernsey",
+    "info": "Crown dependency of the United Kingdom.",
+    "map": "ug-map-guernsey.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Isle of Man",
+    "info": "Crown dependency of the United Kingdom.",
+    "map": "ug-map-isle_of_man.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Jersey",
+    "info": "Crown dependency of the United Kingdom.",
+    "map": "ug-map-jersey.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Kiribati",
+    "capital": "South Tarawa",
+    "flag": "ug-flag-kiribati.svg",
+    "map": "ug-map-kiribati.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Macau",
+    "info": "Special Administrative Region of China.",
+    "flag": "ug-flag-macau.svg",
+    "map": "ug-map-macau.png",
+    "tags": ["Asia"]
+  },
+  {
+    "name": "Madeira",
+    "info": "Autonomous region of Portugal.",
+    "map": "ug-map-madeira.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Marshall Islands",
+    "capital": "Majuro",
+    "flag": "ug-flag-marshall_islands.svg",
+    "map": "ug-map-marshall_islands.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Nauru",
+    "capital": "Yaren",
+    "capitalInfo": "Nauru has no official capital; the Yaren District is the de facto capital.",
+    "flag": "ug-flag-nauru.svg",
+    "map": "ug-map-nauru.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "New Caledonia",
+    "info": "Overseas territory of France.",
+    "capital": "Nouméa",
+    "flag": "ug-flag-new_caledonia.svg",
+    "map": "ug-map-new_caledonia.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Niue",
+    "capital": "Alofi",
+    "flag": "ug-flag-niue.svg",
+    "map": "ug-map-niue.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Northern Cyprus",
+    "info": "State recognised only by Turkey and claimed by Cyprus.",
+    "capital": "North Nicosia",
+    "flag": "ug-flag-northern_cyprus.svg",
+    "map": "ug-map-northern_cyprus.png",
+    "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "capital": "Basseterre",
+    "flag": "ug-flag-saint_kitts_and_nevis.svg",
+    "map": "ug-map-saint_kitts_and_nevis.png",
+    "tags": ["Caribbean", "North_America", "Sovereign_State"]
+  },
+  {
+    "name": "Samoa",
+    "capital": "Apia",
+    "flag": "ug-flag-samoa.svg",
+    "map": "ug-map-samoa.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Somaliland",
+    "info": "Independent state claimed by Somalia.",
+    "capital": "Hargeisa",
+    "flag": "ug-flag-somaliland.svg",
+    "map": "ug-map-somaliland.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "South Sudan",
+    "capital": "Juba",
+    "flag": "ug-flag-south_sudan.svg",
+    "map": "ug-map-south_sudan.png",
+    "tags": ["Africa", "East_Africa", "Sovereign_State"]
+  },
+  {
+    "name": "Tuvalu",
+    "capital": "Funafuti",
+    "flag": "ug-flag-tuvalu.svg",
+    "map": "ug-map-tuvalu.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "United States Virgin Islands",
+    "info": "Unincorporated territory of the United States.",
+    "capital": "Charlotte Amalie",
+    "flag": "ug-flag-united_states_virgin_islands.svg",
+    "map": "ug-map-united_states_virgin_islands.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Åland Islands",
+    "info": "Autonomous region of Finland.",
+    "capital": "Mariehamn",
+    "flag": "ug-flag-aland_islands.svg",
+    "map": "ug-map-aland_islands.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "South Ossetia",
+    "info": "Independent state claimed by Georgia.",
+    "capital": "Tskhinvali",
+    "flag": "ug-flag-south_ossetia.svg",
+    "map": "ug-map-south_ossetia.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "American Samoa",
+    "info": "Unincorporated territory of the United States.",
+    "map": "ug-map-american_samoa.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "info": "Unincorporated territory of the United States.",
+    "map": "ug-map-northern_mariana_islands.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Aruba",
+    "info": "Constituent country of the Kingdom of the Netherlands.",
+    "capital": "Oranjestad",
+    "flag": "ug-flag-aruba.svg",
+    "map": "ug-map-aruba.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Abkhazia",
+    "info": "Independent state claimed by Georgia.",
+    "capital": "Sukhumi",
+    "flag": "ug-flag-abkhazia.svg",
+    "map": "ug-map-abkhazia.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Sint Maarten",
+    "info": "Constituent country of the Kingdom of the Netherlands.",
+    "map": "ug-map-sint_maarten.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Tonga",
+    "capital": "Nukuʻalofa",
+    "flag": "ug-flag-tonga.svg",
+    "map": "ug-map-tonga.png",
+    "tags": ["Oceania", "Sovereign_State"]
+  },
+  {
+    "name": "Transnistria",
+    "info": "Independent state claimed by Moldova.",
+    "capital": "Tiraspol",
+    "flag": "ug-flag-transnistria.svg",
+    "map": "ug-map-transnistria.png",
+    "tags": ["Europe", "Sovereign_State"]
+  },
+  {
+    "name": "Sardinia",
+    "info": "Autonomous region of Italy.",
+    "map": "ug-map-sardinia.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Kaliningrad Oblast",
+    "info": "Oblast (administrative region) of the Russian Federation.",
+    "map": "ug-map-kaliningrad_oblast.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Martinique",
+    "info": "Overseas department of France.",
+    "map": "ug-map-martinique.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Java",
+    "info": "Island of Indonesia.",
+    "map": "ug-map-java.png",
+    "tags": ["Asia"]
+  },
+  {
+    "name": "Corsica",
+    "info": "Region of France.",
+    "map": "ug-map-corsica.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "European Union",
+    "flag": "ug-flag-european_union.svg",
+    "map": "ug-map-european_union.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Gulf of Mexico",
+    "map": "ug-map-gulf_of_mexico.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Philippine Sea",
+    "map": "ug-map-philippine_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Southern Ocean",
+    "map": "ug-map-southern_ocean-nobox.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Gulf of Thailand",
+    "info": "Also known as the Gulf of Siam.",
+    "map": "ug-map-gulf_of_thailand.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Micronesia",
+    "info": "Subregion of Oceania comprising thousands of small islands in the western Pacific Ocean.",
+    "map": "ug-map-micronesia.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Pacific Ocean",
+    "map": "ug-map-pacific_ocean-nobox.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Atlantic Ocean",
+    "map": "ug-map-atlantic_ocean-nobox.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Indian Ocean",
+    "map": "ug-map-indian_ocean-nobox.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Arctic Ocean",
+    "map": "ug-map-arctic_ocean-nobox.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Hudson Bay",
+    "map": "ug-map-hudson_bay.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Labrador Sea",
+    "map": "ug-map-labrador_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "White Sea",
+    "map": "ug-map-white_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Denmark Strait",
+    "map": "ug-map-denmark_strait.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Norwegian Sea",
+    "map": "ug-map-norwegian_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Baltic Sea",
+    "map": "ug-map-baltic_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Celtic Sea",
+    "map": "ug-map-celtic_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "English Channel",
+    "map": "ug-map-english_channel.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Adriatic Sea",
+    "map": "ug-map-adriatic_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Bay of Biscay",
+    "map": "ug-map-bay_of_biscay.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Black Sea",
+    "map": "ug-map-black_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Aegean Sea",
+    "map": "ug-map-aegean_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Balkan Peninsula",
+    "map": "ug-map-balkan_peninsula.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Caspian Sea",
+    "map": "ug-map-caspian_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Mediterranean Sea",
+    "map": "ug-map-mediterranean_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "East Siberian Sea",
+    "map": "ug-map-east_siberian_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Bering Strait",
+    "map": "ug-map-bering_strait.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Arabian Sea",
+    "map": "ug-map-arabian_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  { "name": "Red Sea", "map": "ug-map-red_sea.png", "tags": ["Oceans+Seas"] },
+  { "name": "Dead Sea", "map": "ug-map-dead_sea.png", "tags": ["Oceans+Seas"] },
+  {
+    "name": "Bay of Bengal",
+    "map": "ug-map-bay_of_bengal.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Sea of Japan",
+    "info": "A naming dispute exists between the sea's bordering countries, with South Korea notably supporting the name East Sea.",
+    "map": "ug-map-sea_of_japan.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Yellow Sea",
+    "map": "ug-map-yellow_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Coral Sea",
+    "map": "ug-map-coral_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "South China Sea",
+    "map": "ug-map-south_china_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Tasman Sea",
+    "map": "ug-map-tasman_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Gulf of Carpentaria",
+    "map": "ug-map-gulf_of_carpentaria.png",
+    "tags": ["Oceans+Seas"]
+  },
+  { "name": "Aral Sea", "map": "ug-map-aral_sea.png", "tags": ["Oceans+Seas"] },
+  {
+    "name": "Persian Gulf",
+    "map": "ug-map-persian_gulf.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Caribbean Sea",
+    "map": "ug-map-caribbean_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Gulf of California",
+    "info": "Also known as the Sea of Cortez.",
+    "map": "ug-map-gulf_of_california.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Polynesia",
+    "info": "Subregion of Oceania comprising thousands of small islands in the central and southern Pacific Ocean.",
+    "map": "ug-map-polynesia.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Melanesia",
+    "info": "Subregion of Oceania, which includes the four countries of Vanuatu, the Solomon Islands, Fiji, and Papua New Guinea.",
+    "map": "ug-map-melanesia.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Scandinavia",
+    "info": "Historical and cultural region in Northern Europe, which includes the countries of Denmark, Norway and Sweden, and sometimes Finland and Iceland.",
+    "map": "ug-map-scandinavia.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Sea of Galilee",
+    "map": "ug-map-sea_of_galilee.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Sumatra",
+    "info": "Island of Indonesia.",
+    "map": "ug-map-sumatra.png",
+    "tags": ["Asia"]
+  },
+  {
+    "name": "Sicily",
+    "info": "Autonomous region of Italy.",
+    "map": "ug-map-sicily.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Mayotte",
+    "info": "Overseas department of France.",
+    "map": "ug-map-mayotte.png",
+    "tags": ["Africa", "East_Africa"]
+  },
+  {
+    "name": "Réunion",
+    "info": "Overseas department of France.",
+    "map": "ug-map-reunion.png",
+    "tags": ["Africa", "East_Africa"]
+  },
+  {
+    "name": "Falkland Islands",
+    "info": "Overseas territory of the United Kingdom.",
+    "map": "ug-map-falkland_islands.png",
+    "tags": ["South_America"]
+  },
+  {
+    "name": "Europe",
+    "map": "ug-map-europe-nobox.png",
+    "tags": ["Continents"]
+  },
+  {
+    "name": "North America",
+    "map": "ug-map-north_america-nobox.png",
+    "tags": ["Continents"]
+  },
+  {
+    "name": "South America",
+    "map": "ug-map-south_america-nobox.png",
+    "tags": ["Continents"]
+  },
+  { "name": "Asia", "map": "ug-map-asia-nobox.png", "tags": ["Continents"] },
+  {
+    "name": "Africa",
+    "map": "ug-map-africa-nobox.png",
+    "tags": ["Continents"]
+  },
+  {
+    "name": "Oceania",
+    "info": "World region covering the Australian continent and most of the islands in the Pacific Ocean.",
+    "map": "ug-map-oceania-nobox.png",
+    "tags": ["Continents"]
+  },
+  {
+    "name": "Antarctica",
+    "map": "ug-map-antarctica-nobox.png",
+    "tags": ["Continents"]
+  },
+  {
+    "name": "Saint Martin",
+    "info": "Overseas territory of France.",
+    "map": "ug-map-saint_martin.png",
+    "tags": ["Caribbean", "North_America"]
+  },
+  {
+    "name": "Wallis and Futuna",
+    "info": "Overseas territory of France.",
+    "map": "ug-map-wallis_and_futuna.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Akrotiri and Dhekelia",
+    "info": "Overseas territory of the United Kingdom.",
+    "map": "ug-map-akrotiri_and_dhekelia.png",
+    "tags": ["Asia", "Mediterranean", "Middle_East"]
+  },
+  {
+    "name": "Svalbard",
+    "info": "Unincorporated internal area of Norway.",
+    "map": "ug-map-svalbard.png",
+    "tags": ["Europe"]
+  },
+  {
+    "name": "Hawaii",
+    "info": "State of the United States.",
+    "map": "ug-map-hawaii.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Alaska",
+    "info": "State of the United States.",
+    "map": "ug-map-alaska.png",
+    "tags": ["North_America"]
+  },
+  {
+    "name": "Bougainville",
+    "info": "Autonomous region of Papua New Guinea.",
+    "map": "ug-map-bougainville.png",
+    "tags": ["Oceania"]
+  },
+  {
+    "name": "Jeju",
+    "info": "Autonomous province of South Korea.",
+    "map": "ug-map-jeju.png",
+    "tags": ["Asia"]
+  },
+  {
+    "name": "Banda Sea",
+    "map": "ug-map-banda_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Barents Sea",
+    "map": "ug-map-barents_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Celebes Sea",
+    "map": "ug-map-celebes_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "East China Sea",
+    "map": "ug-map-east_china_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Gulf of Alaska",
+    "map": "ug-map-gulf_of_alaska.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Gulf of Guinea",
+    "map": "ug-map-gulf_of_guinea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "North Sea",
+    "map": "ug-map-north_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Sea of Okhotsk",
+    "map": "ug-map-sea_of_okhotsk.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "name": "Timor Sea",
+    "map": "ug-map-timor_sea.png",
+    "tags": ["Oceans+Seas"]
+  }
+]
