@@ -87,6 +87,8 @@ Als Nutzer möchte ich Abzeichen und Auszeichnungen erhalten, um meine Motivatio
 
 Note: Der Technologie Stack kann im Verlauf vom Projekt noch geändert werden
 
-- Angular
-- MongoDB
-- Docker & Docker Compose
+- [Angular](https://angular.dev/) (Front End)
+- [MongoDB](https://www.mongodb.com/) (Datenbank)
+- [Docker](https://www.docker.com/) & [Docker Compose](https://docs.docker.com/compose/) (Deployment)
+- [NodeJS](https://nodejs.org/en) (Backend)
+- [ExpressJS](https://expressjs.com/) (Backend RestAPI)
