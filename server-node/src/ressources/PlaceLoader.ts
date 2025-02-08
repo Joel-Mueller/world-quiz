@@ -5,11 +5,13 @@ import { Place } from "./Place";
 
 export class PlaceLoader {
   private placesMap: Map<string, PlaceRaw>;
+  private count : number;
   private pathToData: string;
 
   constructor(pathToData: string) {
     this.placesMap = new Map();
     this.pathToData = pathToData;
+    this.count = 0;
   }
 
   public loadPlaces(): Place[] {
@@ -34,6 +36,7 @@ export class PlaceLoader {
     const rawRecords = this.readCSV("main");
     for (const r of rawRecords) {
       this.placesMap.set(r["country"], {
+        id: this.count,
         name: r["country"],
         info: undefined,
         capital: undefined,
@@ -42,6 +45,7 @@ export class PlaceLoader {
         map: r["map"],
         tag: r["tags"],
       });
+      this.count ++;
     }
   }
 
@@ -71,11 +75,14 @@ export class PlaceLoader {
 
   private getArrayAndRemoveQuotes(): PlaceRaw[] {
     return Array.from(this.placesMap.values()).map((p) => ({
-      ...p,
+      id: p.id,
+      name: p.name,
+      info: p.info || undefined,
       capital: p.capital || undefined,
       capitalInfo: p.capitalInfo || undefined,
-      info: p.info || undefined,
       flag: p.flag || undefined,
+      map: p.map,
+      tag: p.tag,
     }));
   }
 
@@ -89,6 +96,7 @@ export class PlaceLoader {
 
   private getPlaces(placesRaw: PlaceRaw[]): Place[] {
     return placesRaw.map((p) => ({
+      id: p.id,
       name: p.name,
       info: p.info,
       capital: p.capital,
@@ -101,6 +109,7 @@ export class PlaceLoader {
 }
 
 interface PlaceRaw {
+  id: number;
   name: string;
   info?: string;
   capital?: string;

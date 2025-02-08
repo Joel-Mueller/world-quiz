@@ -1,5 +1,6 @@
 [
   {
+    "id": 0,
     "name": "England",
     "info": "Constituent country of the United Kingdom.",
     "capital": "London",
@@ -8,6 +9,7 @@
     "tags": ["Europe"]
   },
   {
+    "id": 1,
     "name": "Scotland",
     "info": "Constituent country of the United Kingdom.",
     "capital": "Edinburgh",
@@ -16,6 +18,7 @@
     "tags": ["Europe"]
   },
   {
+    "id": 2,
     "name": "United Kingdom",
     "capital": "London",
     "flag": "ug-flag-united_kingdom.svg",
@@ -23,6 +26,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 3,
     "name": "Northern Ireland",
     "info": "Constituent country of the United Kingdom.",
     "capital": "Belfast",
@@ -30,6 +34,7 @@
     "tags": ["Europe"]
   },
   {
+    "id": 4,
     "name": "France",
     "capital": "Paris",
     "flag": "ug-flag-france.svg",
@@ -37,6 +42,7 @@
     "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 5,
     "name": "Wales",
     "info": "Constituent country of the United Kingdom.",
     "capital": "Cardiff",
@@ -45,6 +51,7 @@
     "tags": ["Europe"]
   },
   {
+    "id": 6,
     "name": "Georgia",
     "capital": "Tbilisi",
     "flag": "ug-flag-georgia.svg",
@@ -52,6 +59,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 7,
     "name": "Germany",
     "capital": "Berlin",
     "flag": "ug-flag-germany.svg",
@@ -59,6 +67,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 8,
     "name": "Greece",
     "capital": "Athens",
     "flag": "ug-flag-greece.svg",
@@ -66,6 +75,7 @@
     "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 9,
     "name": "Greenland",
     "info": "Constituent country in the Kingdom of Denmark.",
     "capital": "Nuuk",
@@ -74,6 +84,7 @@
     "tags": ["North_America"]
   },
   {
+    "id": 10,
     "name": "Hungary",
     "capital": "Budapest",
     "flag": "ug-flag-hungary.svg",
@@ -81,6 +92,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 11,
     "name": "Albania",
     "capital": "Tirana",
     "flag": "ug-flag-albania.svg",
@@ -88,6 +100,7 @@
     "tags": ["Europe", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 12,
     "name": "Andorra",
     "capital": "Andorra la Vella",
     "flag": "ug-flag-andorra.svg",
@@ -95,6 +108,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 13,
     "name": "Austria",
     "capital": "Vienna",
     "flag": "ug-flag-austria.svg",
@@ -102,6 +116,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 14,
     "name": "Azerbaijan",
     "capital": "Baku",
     "flag": "ug-flag-azerbaijan.svg",
@@ -109,6 +124,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 15,
     "name": "Belarus",
     "capital": "Minsk",
     "flag": "ug-flag-belarus.svg",
@@ -116,6 +132,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 16,
     "name": "Belgium",
     "capital": "Brussels",
     "flag": "ug-flag-belgium.svg",
@@ -123,6 +140,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 17,
     "name": "Bosnia and Herzegovina",
     "capital": "Sarajevo",
     "flag": "ug-flag-bosnia_and_herzegovina.svg",
@@ -130,6 +148,7 @@
     "tags": ["Europe", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 18,
     "name": "Bulgaria",
     "capital": "Sofia",
     "flag": "ug-flag-bulgaria.svg",
@@ -137,6 +156,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 19,
     "name": "Croatia",
     "capital": "Zagreb",
     "flag": "ug-flag-croatia.svg",
@@ -144,6 +164,7 @@
     "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 20,
     "name": "Czech Republic",
     "info": "Also known as Czechia.",
     "capital": "Prague",
@@ -152,6 +173,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 21,
     "name": "Denmark",
     "capital": "Copenhagen",
     "flag": "ug-flag-denmark.svg",
@@ -159,6 +181,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 22,
     "name": "Estonia",
     "capital": "Tallinn",
     "flag": "ug-flag-estonia.svg",
@@ -166,6 +189,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 23,
     "name": "Faroe Islands",
     "info": "Constituent country in the Kingdom of Denmark.",
     "capital": "Tórshavn",
@@ -174,6 +198,7 @@
     "tags": ["Europe"]
   },
   {
+    "id": 24,
     "name": "Finland",
     "capital": "Helsinki",
     "flag": "ug-flag-finland.svg",
@@ -181,6 +206,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 25,
     "name": "Iceland",
     "capital": "Reykjavík",
     "flag": "ug-flag-iceland.svg",
@@ -188,6 +214,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 26,
     "name": "Ireland",
     "capital": "Dublin",
     "flag": "ug-flag-ireland.svg",
@@ -195,6 +222,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 27,
     "name": "Italy",
     "capital": "Rome",
     "flag": "ug-flag-italy.svg",
@@ -202,6 +230,7 @@
     "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 28,
     "name": "Latvia",
     "capital": "Riga",
     "flag": "ug-flag-latvia.svg",
@@ -209,6 +238,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 29,
     "name": "Liechtenstein",
     "capital": "Vaduz",
     "flag": "ug-flag-liechtenstein.svg",
@@ -216,6 +246,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 30,
     "name": "Lithuania",
     "capital": "Vilnius",
     "flag": "ug-flag-lithuania.svg",
@@ -223,6 +254,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 31,
     "name": "Luxembourg",
     "capital": "Luxembourg City",
     "capitalInfo": "Officially Luxembourg.",
@@ -231,6 +263,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 32,
     "name": "North Macedonia",
     "info": "Formerly known as Macedonia.",
     "capital": "Skopje",
@@ -239,6 +272,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 33,
     "name": "Malta",
     "capital": "Valletta",
     "flag": "ug-flag-malta.svg",
@@ -246,6 +280,7 @@
     "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 34,
     "name": "Moldova",
     "capital": "Chișinău",
     "flag": "ug-flag-moldova.svg",
@@ -253,6 +288,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 35,
     "name": "Monaco",
     "capital": "Monaco",
     "flag": "ug-flag-monaco.svg",
@@ -260,6 +296,7 @@
     "tags": ["Europe", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 36,
     "name": "Montenegro",
     "capital": "Podgorica",
     "capitalInfo": "Cetinje is an honorary capital.",
@@ -268,6 +305,7 @@
     "tags": ["Europe", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 37,
     "name": "Netherlands",
     "capital": "Amsterdam",
     "capitalInfo": "While Amsterdam is the official capital, The Hague is the seat of the executive and legislative branches.",
@@ -276,6 +314,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 38,
     "name": "Norway",
     "capital": "Oslo",
     "flag": "ug-flag-norway.svg",
@@ -283,6 +322,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 39,
     "name": "Poland",
     "capital": "Warsaw",
     "flag": "ug-flag-poland.svg",
@@ -290,6 +330,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 40,
     "name": "Portugal",
     "capital": "Lisbon",
     "flag": "ug-flag-portugal.svg",
@@ -297,6 +338,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 41,
     "name": "Romania",
     "capital": "Bucharest",
     "flag": "ug-flag-romania.svg",
@@ -304,6 +346,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 42,
     "name": "Russia",
     "capital": "Moscow",
     "flag": "ug-flag-russia.svg",
@@ -311,6 +354,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 43,
     "name": "San Marino",
     "capital": "City of San Marino",
     "flag": "ug-flag-san_marino.svg",
@@ -318,6 +362,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 44,
     "name": "Serbia",
     "capital": "Belgrade",
     "flag": "ug-flag-serbia.svg",
@@ -325,6 +370,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 45,
     "name": "Slovakia",
     "capital": "Bratislava",
     "flag": "ug-flag-slovakia.svg",
@@ -332,6 +378,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 46,
     "name": "Slovenia",
     "capital": "Ljubljana",
     "flag": "ug-flag-slovenia.svg",
@@ -339,6 +386,7 @@
     "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 47,
     "name": "Spain",
     "capital": "Madrid",
     "flag": "ug-flag-spain.svg",
@@ -346,6 +394,7 @@
     "tags": ["Europe", "European_Union", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 48,
     "name": "Sweden",
     "capital": "Stockholm",
     "flag": "ug-flag-sweden.svg",
@@ -353,6 +402,7 @@
     "tags": ["Europe", "European_Union", "Sovereign_State"]
   },
   {
+    "id": 49,
     "name": "Switzerland",
     "capital": "Bern",
     "capitalInfo": "Switzerland has no official capital; Bern is the de facto capital.",
@@ -361,6 +411,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 50,
     "name": "Turkey",
     "info": "Also known as Türkiye",
     "capital": "Ankara",
@@ -369,6 +420,7 @@
     "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 51,
     "name": "Ukraine",
     "capital": "Kyiv",
     "capitalInfo": "Also known as Kiev.",
@@ -377,6 +429,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 52,
     "name": "Vatican City",
     "capital": "Vatican City",
     "flag": "ug-flag-vatican_city.svg",
@@ -384,6 +437,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 53,
     "name": "Armenia",
     "capital": "Yerevan",
     "flag": "ug-flag-armenia.svg",
@@ -391,6 +445,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 54,
     "name": "Cyprus",
     "capital": "Nicosia",
     "flag": "ug-flag-cyprus.svg",
@@ -404,6 +459,7 @@
     ]
   },
   {
+    "id": 55,
     "name": "Kazakhstan",
     "capital": "Astana",
     "capitalInfo": "Known as Nur-Sultan until September 2022.",
@@ -412,6 +468,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 56,
     "name": "Egypt",
     "capital": "Cairo",
     "flag": "ug-flag-egypt.svg",
@@ -419,6 +476,7 @@
     "tags": ["Africa", "Mediterranean", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 57,
     "name": "Algeria",
     "capital": "Algiers",
     "flag": "ug-flag-algeria.svg",
@@ -426,6 +484,7 @@
     "tags": ["Africa", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 58,
     "name": "Angola",
     "capital": "Luanda",
     "flag": "ug-flag-angola.svg",
@@ -433,6 +492,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 59,
     "name": "Benin",
     "capital": "Porto-Novo",
     "capitalInfo": "While Porto-Novo is the official capital, Cotonou is the de facto seat of government.",
@@ -441,6 +501,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 60,
     "name": "Botswana",
     "capital": "Gaborone",
     "flag": "ug-flag-botswana.svg",
@@ -448,6 +509,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 61,
     "name": "Burkina Faso",
     "capital": "Ouagadougou",
     "flag": "ug-flag-burkina_faso.svg",
@@ -455,6 +517,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 62,
     "name": "Cameroon",
     "capital": "Yaoundé",
     "flag": "ug-flag-cameroon.svg",
@@ -462,6 +525,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 63,
     "name": "Burundi",
     "capital": "Gitega",
     "capitalInfo": "Official capital was moved from Bujumbura to Gitega in 2019.",
@@ -470,6 +534,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 64,
     "name": "Cape Verde",
     "info": "Also known as Cabo Verde.",
     "capital": "Praia",
@@ -478,6 +543,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 65,
     "name": "São Tomé and Príncipe",
     "capital": "São Tomé",
     "flag": "ug-flag-sao_tome_and_principe.svg",
@@ -485,6 +551,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 66,
     "name": "Central African Republic",
     "capital": "Bangui",
     "flag": "ug-flag-central_african_republic.svg",
@@ -492,6 +559,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 67,
     "name": "Chad",
     "capital": "N'Djamena",
     "flag": "ug-flag-chad.svg",
@@ -499,6 +567,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 68,
     "name": "Equatorial Guinea",
     "capital": "Malabo",
     "capitalInfo": "Ciudad de la Paz is being built to replace Malabo as capital.",
@@ -507,6 +576,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 69,
     "name": "Kenya",
     "capital": "Nairobi",
     "flag": "ug-flag-kenya.svg",
@@ -514,6 +584,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 70,
     "name": "Comoros",
     "capital": "Moroni",
     "flag": "ug-flag-comoros.svg",
@@ -521,6 +592,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 71,
     "name": "Ivory Coast",
     "info": "Officially Côte d'Ivoire.",
     "capital": "Yamoussoukro",
@@ -530,6 +602,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 72,
     "name": "Democratic Republic of the Congo",
     "info": "Formerly Zaire.",
     "capital": "Kinshasa",
@@ -538,6 +611,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 73,
     "name": "Djibouti",
     "capital": "Djibouti",
     "flag": "ug-flag-djibouti.svg",
@@ -545,6 +619,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 74,
     "name": "Guinea-Bissau",
     "capital": "Bissau",
     "flag": "ug-flag-guinea-bissau.svg",
@@ -552,6 +627,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 75,
     "name": "Eritrea",
     "capital": "Asmara",
     "flag": "ug-flag-eritrea.svg",
@@ -559,6 +635,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 76,
     "name": "Ethiopia",
     "capital": "Addis Ababa",
     "flag": "ug-flag-ethiopia.svg",
@@ -566,6 +643,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 77,
     "name": "Gabon",
     "capital": "Libreville",
     "flag": "ug-flag-gabon.svg",
@@ -573,6 +651,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 78,
     "name": "The Gambia",
     "capital": "Banjul",
     "flag": "ug-flag-the_gambia.svg",
@@ -580,6 +659,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 79,
     "name": "Lesotho",
     "capital": "Maseru",
     "flag": "ug-flag-lesotho.svg",
@@ -587,6 +667,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 80,
     "name": "Liberia",
     "capital": "Monrovia",
     "flag": "ug-flag-liberia.svg",
@@ -594,6 +675,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 81,
     "name": "Madagascar",
     "capital": "Antananarivo",
     "flag": "ug-flag-madagascar.svg",
@@ -601,6 +683,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 82,
     "name": "Malawi",
     "capital": "Lilongwe",
     "flag": "ug-flag-malawi.svg",
@@ -608,6 +691,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 83,
     "name": "Mali",
     "capital": "Bamako",
     "flag": "ug-flag-mali.svg",
@@ -615,6 +699,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 84,
     "name": "Mauritania",
     "capital": "Nouakchott",
     "flag": "ug-flag-mauritania.svg",
@@ -622,6 +707,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 85,
     "name": "Mauritius",
     "capital": "Port Louis",
     "flag": "ug-flag-mauritius.svg",
@@ -629,6 +715,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 86,
     "name": "Morocco",
     "capital": "Rabat",
     "flag": "ug-flag-morocco.svg",
@@ -636,6 +723,7 @@
     "tags": ["Africa", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 87,
     "name": "Mozambique",
     "capital": "Maputo",
     "flag": "ug-flag-mozambique.svg",
@@ -643,6 +731,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 88,
     "name": "Namibia",
     "capital": "Windhoek",
     "flag": "ug-flag-namibia.svg",
@@ -650,6 +739,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 89,
     "name": "Niger",
     "capital": "Niamey",
     "flag": "ug-flag-niger.svg",
@@ -657,6 +747,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 90,
     "name": "Nigeria",
     "capital": "Abuja",
     "flag": "ug-flag-nigeria.svg",
@@ -664,6 +755,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 91,
     "name": "Republic of the Congo",
     "capital": "Brazzaville",
     "flag": "ug-flag-republic_of_the_congo.svg",
@@ -671,6 +763,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 92,
     "name": "Rwanda",
     "capital": "Kigali",
     "flag": "ug-flag-rwanda.svg",
@@ -678,6 +771,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 93,
     "name": "Senegal",
     "capital": "Dakar",
     "flag": "ug-flag-senegal.svg",
@@ -685,6 +779,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 94,
     "name": "Seychelles",
     "capital": "Victoria",
     "flag": "ug-flag-seychelles.svg",
@@ -692,6 +787,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 95,
     "name": "Sierra Leone",
     "capital": "Freetown",
     "flag": "ug-flag-sierra_leone.svg",
@@ -699,6 +795,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 96,
     "name": "South Africa",
     "capital": "Pretoria, Cape Town, Bloemfontein",
     "capitalInfo": "South Africa has no legally defined capital: the branches of government are split over three cities: Pretoria (executive), Cape Town (legislative) and Bloemfontein (judicial).",
@@ -707,6 +804,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 97,
     "name": "Sudan",
     "capital": "Khartoum",
     "flag": "ug-flag-sudan.svg",
@@ -714,6 +812,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 98,
     "name": "Eswatini",
     "info": "Known as Swaziland until 2018.",
     "capital": "Mbabane",
@@ -723,6 +822,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 99,
     "name": "Tanzania",
     "capital": "Dodoma",
     "capitalInfo": "While Dodoma is the official capital, Dar es Salaam is the de facto seat of government.",
@@ -731,6 +831,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 100,
     "name": "Togo",
     "capital": "Lomé",
     "flag": "ug-flag-togo.svg",
@@ -738,6 +839,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 101,
     "name": "Tunisia",
     "capital": "Tunis",
     "flag": "ug-flag-tunisia.svg",
@@ -745,6 +847,7 @@
     "tags": ["Africa", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 102,
     "name": "Uganda",
     "capital": "Kampala",
     "flag": "ug-flag-uganda.svg",
@@ -752,6 +855,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 103,
     "name": "Sahrawi Arab Democratic Republic",
     "info": "Partially recognised state claimed by Morocco. Also known as Western Sahara.",
     "capital": "Laayoune",
@@ -761,6 +865,7 @@
     "tags": ["Africa", "Sovereign_State"]
   },
   {
+    "id": 104,
     "name": "Zambia",
     "capital": "Lusaka",
     "flag": "ug-flag-zambia.svg",
@@ -768,6 +873,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 105,
     "name": "Zimbabwe",
     "capital": "Harare",
     "flag": "ug-flag-zimbabwe.svg",
@@ -775,12 +881,14 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 106,
     "name": "Canary Islands",
     "info": "Autonomous community of Spain.",
     "map": "ug-map-canary_islands.png",
     "tags": ["Africa"]
   },
   {
+    "id": 107,
     "name": "Afghanistan",
     "capital": "Kabul",
     "flag": "ug-flag-afghanistan.svg",
@@ -788,6 +896,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 108,
     "name": "Bahrain",
     "capital": "Manama",
     "flag": "ug-flag-bahrain.svg",
@@ -795,6 +904,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 109,
     "name": "Bangladesh",
     "capital": "Dhaka",
     "flag": "ug-flag-bangladesh.svg",
@@ -802,6 +912,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 110,
     "name": "Bhutan",
     "capital": "Thimphu",
     "flag": "ug-flag-bhutan.svg",
@@ -809,6 +920,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 111,
     "name": "Brunei",
     "capital": "Bandar Seri Begawan",
     "flag": "ug-flag-brunei.svg",
@@ -816,6 +928,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 112,
     "name": "China",
     "capital": "Beijing",
     "flag": "ug-flag-china.svg",
@@ -823,6 +936,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 113,
     "name": "Cambodia",
     "capital": "Phnom Penh",
     "flag": "ug-flag-cambodia.svg",
@@ -830,6 +944,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 114,
     "name": "Indonesia",
     "capital": "Jakarta",
     "flag": "ug-flag-indonesia.svg",
@@ -837,6 +952,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 115,
     "name": "India",
     "capital": "New Delhi",
     "flag": "ug-flag-india.svg",
@@ -844,6 +960,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 116,
     "name": "Hong Kong",
     "info": "Special Administrative Region of China.",
     "flag": "ug-flag-hong_kong.svg",
@@ -851,6 +968,7 @@
     "tags": ["Asia"]
   },
   {
+    "id": 117,
     "name": "Iran",
     "capital": "Tehran",
     "flag": "ug-flag-iran.svg",
@@ -858,6 +976,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 118,
     "name": "Israel",
     "capital": "Jerusalem",
     "capitalInfo": "Disputed; claimed by Palestine.",
@@ -866,6 +985,7 @@
     "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 119,
     "name": "Iraq",
     "capital": "Baghdad",
     "flag": "ug-flag-iraq.svg",
@@ -873,6 +993,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 120,
     "name": "South Korea",
     "capital": "Seoul",
     "flag": "ug-flag-south_korea.svg",
@@ -880,6 +1001,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 121,
     "name": "North Korea",
     "capital": "Pyongyang",
     "flag": "ug-flag-north_korea.svg",
@@ -887,6 +1009,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 122,
     "name": "Jordan",
     "capital": "Amman",
     "flag": "ug-flag-jordan.svg",
@@ -894,6 +1017,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 123,
     "name": "Japan",
     "capital": "Tokyo",
     "flag": "ug-flag-japan.svg",
@@ -901,6 +1025,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 124,
     "name": "Lebanon",
     "capital": "Beirut",
     "flag": "ug-flag-lebanon.svg",
@@ -908,6 +1033,7 @@
     "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 125,
     "name": "Laos",
     "capital": "Vientiane",
     "flag": "ug-flag-laos.svg",
@@ -915,6 +1041,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 126,
     "name": "Kyrgyzstan",
     "capital": "Bishkek",
     "flag": "ug-flag-kyrgyzstan.svg",
@@ -922,6 +1049,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 127,
     "name": "Kuwait",
     "capital": "Kuwait City",
     "flag": "ug-flag-kuwait.svg",
@@ -929,6 +1057,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 128,
     "name": "Myanmar",
     "info": "Also known as Burma.",
     "capital": "Naypyidaw",
@@ -937,6 +1066,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 129,
     "name": "Mongolia",
     "capital": "Ulaanbaatar",
     "flag": "ug-flag-mongolia.svg",
@@ -944,6 +1074,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 130,
     "name": "Maldives",
     "capital": "Malé",
     "flag": "ug-flag-maldives.svg",
@@ -951,6 +1082,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 131,
     "name": "Malaysia",
     "capital": "Kuala Lumpur",
     "flag": "ug-flag-malaysia.svg",
@@ -958,6 +1090,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 132,
     "name": "Oman",
     "capital": "Muscat",
     "flag": "ug-flag-oman.svg",
@@ -965,6 +1098,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 133,
     "name": "Nepal",
     "capital": "Kathmandu",
     "flag": "ug-flag-nepal-nobox.svg",
@@ -972,6 +1106,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 134,
     "name": "Palestine",
     "capital": "Jerusalem",
     "capitalInfo": "Disputed; claimed by Israel; Ramallah is the administrative centre.",
@@ -980,6 +1115,7 @@
     "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 135,
     "name": "Pakistan",
     "capital": "Islamabad",
     "flag": "ug-flag-pakistan.svg",
@@ -987,6 +1123,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 136,
     "name": "Qatar",
     "capital": "Doha",
     "flag": "ug-flag-qatar.svg",
@@ -994,6 +1131,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 137,
     "name": "Saudi Arabia",
     "capital": "Riyadh",
     "flag": "ug-flag-saudi_arabia.svg",
@@ -1001,6 +1139,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 138,
     "name": "Singapore",
     "capital": "Singapore",
     "flag": "ug-flag-singapore.svg",
@@ -1008,6 +1147,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 139,
     "name": "Syria",
     "capital": "Damascus",
     "flag": "ug-flag-syria.svg",
@@ -1015,6 +1155,7 @@
     "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 140,
     "name": "Taiwan",
     "info": "Partially recognised state claimed by China.",
     "capital": "Taipei",
@@ -1023,6 +1164,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 141,
     "name": "Sri Lanka",
     "capital": "Sri Jayawardenepura Kotte",
     "capitalInfo": "Colombo is often referred to as the capital but Sri Jayawardenepura Kotte, a suburb of Colombo, is the official, legislative capital.",
@@ -1031,6 +1173,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 142,
     "name": "Tajikistan",
     "capital": "Dushanbe",
     "flag": "ug-flag-tajikistan.svg",
@@ -1038,6 +1181,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 143,
     "name": "Thailand",
     "capital": "Bangkok",
     "flag": "ug-flag-thailand.svg",
@@ -1045,6 +1189,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 144,
     "name": "East Timor",
     "info": "Also known as Timor-Leste.",
     "capital": "Dili",
@@ -1053,6 +1198,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 145,
     "name": "United Arab Emirates",
     "capital": "Abu Dhabi",
     "flag": "ug-flag-united_arab_emirates.svg",
@@ -1060,6 +1206,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 146,
     "name": "Turkmenistan",
     "capital": "Ashgabat",
     "flag": "ug-flag-turkmenistan.svg",
@@ -1067,6 +1214,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 147,
     "name": "Yemen",
     "capital": "Sana'a",
     "flag": "ug-flag-yemen.svg",
@@ -1074,6 +1222,7 @@
     "tags": ["Asia", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 148,
     "name": "Vietnam",
     "capital": "Hanoi",
     "flag": "ug-flag-vietnam.svg",
@@ -1081,6 +1230,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 149,
     "name": "Uzbekistan",
     "capital": "Tashkent",
     "flag": "ug-flag-uzbekistan.svg",
@@ -1088,6 +1238,7 @@
     "tags": ["Asia", "Sovereign_State"]
   },
   {
+    "id": 150,
     "name": "Fiji",
     "capital": "Suva",
     "flag": "ug-flag-fiji.svg",
@@ -1095,6 +1246,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 151,
     "name": "Papua New Guinea",
     "capital": "Port Moresby",
     "flag": "ug-flag-papua_new_guinea.svg",
@@ -1102,6 +1254,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 152,
     "name": "Australia",
     "capital": "Canberra",
     "flag": "ug-flag-australia.svg",
@@ -1109,6 +1262,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 153,
     "name": "Solomon Islands",
     "capital": "Honiara",
     "flag": "ug-flag-solomon_islands.svg",
@@ -1116,6 +1270,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 154,
     "name": "Argentina",
     "capital": "Buenos Aires",
     "flag": "ug-flag-argentina.svg",
@@ -1123,6 +1278,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 155,
     "name": "Bolivia",
     "capital": "Sucre",
     "capitalInfo": "While Sucre is the constitutional capital, La Paz is the seat of government.",
@@ -1131,6 +1287,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 156,
     "name": "Brazil",
     "capital": "Brasília",
     "flag": "ug-flag-brazil.svg",
@@ -1138,6 +1295,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 157,
     "name": "Chile",
     "capital": "Santiago",
     "flag": "ug-flag-chile.svg",
@@ -1145,6 +1303,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 158,
     "name": "Colombia",
     "capital": "Bogotá",
     "flag": "ug-flag-colombia.svg",
@@ -1152,6 +1311,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 159,
     "name": "Ecuador",
     "capital": "Quito",
     "flag": "ug-flag-ecuador.svg",
@@ -1159,6 +1319,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 160,
     "name": "Guyana",
     "capital": "Georgetown",
     "flag": "ug-flag-guyana.svg",
@@ -1166,6 +1327,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 161,
     "name": "Paraguay",
     "capital": "Asunción",
     "flag": "ug-flag-paraguay-blur.svg",
@@ -1173,6 +1335,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 162,
     "name": "Peru",
     "capital": "Lima",
     "flag": "ug-flag-peru.svg",
@@ -1180,6 +1343,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 163,
     "name": "Suriname",
     "capital": "Paramaribo",
     "flag": "ug-flag-suriname.svg",
@@ -1187,6 +1351,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 164,
     "name": "Uruguay",
     "capital": "Montevideo",
     "flag": "ug-flag-uruguay.svg",
@@ -1194,6 +1359,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 165,
     "name": "Venezuela",
     "capital": "Caracas",
     "flag": "ug-flag-venezuela.svg",
@@ -1201,6 +1367,7 @@
     "tags": ["South_America", "Sovereign_State"]
   },
   {
+    "id": 166,
     "name": "Cook Islands",
     "capital": "Avarua",
     "flag": "ug-flag-cook_islands.svg",
@@ -1208,6 +1375,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 167,
     "name": "Federated States of Micronesia",
     "capital": "Palikir",
     "flag": "ug-flag-federated_states_of_micronesia.svg",
@@ -1215,6 +1383,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 168,
     "name": "Guam",
     "info": "Unincorporated territory of the United States.",
     "capital": "Hagåtña",
@@ -1223,6 +1392,7 @@
     "tags": ["Oceania"]
   },
   {
+    "id": 169,
     "name": "Vanuatu",
     "capital": "Port Vila",
     "flag": "ug-flag-vanuatu.svg",
@@ -1230,6 +1400,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 170,
     "name": "Canada",
     "capital": "Ottawa",
     "flag": "ug-flag-canada.svg",
@@ -1237,6 +1408,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 171,
     "name": "United States of America",
     "capital": "Washington, D.C.",
     "flag": "ug-flag-united_states_of_america.svg",
@@ -1244,6 +1416,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 172,
     "name": "Mexico",
     "capital": "Mexico City",
     "flag": "ug-flag-mexico.svg",
@@ -1251,6 +1424,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 173,
     "name": "Puerto Rico",
     "info": "Unincorporated territory of the United States.",
     "capital": "San Juan",
@@ -1259,6 +1433,7 @@
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 174,
     "name": "Cuba",
     "capital": "Havana",
     "flag": "ug-flag-cuba.svg",
@@ -1266,6 +1441,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 175,
     "name": "Dominican Republic",
     "capital": "Santo Domingo",
     "flag": "ug-flag-dominican_republic.svg",
@@ -1273,6 +1449,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 176,
     "name": "Haiti",
     "capital": "Port-au-Prince",
     "flag": "ug-flag-haiti.svg",
@@ -1280,6 +1457,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 177,
     "name": "Jamaica",
     "capital": "Kingston",
     "flag": "ug-flag-jamaica.svg",
@@ -1287,6 +1465,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 178,
     "name": "Trinidad and Tobago",
     "capital": "Port of Spain",
     "flag": "ug-flag-trinidad_and_tobago.svg",
@@ -1294,18 +1473,21 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 179,
     "name": "Bermuda",
     "info": "Overseas territory of the United Kingdom.",
     "map": "ug-map-bermuda.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 180,
     "name": "Guadeloupe",
     "info": "Overseas department of France.",
     "map": "ug-map-guadeloupe.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 181,
     "name": "The Bahamas",
     "capital": "Nassau",
     "flag": "ug-flag-the_bahamas.svg",
@@ -1313,6 +1495,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 182,
     "name": "Barbados",
     "capital": "Bridgetown",
     "flag": "ug-flag-barbados.svg",
@@ -1320,6 +1503,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 183,
     "name": "Belize",
     "capital": "Belmopan",
     "flag": "ug-flag-belize.svg",
@@ -1327,6 +1511,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 184,
     "name": "Costa Rica",
     "capital": "San José",
     "flag": "ug-flag-costa_rica-blur.svg",
@@ -1334,6 +1519,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 185,
     "name": "El Salvador",
     "capital": "San Salvador",
     "flag": "ug-flag-el_salvador-blur.svg",
@@ -1341,6 +1527,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 186,
     "name": "Guatemala",
     "capital": "Guatemala City",
     "flag": "ug-flag-guatemala.svg",
@@ -1348,6 +1535,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 187,
     "name": "Honduras",
     "capital": "Tegucigalpa",
     "flag": "ug-flag-honduras.svg",
@@ -1355,6 +1543,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 188,
     "name": "Nicaragua",
     "capital": "Managua",
     "flag": "ug-flag-nicaragua-blur.svg",
@@ -1362,6 +1551,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 189,
     "name": "Panama",
     "capital": "Panama City",
     "flag": "ug-flag-panama.svg",
@@ -1369,6 +1559,7 @@
     "tags": ["North_America", "Sovereign_State"]
   },
   {
+    "id": 190,
     "name": "Antigua and Barbuda",
     "capital": "St. John's",
     "flag": "ug-flag-antigua_and_barbuda.svg",
@@ -1376,6 +1567,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 191,
     "name": "Dominica",
     "capital": "Roseau",
     "flag": "ug-flag-dominica.svg",
@@ -1383,6 +1575,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 192,
     "name": "Saint Vincent and the Grenadines",
     "capital": "Kingstown",
     "flag": "ug-flag-saint_vincent_and_the_grenadines.svg",
@@ -1390,6 +1583,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 193,
     "name": "Somalia",
     "capital": "Mogadishu",
     "flag": "ug-flag-somalia.svg",
@@ -1397,12 +1591,14 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 194,
     "name": "Zanzibar",
     "info": "Semi-autonomous region of Tanzania.",
     "map": "ug-map-zanzibar.png",
     "tags": ["Africa"]
   },
   {
+    "id": 195,
     "name": "Ghana",
     "capital": "Accra",
     "flag": "ug-flag-ghana.svg",
@@ -1410,6 +1606,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 196,
     "name": "Guinea",
     "capital": "Conakry",
     "flag": "ug-flag-guinea.svg",
@@ -1417,6 +1614,7 @@
     "tags": ["Africa", "Sovereign_State", "West_Africa"]
   },
   {
+    "id": 197,
     "name": "New Zealand",
     "capital": "Wellington",
     "flag": "ug-flag-new_zealand.svg",
@@ -1424,6 +1622,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 198,
     "name": "French Polynesia",
     "info": "Overseas territory of France.",
     "capital": "Papeete",
@@ -1432,6 +1631,7 @@
     "tags": ["Oceania"]
   },
   {
+    "id": 199,
     "name": "Philippines",
     "capital": "Manila",
     "flag": "ug-flag-philippines.svg",
@@ -1439,6 +1639,7 @@
     "tags": ["Asia", "Southeast_Asia", "Sovereign_State"]
   },
   {
+    "id": 200,
     "name": "Kosovo",
     "info": "Partially recognised state claimed by Serbia.",
     "capital": "Pristina",
@@ -1447,6 +1648,7 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 201,
     "name": "Libya",
     "capital": "Tripoli",
     "flag": "ug-flag-libya.svg",
@@ -1454,6 +1656,7 @@
     "tags": ["Africa", "Mediterranean", "Sovereign_State"]
   },
   {
+    "id": 202,
     "name": "Palau",
     "capital": "Ngerulmud",
     "flag": "ug-flag-palau.svg",
@@ -1461,6 +1664,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 203,
     "name": "Saint Lucia",
     "capital": "Castries",
     "flag": "ug-flag-saint_lucia.svg",
@@ -1468,12 +1672,14 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 204,
     "name": "Bali",
     "info": "Island of Indonesia.",
     "map": "ug-map-bali.png",
     "tags": ["Asia"]
   },
   {
+    "id": 205,
     "name": "Grenada",
     "capital": "St. George's",
     "flag": "ug-flag-grenada.svg",
@@ -1481,36 +1687,42 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 206,
     "name": "British Virgin Islands",
     "info": "Overseas territory of the United Kingdom.",
     "map": "ug-map-british_virgin_islands.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 207,
     "name": "Turks and Caicos Islands",
     "info": "Overseas territory of the United Kingdom.",
     "map": "ug-map-turks_and_caicos_islands.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 208,
     "name": "Cayman Islands",
     "info": "Overseas territory of the United Kingdom.",
     "map": "ug-map-cayman_islands.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 209,
     "name": "Anguilla",
     "info": "Overseas territory of the United Kingdom.",
     "map": "ug-map-anguilla.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 210,
     "name": "Azores",
     "info": "Autonomous region of Portugal.",
     "map": "ug-map-azores.png",
     "tags": ["Europe"]
   },
   {
+    "id": 211,
     "name": "Curaçao",
     "info": "Constituent country of the Kingdom of the Netherlands.",
     "capital": "Willemstad",
@@ -1519,36 +1731,42 @@
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 212,
     "name": "French Guiana",
     "info": "Overseas department of France.",
     "map": "ug-map-french_guiana.png",
     "tags": ["South_America"]
   },
   {
+    "id": 213,
     "name": "Gibraltar",
     "info": "Overseas territory of the United Kingdom.",
     "map": "ug-map-gibraltar.png",
     "tags": ["Europe", "Mediterranean"]
   },
   {
+    "id": 214,
     "name": "Guernsey",
     "info": "Crown dependency of the United Kingdom.",
     "map": "ug-map-guernsey.png",
     "tags": ["Europe"]
   },
   {
+    "id": 215,
     "name": "Isle of Man",
     "info": "Crown dependency of the United Kingdom.",
     "map": "ug-map-isle_of_man.png",
     "tags": ["Europe"]
   },
   {
+    "id": 216,
     "name": "Jersey",
     "info": "Crown dependency of the United Kingdom.",
     "map": "ug-map-jersey.png",
     "tags": ["Europe"]
   },
   {
+    "id": 217,
     "name": "Kiribati",
     "capital": "South Tarawa",
     "flag": "ug-flag-kiribati.svg",
@@ -1556,6 +1774,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 218,
     "name": "Macau",
     "info": "Special Administrative Region of China.",
     "flag": "ug-flag-macau.svg",
@@ -1563,12 +1782,14 @@
     "tags": ["Asia"]
   },
   {
+    "id": 219,
     "name": "Madeira",
     "info": "Autonomous region of Portugal.",
     "map": "ug-map-madeira.png",
     "tags": ["Europe"]
   },
   {
+    "id": 220,
     "name": "Marshall Islands",
     "capital": "Majuro",
     "flag": "ug-flag-marshall_islands.svg",
@@ -1576,6 +1797,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 221,
     "name": "Nauru",
     "capital": "Yaren",
     "capitalInfo": "Nauru has no official capital; the Yaren District is the de facto capital.",
@@ -1584,6 +1806,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 222,
     "name": "New Caledonia",
     "info": "Overseas territory of France.",
     "capital": "Nouméa",
@@ -1592,6 +1815,7 @@
     "tags": ["Oceania"]
   },
   {
+    "id": 223,
     "name": "Niue",
     "capital": "Alofi",
     "flag": "ug-flag-niue.svg",
@@ -1599,6 +1823,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 224,
     "name": "Northern Cyprus",
     "info": "State recognised only by Turkey and claimed by Cyprus.",
     "capital": "North Nicosia",
@@ -1607,6 +1832,7 @@
     "tags": ["Asia", "Mediterranean", "Middle_East", "Sovereign_State"]
   },
   {
+    "id": 225,
     "name": "Saint Kitts and Nevis",
     "capital": "Basseterre",
     "flag": "ug-flag-saint_kitts_and_nevis.svg",
@@ -1614,6 +1840,7 @@
     "tags": ["Caribbean", "North_America", "Sovereign_State"]
   },
   {
+    "id": 226,
     "name": "Samoa",
     "capital": "Apia",
     "flag": "ug-flag-samoa.svg",
@@ -1621,6 +1848,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 227,
     "name": "Somaliland",
     "info": "Independent state claimed by Somalia.",
     "capital": "Hargeisa",
@@ -1629,6 +1857,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 228,
     "name": "South Sudan",
     "capital": "Juba",
     "flag": "ug-flag-south_sudan.svg",
@@ -1636,6 +1865,7 @@
     "tags": ["Africa", "East_Africa", "Sovereign_State"]
   },
   {
+    "id": 229,
     "name": "Tuvalu",
     "capital": "Funafuti",
     "flag": "ug-flag-tuvalu.svg",
@@ -1643,6 +1873,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 230,
     "name": "United States Virgin Islands",
     "info": "Unincorporated territory of the United States.",
     "capital": "Charlotte Amalie",
@@ -1651,6 +1882,7 @@
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 231,
     "name": "Åland Islands",
     "info": "Autonomous region of Finland.",
     "capital": "Mariehamn",
@@ -1659,6 +1891,7 @@
     "tags": ["Europe"]
   },
   {
+    "id": 232,
     "name": "South Ossetia",
     "info": "Independent state claimed by Georgia.",
     "capital": "Tskhinvali",
@@ -1667,18 +1900,21 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 233,
     "name": "American Samoa",
     "info": "Unincorporated territory of the United States.",
     "map": "ug-map-american_samoa.png",
     "tags": ["Oceania"]
   },
   {
+    "id": 234,
     "name": "Northern Mariana Islands",
     "info": "Unincorporated territory of the United States.",
     "map": "ug-map-northern_mariana_islands.png",
     "tags": ["Oceania"]
   },
   {
+    "id": 235,
     "name": "Aruba",
     "info": "Constituent country of the Kingdom of the Netherlands.",
     "capital": "Oranjestad",
@@ -1687,6 +1923,7 @@
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 236,
     "name": "Abkhazia",
     "info": "Independent state claimed by Georgia.",
     "capital": "Sukhumi",
@@ -1695,12 +1932,14 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 237,
     "name": "Sint Maarten",
     "info": "Constituent country of the Kingdom of the Netherlands.",
     "map": "ug-map-sint_maarten.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 238,
     "name": "Tonga",
     "capital": "Nukuʻalofa",
     "flag": "ug-flag-tonga.svg",
@@ -1708,6 +1947,7 @@
     "tags": ["Oceania", "Sovereign_State"]
   },
   {
+    "id": 239,
     "name": "Transnistria",
     "info": "Independent state claimed by Moldova.",
     "capital": "Tiraspol",
@@ -1716,407 +1956,502 @@
     "tags": ["Europe", "Sovereign_State"]
   },
   {
+    "id": 240,
     "name": "Sardinia",
     "info": "Autonomous region of Italy.",
     "map": "ug-map-sardinia.png",
     "tags": ["Europe"]
   },
   {
+    "id": 241,
     "name": "Kaliningrad Oblast",
     "info": "Oblast (administrative region) of the Russian Federation.",
     "map": "ug-map-kaliningrad_oblast.png",
     "tags": ["Europe"]
   },
   {
+    "id": 242,
     "name": "Martinique",
     "info": "Overseas department of France.",
     "map": "ug-map-martinique.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 243,
     "name": "Java",
     "info": "Island of Indonesia.",
     "map": "ug-map-java.png",
     "tags": ["Asia"]
   },
   {
+    "id": 244,
     "name": "Corsica",
     "info": "Region of France.",
     "map": "ug-map-corsica.png",
     "tags": ["Europe"]
   },
   {
+    "id": 245,
     "name": "European Union",
     "flag": "ug-flag-european_union.svg",
     "map": "ug-map-european_union.png",
     "tags": ["Europe"]
   },
   {
+    "id": 246,
     "name": "Gulf of Mexico",
     "map": "ug-map-gulf_of_mexico.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 247,
     "name": "Philippine Sea",
     "map": "ug-map-philippine_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 248,
     "name": "Southern Ocean",
     "map": "ug-map-southern_ocean-nobox.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 249,
     "name": "Gulf of Thailand",
     "info": "Also known as the Gulf of Siam.",
     "map": "ug-map-gulf_of_thailand.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 250,
     "name": "Micronesia",
     "info": "Subregion of Oceania comprising thousands of small islands in the western Pacific Ocean.",
     "map": "ug-map-micronesia.png",
     "tags": ["Oceania"]
   },
   {
+    "id": 251,
     "name": "Pacific Ocean",
     "map": "ug-map-pacific_ocean-nobox.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 252,
     "name": "Atlantic Ocean",
     "map": "ug-map-atlantic_ocean-nobox.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 253,
     "name": "Indian Ocean",
     "map": "ug-map-indian_ocean-nobox.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 254,
     "name": "Arctic Ocean",
     "map": "ug-map-arctic_ocean-nobox.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 255,
     "name": "Hudson Bay",
     "map": "ug-map-hudson_bay.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 256,
     "name": "Labrador Sea",
     "map": "ug-map-labrador_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 257,
     "name": "White Sea",
     "map": "ug-map-white_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 258,
     "name": "Denmark Strait",
     "map": "ug-map-denmark_strait.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 259,
     "name": "Norwegian Sea",
     "map": "ug-map-norwegian_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 260,
     "name": "Baltic Sea",
     "map": "ug-map-baltic_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 261,
     "name": "Celtic Sea",
     "map": "ug-map-celtic_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 262,
     "name": "English Channel",
     "map": "ug-map-english_channel.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 263,
     "name": "Adriatic Sea",
     "map": "ug-map-adriatic_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 264,
     "name": "Bay of Biscay",
     "map": "ug-map-bay_of_biscay.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 265,
     "name": "Black Sea",
     "map": "ug-map-black_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 266,
     "name": "Aegean Sea",
     "map": "ug-map-aegean_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 267,
     "name": "Balkan Peninsula",
     "map": "ug-map-balkan_peninsula.png",
     "tags": ["Europe"]
   },
   {
+    "id": 268,
     "name": "Caspian Sea",
     "map": "ug-map-caspian_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 269,
     "name": "Mediterranean Sea",
     "map": "ug-map-mediterranean_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 270,
     "name": "East Siberian Sea",
     "map": "ug-map-east_siberian_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 271,
     "name": "Bering Strait",
     "map": "ug-map-bering_strait.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 272,
     "name": "Arabian Sea",
     "map": "ug-map-arabian_sea.png",
     "tags": ["Oceans+Seas"]
   },
-  { "name": "Red Sea", "map": "ug-map-red_sea.png", "tags": ["Oceans+Seas"] },
-  { "name": "Dead Sea", "map": "ug-map-dead_sea.png", "tags": ["Oceans+Seas"] },
   {
+    "id": 273,
+    "name": "Red Sea",
+    "map": "ug-map-red_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "id": 274,
+    "name": "Dead Sea",
+    "map": "ug-map-dead_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "id": 275,
     "name": "Bay of Bengal",
     "map": "ug-map-bay_of_bengal.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 276,
     "name": "Sea of Japan",
     "info": "A naming dispute exists between the sea's bordering countries, with South Korea notably supporting the name East Sea.",
     "map": "ug-map-sea_of_japan.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 277,
     "name": "Yellow Sea",
     "map": "ug-map-yellow_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 278,
     "name": "Coral Sea",
     "map": "ug-map-coral_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 279,
     "name": "South China Sea",
     "map": "ug-map-south_china_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 280,
     "name": "Tasman Sea",
     "map": "ug-map-tasman_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 281,
     "name": "Gulf of Carpentaria",
     "map": "ug-map-gulf_of_carpentaria.png",
     "tags": ["Oceans+Seas"]
   },
-  { "name": "Aral Sea", "map": "ug-map-aral_sea.png", "tags": ["Oceans+Seas"] },
   {
+    "id": 282,
+    "name": "Aral Sea",
+    "map": "ug-map-aral_sea.png",
+    "tags": ["Oceans+Seas"]
+  },
+  {
+    "id": 283,
     "name": "Persian Gulf",
     "map": "ug-map-persian_gulf.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 284,
     "name": "Caribbean Sea",
     "map": "ug-map-caribbean_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 285,
     "name": "Gulf of California",
     "info": "Also known as the Sea of Cortez.",
     "map": "ug-map-gulf_of_california.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 286,
     "name": "Polynesia",
     "info": "Subregion of Oceania comprising thousands of small islands in the central and southern Pacific Ocean.",
     "map": "ug-map-polynesia.png",
     "tags": ["Oceania"]
   },
   {
+    "id": 287,
     "name": "Melanesia",
     "info": "Subregion of Oceania, which includes the four countries of Vanuatu, the Solomon Islands, Fiji, and Papua New Guinea.",
     "map": "ug-map-melanesia.png",
     "tags": ["Oceania"]
   },
   {
+    "id": 288,
     "name": "Scandinavia",
     "info": "Historical and cultural region in Northern Europe, which includes the countries of Denmark, Norway and Sweden, and sometimes Finland and Iceland.",
     "map": "ug-map-scandinavia.png",
     "tags": ["Europe"]
   },
   {
+    "id": 289,
     "name": "Sea of Galilee",
     "map": "ug-map-sea_of_galilee.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 290,
     "name": "Sumatra",
     "info": "Island of Indonesia.",
     "map": "ug-map-sumatra.png",
     "tags": ["Asia"]
   },
   {
+    "id": 291,
     "name": "Sicily",
     "info": "Autonomous region of Italy.",
     "map": "ug-map-sicily.png",
     "tags": ["Europe"]
   },
   {
+    "id": 292,
     "name": "Mayotte",
     "info": "Overseas department of France.",
     "map": "ug-map-mayotte.png",
     "tags": ["Africa", "East_Africa"]
   },
   {
+    "id": 293,
     "name": "Réunion",
     "info": "Overseas department of France.",
     "map": "ug-map-reunion.png",
     "tags": ["Africa", "East_Africa"]
   },
   {
+    "id": 294,
     "name": "Falkland Islands",
     "info": "Overseas territory of the United Kingdom.",
     "map": "ug-map-falkland_islands.png",
     "tags": ["South_America"]
   },
   {
+    "id": 295,
     "name": "Europe",
     "map": "ug-map-europe-nobox.png",
     "tags": ["Continents"]
   },
   {
+    "id": 296,
     "name": "North America",
     "map": "ug-map-north_america-nobox.png",
     "tags": ["Continents"]
   },
   {
+    "id": 297,
     "name": "South America",
     "map": "ug-map-south_america-nobox.png",
     "tags": ["Continents"]
   },
-  { "name": "Asia", "map": "ug-map-asia-nobox.png", "tags": ["Continents"] },
   {
+    "id": 298,
+    "name": "Asia",
+    "map": "ug-map-asia-nobox.png",
+    "tags": ["Continents"]
+  },
+  {
+    "id": 299,
     "name": "Africa",
     "map": "ug-map-africa-nobox.png",
     "tags": ["Continents"]
   },
   {
+    "id": 300,
     "name": "Oceania",
     "info": "World region covering the Australian continent and most of the islands in the Pacific Ocean.",
     "map": "ug-map-oceania-nobox.png",
     "tags": ["Continents"]
   },
   {
+    "id": 301,
     "name": "Antarctica",
     "map": "ug-map-antarctica-nobox.png",
     "tags": ["Continents"]
   },
   {
+    "id": 302,
     "name": "Saint Martin",
     "info": "Overseas territory of France.",
     "map": "ug-map-saint_martin.png",
     "tags": ["Caribbean", "North_America"]
   },
   {
+    "id": 303,
     "name": "Wallis and Futuna",
     "info": "Overseas territory of France.",
     "map": "ug-map-wallis_and_futuna.png",
     "tags": ["Oceania"]
   },
   {
+    "id": 304,
     "name": "Akrotiri and Dhekelia",
     "info": "Overseas territory of the United Kingdom.",
     "map": "ug-map-akrotiri_and_dhekelia.png",
     "tags": ["Asia", "Mediterranean", "Middle_East"]
   },
   {
+    "id": 305,
     "name": "Svalbard",
     "info": "Unincorporated internal area of Norway.",
     "map": "ug-map-svalbard.png",
     "tags": ["Europe"]
   },
   {
+    "id": 306,
     "name": "Hawaii",
     "info": "State of the United States.",
     "map": "ug-map-hawaii.png",
     "tags": ["Oceania"]
   },
   {
+    "id": 307,
     "name": "Alaska",
     "info": "State of the United States.",
     "map": "ug-map-alaska.png",
     "tags": ["North_America"]
   },
   {
+    "id": 308,
     "name": "Bougainville",
     "info": "Autonomous region of Papua New Guinea.",
     "map": "ug-map-bougainville.png",
     "tags": ["Oceania"]
   },
   {
+    "id": 309,
     "name": "Jeju",
     "info": "Autonomous province of South Korea.",
     "map": "ug-map-jeju.png",
     "tags": ["Asia"]
   },
   {
+    "id": 310,
     "name": "Banda Sea",
     "map": "ug-map-banda_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 311,
     "name": "Barents Sea",
     "map": "ug-map-barents_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 312,
     "name": "Celebes Sea",
     "map": "ug-map-celebes_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 313,
     "name": "East China Sea",
     "map": "ug-map-east_china_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 314,
     "name": "Gulf of Alaska",
     "map": "ug-map-gulf_of_alaska.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 315,
     "name": "Gulf of Guinea",
     "map": "ug-map-gulf_of_guinea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 316,
     "name": "North Sea",
     "map": "ug-map-north_sea.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 317,
     "name": "Sea of Okhotsk",
     "map": "ug-map-sea_of_okhotsk.png",
     "tags": ["Oceans+Seas"]
   },
   {
+    "id": 318,
     "name": "Timor Sea",
     "map": "ug-map-timor_sea.png",
     "tags": ["Oceans+Seas"]
