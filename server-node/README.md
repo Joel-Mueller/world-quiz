@@ -41,3 +41,27 @@ Start a js file
 ```shell
 node dist/app.js
 ```
+
+## Curl commands to test API
+
+```shell
+curl -X POST http://localhost:3000/quiz \
+     -H "Content-Type: application/json" \
+     -d '{"tags": ["Oceans+Seas", "North_America"], "frontCategory": "Map", "backCategory": "Name+Capital"}'
+```
+
+```shell
+curl -X POST http://localhost:3000/quiz \
+     -H "Content-Type: application/json" \
+     -d '{"tags": ["Continents"], "frontCategory": "Map", "backCategory": "Name+Capital"}'
+```
+
+```shell
+curl -X GET http://localhost:3000/quiz/1/card
+```
+
+```shell
+curl -X POST http://localhost:3000/quiz/1/guess \
+     -H "Content-Type: application/json" \
+     -d '{"guessed": true}'
+```

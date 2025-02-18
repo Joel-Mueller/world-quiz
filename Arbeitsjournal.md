@@ -8,3 +8,5 @@
 | 07.02.2025 | Server read CSV and Parse it to JSON    | 03:00          |
 | 07.02.2025 | Write Unit tests and Troubleshooting    | 03:00          |
 | 18.02.2025 | Write PlaceManager and Unittests for it | 02:00          |
+| 18.02.2025 | Write Quiz and Quizmanager              | 01:00          |
+| 18.02.2025 | Write basic api for Quizmanager         | 03:00          |
