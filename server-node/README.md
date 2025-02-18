@@ -24,6 +24,12 @@ Start the server
 npm start
 ```
 
+Run the tests
+
+```shell
+npm test
+```
+
 Transpile TS code to JS
 
 ```shell
