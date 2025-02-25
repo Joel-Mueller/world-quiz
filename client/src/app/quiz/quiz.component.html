@@ -1,0 +1,23 @@
+<p>quiz works!</p>
+<!-- <img src="media/flags/ug-flag-aland_islands.svg" alt="Uganda Flag">
+<img src="media/maps/ug-map-akrotiri_and_dhekelia.png" alt="Akrotiri and Dhekelia Map"> -->
+
+<div class="quiz-card">
+  <h2>Quiz</h2>
+  <div class="card-content">
+    <ng-container *ngIf="card.front === 'Map'">
+      <img [src]="getFront()" />
+    </ng-container>
+    <ng-container *ngIf="card.front === 'Flag'">
+      <img [src]="getFront()" />
+    </ng-container>
+    <ng-container *ngIf="card.front !== 'Flag' && card.front !== 'Map'">
+      <p>{{ getFront() }}</p>
+    </ng-container>
+    <ng-container *ngIf="showBack">
+      <p>{{ getBack() }}</p>
+    </ng-container>
+  </div>
+
+  <button (click)="toggleCard()">Flip</button>
+</div>
