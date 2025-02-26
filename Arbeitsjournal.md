@@ -13,3 +13,4 @@
 | 25.02.2025 | Start with the quiz component           | 03:00          |
 | 26.02.2025 | Add api connector to the quiz           | 01:00          |
 | 26.02.2025 | Add quiz manager module                 | 01:00          |
+| 26.02.2025 | Add a selector, for selecting a quiz    | 01:00          |

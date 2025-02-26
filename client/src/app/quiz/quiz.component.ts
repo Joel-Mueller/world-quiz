@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Place, Card } from './quiz.types';
-import { NgIf} from '@angular/common';
 import { ApiService } from '../api.service';
 
 @Component({

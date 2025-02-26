@@ -1,4 +1,37 @@
 <p>quiz-manager works!</p>
-@if (quizId) {
-    <app-quiz [quizId]="1"></app-quiz>
-}
+
+<div class="quiz-manager">
+  <h2>Start a Quiz</h2>
+
+  <label for="frontType">Select Front Type:</label>
+  <select id="frontType" [(ngModel)]="selectedFront">
+    @for (option of frontOptions; track option) {
+    <option [value]="option">{{ option }}</option>
+    }
+  </select>
+
+  <label for="backType">Select Back Type:</label>
+  <select id="backType" [(ngModel)]="selectedBack">
+    @for (option of backOptions; track option) {
+    <option [value]="option">{{ option }}</option>
+    }
+  </select>
+
+  <fieldset>
+    <legend>Select Tags:</legend>
+    @for (tag of tagOptions; track tag) {
+    <label>
+      <input type="checkbox" [value]="tag" (change)="toggleTag(tag)" />
+      {{ tag }}
+    </label>
+    } @empty {
+    <span>No tags available</span>
+    }
+  </fieldset>
+
+  <button (click)="startQuiz()">Start Quiz</button>
+
+  @if (quizId) {
+  <app-quiz [quizId]=this.quizId></app-quiz>
+  }
+</div>

@@ -40,7 +40,10 @@ app.post("/quiz", (req, res) => {
   const backCat = CategoryFinder.getEnumByString(backCategory);
   
   quizManager.createQuiz(tagsTag, frontCat, backCat);
-  res.status(201).json({ message: "Quiz created successfully" });
+  res.status(201).json({ 
+    message: "Quiz created successfully",
+    id: 1
+  });
 });
 
 // Get the current card of a quiz
