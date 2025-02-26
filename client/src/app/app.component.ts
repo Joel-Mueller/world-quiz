@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { QuizComponent } from './quiz/quiz.component';
+import { QuizManagerComponent } from "./quiz-manager/quiz-manager.component";
 
 @Component({
   selector: 'app-root',
-  imports: [QuizComponent],
+  imports: [QuizManagerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

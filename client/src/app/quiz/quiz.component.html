@@ -5,25 +5,18 @@
 <div class="quiz-card">
   <h2>Quiz</h2>
   <div class="card-content">
-    <ng-container *ngIf="card && card.finished === false">
-      <ng-container *ngIf="card.front === 'Map'">
+    @if (card && card.finished === false) {
+      @if (card.front == 'Flag' || card.front == 'Map') {
         <img [src]="getFront()" />
-      </ng-container>
-      <ng-container *ngIf="card.front === 'Flag'">
-        <img [src]="getFront()" />
-      </ng-container>
-      <ng-container *ngIf="card.front !== 'Flag' && card.front !== 'Map'">
+      } @else {
         <p>{{ getFront() }}</p>
-      </ng-container>
-      <ng-container *ngIf="showBack">
+      }
+      @if (showBack) {
         <p>{{ getBack() }}</p>
-      </ng-container>
-    </ng-container>
-  </div>
-  <div>
-    <ng-container *ngIf="card && card.finished">
+      }
+    } @else {
       <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
-    </ng-container>
+    }
   </div>
   <div>
     <button (click)="toggleCard()">Flip</button>

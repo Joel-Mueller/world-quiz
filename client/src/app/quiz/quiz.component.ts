@@ -1,32 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Place, Card } from './quiz.types';
-import { NgIf } from '@angular/common';
+import { NgIf} from '@angular/common';
 import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-quiz',
-  imports: [NgIf],
+  imports: [],
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.scss'
 })
 export class QuizComponent {
+  @Input({ required: true })
+  public quizId!: number;
   card?: Card;
-  quizId?: number;
   showBack: boolean = false;
 
   constructor(private apiService: ApiService) {}
 
-  ngOnInit(): void {
-    this.startQuiz();
+  ngOnInit() {
+    this.loadCard();
   }
 
-  startQuiz(): void {
-    this.apiService.startQuiz(['Continents'], 'Map', 'Name+Capital').subscribe(response => {
-      //this.quizId = response.id;
-      this.quizId = 1;
-      this.loadCard();
-    });
-  }
 
   loadCard(): void {
     if (this.quizId) {
@@ -37,7 +31,7 @@ export class QuizComponent {
   }
 
   submitGuess(guessed: boolean): void {
-    this.toggleCard();
+    this.showBack = false;
     if (this.quizId) {
       this.apiService.submitGuess(this.quizId, guessed).subscribe(() => {
         this.loadCard();
