@@ -64,3 +64,29 @@ Game selecter (sucht alle cards)
 CSV loader
 DBConnector
 Stats generator
+
+
+## Server py tree
+
+server-py
+├── api
+│   └── __init__.py
+├── data
+│   ├── capital.csv
+│   ├── capital_hint.csv
+│   ├── capital_info.csv
+│   ├── country.csv
+│   ├── country_info.csv
+│   ├── flag_similarity.csv
+│   ├── guid.csv
+│   └── main.csv
+├── entities
+│   └── __init__.py
+├── persistence
+│   └── __init__.py
+├── quiz
+│   └── __init__.py
+└── ressources
+    └── __init__.py
+
+7 directories, 13 files
