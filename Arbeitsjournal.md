@@ -11,3 +11,4 @@
 | 18.02.2025 | Write Quiz and Quizmanager              | 01:00          |
 | 18.02.2025 | Write basic api for Quizmanager         | 03:00          |
 | 25.02.2025 | Start with the quiz component           | 03:00          |
+| 26.02.2025 | Add api connector to the quiz           | 01:00          |

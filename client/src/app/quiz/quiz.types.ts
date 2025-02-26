@@ -3,7 +3,7 @@ export interface Card {
   front: string;
   back: string;
   place: Place;
-  finished: false;
+  finished: boolean;
 }
 
 export interface Place {

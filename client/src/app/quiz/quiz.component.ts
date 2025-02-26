@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Place, Card } from './quiz.types';
 import { NgIf } from '@angular/common';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-quiz',
@@ -9,30 +10,47 @@ import { NgIf } from '@angular/common';
   styleUrl: './quiz.component.scss'
 })
 export class QuizComponent {
-  card: Card = {
-    count: 0,
-    front: "Map",
-    back: "Name+Capital",
-    place: {
-      id: 295,
-      name: "Europe",
-      capital: "helllllocapital",
-      map: "ug-map-europe-nobox.png",
-      flag: "ug-flag-afghanistan.svg",
-      tags: [
-        "Continents"
-      ]
-    },
-    finished: false
+  card?: Card;
+  quizId?: number;
+  showBack: boolean = false;
+
+  constructor(private apiService: ApiService) {}
+
+  ngOnInit(): void {
+    this.startQuiz();
   }
 
-  showBack: boolean = false;
+  startQuiz(): void {
+    this.apiService.startQuiz(['Continents'], 'Map', 'Name+Capital').subscribe(response => {
+      //this.quizId = response.id;
+      this.quizId = 1;
+      this.loadCard();
+    });
+  }
+
+  loadCard(): void {
+    if (this.quizId) {
+      this.apiService.getCard(this.quizId).subscribe(card => {
+        this.card = card;
+      });
+    }
+  }
+
+  submitGuess(guessed: boolean): void {
+    this.toggleCard();
+    if (this.quizId) {
+      this.apiService.submitGuess(this.quizId, guessed).subscribe(() => {
+        this.loadCard();
+      });
+    }
+  }
 
   toggleCard() {
     this.showBack = !this.showBack;
   }
 
   getFront() : string {
+    if (!this.card || !this.card.place) return "error";
     if (this.card.front === "Name+Capital") {
       return this.card.place.capital 
         ? `${this.card.place.name} (${this.card.place.capital})` 
@@ -54,6 +72,7 @@ export class QuizComponent {
   }
 
   getBack() : string {
+    if (!this.card || !this.card.place) return "error";
     if (this.card.back === "Name+Capital") {
       return this.card.place.capital 
         ? `${this.card.place.name} (${this.card.place.capital})` 

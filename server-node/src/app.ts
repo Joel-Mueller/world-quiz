@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import { PlaceLoader } from "./ressources/PlaceLoader";
 import { Place } from "./ressources/Place";
 import { PlaceManager } from "./ressources/PlaceManager";
@@ -14,6 +15,7 @@ const placeManager: PlaceManager = new PlaceManager(pathToData);
 const quizManager: QuizManager = new QuizManager(placeManager);
 
 app.use(express.json());
+app.use(cors())
 
 app.get("/", (req, res) => {
   let tags: Tag[] = [];

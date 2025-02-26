@@ -5,19 +5,29 @@
 <div class="quiz-card">
   <h2>Quiz</h2>
   <div class="card-content">
-    <ng-container *ngIf="card.front === 'Map'">
-      <img [src]="getFront()" />
-    </ng-container>
-    <ng-container *ngIf="card.front === 'Flag'">
-      <img [src]="getFront()" />
-    </ng-container>
-    <ng-container *ngIf="card.front !== 'Flag' && card.front !== 'Map'">
-      <p>{{ getFront() }}</p>
-    </ng-container>
-    <ng-container *ngIf="showBack">
-      <p>{{ getBack() }}</p>
+    <ng-container *ngIf="card && card.finished === false">
+      <ng-container *ngIf="card.front === 'Map'">
+        <img [src]="getFront()" />
+      </ng-container>
+      <ng-container *ngIf="card.front === 'Flag'">
+        <img [src]="getFront()" />
+      </ng-container>
+      <ng-container *ngIf="card.front !== 'Flag' && card.front !== 'Map'">
+        <p>{{ getFront() }}</p>
+      </ng-container>
+      <ng-container *ngIf="showBack">
+        <p>{{ getBack() }}</p>
+      </ng-container>
     </ng-container>
   </div>
-
-  <button (click)="toggleCard()">Flip</button>
+  <div>
+    <ng-container *ngIf="card && card.finished">
+      <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
+    </ng-container>
+  </div>
+  <div>
+    <button (click)="toggleCard()">Flip</button>
+    <button (click)="submitGuess(true)">Right</button>
+    <button (click)="submitGuess(false)">Wrong</button>
+  </div>
 </div>
