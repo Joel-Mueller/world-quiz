@@ -13,15 +13,16 @@ export class QuizManagerComponent {
   quizId?: number;
   selectedTags: string[] = [];
 
+  // left is for presentation and right is for the api
   tagMap: Record<string, string> = {
-    'Europe': 'EUROPE',
-    'Asia': 'ASIA',
-    'Oceania': 'OCEANIA',
-    'North America': 'NORTH_AMERICA',
-    'South America': 'SOUTH_AMERICA',
-    'Africa': 'AFRICA',
-    'Oceans Seas': 'OCEANS_AND_SEAS',
-    'Continents': 'CONTINENTS',
+    'Europe': 'Europe',
+    'Asia': 'Asia',
+    'Oceania': 'Oceania',
+    'North America': 'North_America',
+    'South America': 'South_America',
+    'Africa': 'Africa',
+    'Oceans and Seas': 'Oceans+Seas',
+    'Continents': 'Continents',
   };
 
   tagOptions = Object.keys(this.tagMap);
@@ -43,8 +44,10 @@ export class QuizManagerComponent {
       return;
     }
 
+    const mappedTags = this.selectedTags.map(tag => this.tagMap[tag]);
+
     this.apiService
-      .startQuiz(this.selectedTags, selectedFront, selectedBack)
+      .startQuiz(mappedTags, selectedFront, selectedBack)
       .subscribe(response => {
         this.quizId = response.id;
       });
