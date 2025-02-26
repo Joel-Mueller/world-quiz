@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
 
 // Create a new quiz
 app.post("/quiz", (req, res) => {
+  console.log("New POST create quiz request received:", req.body);
   const { tags, frontCategory, backCategory } = req.body;
   
   if (!tags || !frontCategory || !backCategory) {
@@ -48,6 +49,7 @@ app.post("/quiz", (req, res) => {
 
 // Get the current card of a quiz
 app.get("/quiz/:id/card", (req, res) => {
+  console.log("New GET card request received:", req.body);
   const quizId = parseInt(req.params.id);
   const card = quizManager.getCurrentCard(quizId);
   
@@ -60,6 +62,7 @@ app.get("/quiz/:id/card", (req, res) => {
 
 // Submit a guess
 app.post("/quiz/:id/guess", (req, res) => {
+  console.log("New POST guess request received:", req.body);
   const quizId = parseInt(req.params.id);
   const { guessed } = req.body;
   

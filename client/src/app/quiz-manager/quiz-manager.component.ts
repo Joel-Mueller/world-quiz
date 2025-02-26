@@ -38,6 +38,11 @@ export class QuizManagerComponent {
     }
   }
 
+  endQuiz() {
+    this.selectedTags = [];
+    this.quizId = undefined;
+  }
+
   startQuiz(selectedFront : string, selectedBack : string): void {
     if (this.selectedTags.length === 0) {
       alert('Please select at least one tag.');
