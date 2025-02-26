@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostListener } from '@angular/core';
 import { Place, Card } from './quiz.types';
 import { ApiService } from '../api.service';
 
@@ -30,6 +30,10 @@ export class QuizComponent {
   }
 
   submitGuess(guessed: boolean): void {
+    if (this.showBack == false) {
+      this.showBack = true;
+      return;
+    }
     this.showBack = false;
     if (this.quizId) {
       this.apiService.submitGuess(this.quizId, guessed).subscribe(() => {
@@ -78,5 +82,13 @@ export class QuizComponent {
       return this.card.place.capital ? this.card.place.capital : "error";
     }
     return "error";
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault(); // Prevent scrolling when pressing Space
+      this.submitGuess(true);
+    }
   }
 }

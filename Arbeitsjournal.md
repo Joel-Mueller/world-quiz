@@ -14,3 +14,4 @@
 | 26.02.2025 | Add api connector to the quiz           | 01:00          |
 | 26.02.2025 | Add quiz manager module                 | 01:00          |
 | 26.02.2025 | Add a selector, for selecting a quiz    | 01:00          |
+| 26.02.2025 | Add usability for selecting quiz and add draft for docker compose | 01:00 |

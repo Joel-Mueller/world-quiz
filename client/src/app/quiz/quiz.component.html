@@ -10,9 +10,15 @@
         <img [src]="getFront()" />
       } @else {
         <p>{{ getFront() }}</p>
+        @if (card.place.info) {
+          <p>{{ "ℹ️ " + card.place.info }}</p>
+        }
       }
       @if (showBack) {
         <p>{{ getBack() }}</p>
+        @if (card.place.capitalInfo) {
+          <p>{{ "ℹ️ " + card.place.capitalInfo }}</p>
+        }
       }
     } @else {
       <p class="quiz-finished">🎉 The quiz is done! 🎉</p>

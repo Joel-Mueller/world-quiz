@@ -11,21 +11,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class QuizManagerComponent {
   quizId?: number;
-  selectedFront: string = 'Name';
-  selectedBack: string = 'Name';
   selectedTags: string[] = [];
-
-  frontOptions: string[] = ['Name', 'Capital', 'Flag', 'Map'];
-  backOptions: string[] = ['Name', 'Name+Capital', 'Capital'];
 
   tagMap: Record<string, string> = {
     'Europe': 'EUROPE',
     'Asia': 'ASIA',
     'Oceania': 'OCEANIA',
-    'North_America': 'NORTH_AMERICA',
-    'South_America': 'SOUTH_AMERICA',
+    'North America': 'NORTH_AMERICA',
+    'South America': 'SOUTH_AMERICA',
     'Africa': 'AFRICA',
-    'Oceans+Seas': 'OCEANS_AND_SEAS',
+    'Oceans Seas': 'OCEANS_AND_SEAS',
     'Continents': 'CONTINENTS',
   };
 
@@ -42,14 +37,14 @@ export class QuizManagerComponent {
     }
   }
 
-  startQuiz(): void {
+  startQuiz(selectedFront : string, selectedBack : string): void {
     if (this.selectedTags.length === 0) {
       alert('Please select at least one tag.');
       return;
     }
 
     this.apiService
-      .startQuiz(this.selectedTags, this.selectedFront, this.selectedBack)
+      .startQuiz(this.selectedTags, selectedFront, selectedBack)
       .subscribe(response => {
         this.quizId = response.id;
       });
