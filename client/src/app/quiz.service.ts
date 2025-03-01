@@ -20,11 +20,11 @@ export class QuizService {
     this.loadMain();
   }
 
-  public getQuiz(tags: Tag[], frontCategory: Category, backCategory: Category) {
+  public getQuiz(tags: Tag[], frontCategory: Category, backCategory: Category, maxCount : number | undefined) {
     return {
       front: frontCategory,
       back: backCategory,
-      places: this.getWithFilter(tags, frontCategory, backCategory)
+      places: this.getWithFilter(tags, frontCategory, backCategory, maxCount)
     };
   }
 
@@ -34,14 +34,17 @@ export class QuizService {
     return this.places.slice();
   }
 
-  public getWithFilter(tags: Tag[], category1: Category, category2: Category): Place[] {
+  public getWithFilter(tags: Tag[], category1: Category, category2: Category, maxCount : number | undefined): Place[] {
     let filteredTags = this.filterTags(tags, this.getAllPlaces());
     let filteredCategory = this.filterCategory(category1, filteredTags);
     let filteredCategory2 = this.filterCategory(category2, filteredCategory);
-    return filteredCategory2;
+    let shuffled = this.shuffleArray(filteredCategory2);
+    let reduced = this.reduceArray(shuffled, maxCount);
+    return reduced;
   }
 
   private filterTags(tags: Tag[], places: Place[]): Place[] {
+    if (tags.includes(Tag.ALL)) return places;
     return places.filter(place => 
       place.tags.some(tag => tags.includes(tag))
     );
@@ -64,6 +67,20 @@ export class QuizService {
           return false;
       }
     });
+  }
+
+  private shuffleArray(array: any[]): any[] {
+    let shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
+  }
+
+  private reduceArray<T>(arr: T[], size: number | undefined): T[] {
+    if (!size) return arr;
+    return arr.length > size ? arr.slice(0, size) : arr;
   }
 
   // Load the CSV files

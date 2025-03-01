@@ -13,24 +13,27 @@
     <label>
       <input type="checkbox" [value]="tag" (change)="toggleTag(tag)" />
       {{ tag }}
-      <br>
+      <br />
     </label>
     } @empty {
     <span>No tags available</span>
     }
+    <legend>Max Cards:</legend>
+    <input type="number" [(ngModel)]="maxCards" placeholder="Enter max cards" />
+    
+    <legend>Select Front and Back</legend>
+    <button (click)="startQuiz(Category.NAME, Category.CAPITAL)">
+      Name | Capital
+    </button>
+    <button (click)="startQuiz(Category.CAPITAL, Category.NAME)">
+      Capital | Name
+    </button>
+    <button (click)="startQuiz(Category.MAP, Category.NAME_AND_CAPITAL)">
+      Map | Name(Capital)
+    </button>
+    <button (click)="startQuiz(Category.FLAG, Category.NAME_AND_CAPITAL)">
+      Flag | Name(Capital)
+    </button>
   </fieldset>
-
-  <button (click)="startQuiz(Category.NAME, Category.CAPITAL)">
-    Name Capital
-  </button>
-  <button (click)="startQuiz(Category.CAPITAL, Category.NAME)">
-    Capital Name
-  </button>
-  <button (click)="startQuiz(Category.MAP, Category.NAME_AND_CAPITAL)">
-    Map Name(Capital)
-  </button>
-  <button (click)="startQuiz(Category.FLAG, Category.NAME_AND_CAPITAL)">
-    Flag Name(Capital)
-  </button>
   }
 </div>

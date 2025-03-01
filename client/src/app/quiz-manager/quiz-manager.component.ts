@@ -17,9 +17,11 @@ export class QuizManagerComponent {
   Category = Category; // Enum has to be exported like this to use it in the html
   selectedTags: string[] = [];
   currentQuiz?: Quiz;
+  maxCards?: number;
 
   tagMap: Record<string, Tag> = {
-    '🌍 Europe': Tag.EUROPE,
+    '🌍 Everything': Tag.ALL,
+    '🏔 Europe': Tag.EUROPE,
     '🏯 Asia': Tag.ASIA,
     '🏝️ Oceania': Tag.OCEANIA,
     '🦅 North America': Tag.NORTH_AMERICA,
@@ -55,6 +57,7 @@ export class QuizManagerComponent {
   endQuiz() {
     this.selectedTags = [];
     this.currentQuiz = undefined;
+    this.maxCards = undefined;
   }
 
   startQuiz(selectedFront: Category, selectedBack: Category): void {
@@ -63,10 +66,6 @@ export class QuizManagerComponent {
       return;
     }
     const mappedTags: Tag[] = this.selectedTags.map((tag) => this.tagMap[tag]);
-    this.currentQuiz = this.quizService.getQuiz(
-      mappedTags,
-      selectedFront,
-      selectedBack
-    );
+    this.currentQuiz = this.quizService.getQuiz(mappedTags, selectedFront, selectedBack, this.maxCards);
   }
 }
