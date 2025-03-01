@@ -7,6 +7,7 @@ export enum Tag {
   AFRICA = 6,
   OCEANS_AND_SEAS = 7,
   CONTINENTS = 8,
+  SOVEREIGN_STATE = 9
   //   US_STATES = 9,
   //   Canada_STATES = 10,
   //   SWITZERLAND_CANTON = 11,
@@ -22,6 +23,7 @@ const tagMap: Record<string, Tag> = {
   "Africa": Tag.AFRICA,
   "Oceans+Seas": Tag.OCEANS_AND_SEAS,
   "Continents": Tag.CONTINENTS,
+  "Sovereign_State": Tag.SOVEREIGN_STATE
 };
 
 export class TagFinder {

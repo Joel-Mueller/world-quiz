@@ -18,3 +18,4 @@
 | 26.02.2025 | Make Dockerfiles and docker compose for client, server and Database | 02:00          |
 | 01.03.2025 | Start adding quiz logic to the front end                            | 04:00          |
 | 01.03.2025 | Parsing csv main and capital                                        | 01:00          |
+| 01.03.2025 | Parsing csv now works                                               | 01:00          |
