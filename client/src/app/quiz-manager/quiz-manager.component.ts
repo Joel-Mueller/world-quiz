@@ -19,26 +19,29 @@ export class QuizManagerComponent {
   currentQuiz?: Quiz;
 
   tagMap: Record<string, Tag> = {
-    'Europe 🌍': Tag.EUROPE,
-    'Asia 🏯': Tag.ASIA,
-    'Oceania 🏝️': Tag.OCEANIA,
-    'North America 🦅': Tag.NORTH_AMERICA,
-    'South America 🦜': Tag.SOUTH_AMERICA,
-    'Africa 🦁': Tag.AFRICA,
-    'Oceans and Seas 🌊': Tag.OCEANS_AND_SEAS,
-    'Continents 🗺️': Tag.CONTINENTS,
-    'Sovereign State 🏛️': Tag.SOVEREIGN_STATE,
-    'Mediterranean 🌿': Tag.MEDITERRANEAN,
-    'European Union 🇪🇺': Tag.EUROPEAN_UNION,
-    'Middle East 🏜️': Tag.MIDDLE_EAST,
-    'East Africa 🦓': Tag.EAST_AFRICA,
-    'Southeast Asia 🍜': Tag.SOUTHEAST_ASIA,
-    'Caribbean 🏖️': Tag.CARIBBEAN,
-  };  
+    '🌍 Europe': Tag.EUROPE,
+    '🏯 Asia': Tag.ASIA,
+    '🏝️ Oceania': Tag.OCEANIA,
+    '🦅 North America': Tag.NORTH_AMERICA,
+    '🦜 South America': Tag.SOUTH_AMERICA,
+    '🦁 Africa': Tag.AFRICA,
+    '🌊 Oceans and Seas': Tag.OCEANS_AND_SEAS,
+    '🗺️ Continents': Tag.CONTINENTS,
+    '🏛️ Sovereign State': Tag.SOVEREIGN_STATE,
+    '🌿 Mediterranean': Tag.MEDITERRANEAN,
+    '🇪🇺 European Union': Tag.EUROPEAN_UNION,
+    '🏜️ Middle East': Tag.MIDDLE_EAST,
+    '🦓 East Africa': Tag.EAST_AFRICA,
+    '🍜 Southeast Asia': Tag.SOUTHEAST_ASIA,
+    '🏖️ Caribbean': Tag.CARIBBEAN,
+  };
 
   tagOptions = Object.keys(this.tagMap);
 
-  constructor(private apiService: ApiService, private quizService : QuizService) {}
+  constructor(
+    private apiService: ApiService,
+    private quizService: QuizService
+  ) {}
 
   toggleTag(tag: string): void {
     const index = this.selectedTags.indexOf(tag);
@@ -54,12 +57,16 @@ export class QuizManagerComponent {
     this.currentQuiz = undefined;
   }
 
-  startQuiz(selectedFront : Category, selectedBack : Category): void {
+  startQuiz(selectedFront: Category, selectedBack: Category): void {
     if (this.selectedTags.length === 0) {
       alert('Please select at least one tag.');
       return;
     }
-    const mappedTags : Tag[] = this.selectedTags.map(tag => this.tagMap[tag]);
-    this.currentQuiz = this.quizService.getQuiz(mappedTags, selectedFront, selectedBack);
+    const mappedTags: Tag[] = this.selectedTags.map((tag) => this.tagMap[tag]);
+    this.currentQuiz = this.quizService.getQuiz(
+      mappedTags,
+      selectedFront,
+      selectedBack
+    );
   }
 }

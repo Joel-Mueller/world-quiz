@@ -13,15 +13,24 @@
     <label>
       <input type="checkbox" [value]="tag" (change)="toggleTag(tag)" />
       {{ tag }}
+      <br>
     </label>
     } @empty {
     <span>No tags available</span>
     }
   </fieldset>
 
-  <button (click)="startQuiz(Category.NAME, Category.CAPITAL)">Name Capital</button>
-  <button (click)="startQuiz(Category.CAPITAL, Category.NAME)">Capital Name</button>
-  <button (click)="startQuiz(Category.MAP, Category.NAME_AND_CAPITAL)">Map Name(Capital)</button>
-  <button (click)="startQuiz(Category.FLAG, Category.NAME_AND_CAPITAL)">Flag Name(Capital)</button>
+  <button (click)="startQuiz(Category.NAME, Category.CAPITAL)">
+    Name Capital
+  </button>
+  <button (click)="startQuiz(Category.CAPITAL, Category.NAME)">
+    Capital Name
+  </button>
+  <button (click)="startQuiz(Category.MAP, Category.NAME_AND_CAPITAL)">
+    Map Name(Capital)
+  </button>
+  <button (click)="startQuiz(Category.FLAG, Category.NAME_AND_CAPITAL)">
+    Flag Name(Capital)
+  </button>
   }
 </div>
