@@ -1,6 +1,8 @@
 import { Component, Input, HostListener } from '@angular/core';
-import { Place, Card } from './quiz.types';
+import { Place } from '../ressources/Place';
 import { ApiService } from '../api.service';
+import { Quiz } from '../ressources/Quiz';
+import { Category } from '../ressources/Category';
 
 @Component({
   selector: 'app-quiz',
@@ -10,11 +12,12 @@ import { ApiService } from '../api.service';
 })
 export class QuizComponent {
   @Input({ required: true })
-  public quizId!: number;
-  card?: Card;
+  quiz!: Quiz;
+  Category = Category;
   showBack: boolean = false;
+  currentPlace?: Place;
 
-  constructor(private apiService: ApiService) {}
+  constructor() {}
 
   ngOnInit() {
     this.loadCard();
@@ -22,11 +25,7 @@ export class QuizComponent {
 
 
   loadCard(): void {
-    if (this.quizId) {
-      this.apiService.getCard(this.quizId).subscribe(card => {
-        this.card = card;
-      });
-    }
+    this.currentPlace = this.quiz.places.shift();
   }
 
   submitGuess(guessed: boolean): void {
@@ -35,11 +34,10 @@ export class QuizComponent {
       return;
     }
     this.showBack = false;
-    if (this.quizId) {
-      this.apiService.submitGuess(this.quizId, guessed).subscribe(() => {
-        this.loadCard();
-      });
+    if (!guessed && this.currentPlace) {
+      this.quiz.places.push(this.currentPlace);
     }
+    this.loadCard();
   }
 
   toggleCard() {
@@ -47,39 +45,39 @@ export class QuizComponent {
   }
 
   getFront() : string {
-    if (!this.card || !this.card.place) return "error";
-    if (this.card.front === "Name+Capital") {
-      return this.card.place.capital 
-        ? `${this.card.place.name} (${this.card.place.capital})` 
-        : this.card.place.name;
+    if (!this.currentPlace) return "error";
+    if (this.quiz.front === Category.NAME_AND_CAPITAL) {
+      return this.currentPlace.capital 
+        ? `${this.currentPlace.name} (${this.currentPlace.capital})` 
+        : this.currentPlace.name;
     }
-    if (this.card.front === "Name") {
-      return this.card.place.name;
+    if (this.quiz.front === Category.NAME) {
+      return this.currentPlace.name;
     }
-    if (this.card.front === "Capital") {
-      return this.card.place.capital ? this.card.place.capital : "error";
+    if (this.quiz.front === Category.CAPITAL) {
+      return this.currentPlace.capital ? this.currentPlace.capital : "error";
     }
-    if (this.card.front === "Map") {
-      return this.card.place.map ? `media/maps/${this.card.place.map}` : "error";
+    if (this.quiz.front === Category.MAP) {
+      return this.currentPlace.map ? `media/maps/${this.currentPlace.map}` : "error";
     }
-    if (this.card.front === "Flag") {
-      return this.card.place.flag ? `media/flags/${this.card.place.flag}` : "error";
+    if (this.quiz.front === Category.FLAG) {
+      return this.currentPlace.flag ? `media/flags/${this.currentPlace.flag}` : "error";
     }
     return "error";
   }
 
   getBack() : string {
-    if (!this.card || !this.card.place) return "error";
-    if (this.card.back === "Name+Capital") {
-      return this.card.place.capital 
-        ? `${this.card.place.name} (${this.card.place.capital})` 
-        : this.card.place.name;
+    if (!this.currentPlace) return "error";
+    if (this.quiz.back === Category.NAME_AND_CAPITAL) {
+      return this.currentPlace.capital 
+        ? `${this.currentPlace.name} (${this.currentPlace.capital})` 
+        : this.currentPlace.name;
     }
-    if (this.card.back === "Name") {
-      return this.card.place.name;
+    if (this.quiz.back === Category.NAME) {
+      return this.currentPlace.name;
     }
-    if (this.card.back === "Capital") {
-      return this.card.place.capital ? this.card.place.capital : "error";
+    if (this.quiz.back === Category.CAPITAL) {
+      return this.currentPlace.capital ? this.currentPlace.capital : "error";
     }
     return "error";
   }
@@ -87,7 +85,7 @@ export class QuizComponent {
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault(); // Prevent scrolling when pressing Space
+      event.preventDefault();
       this.submitGuess(true);
     }
   }

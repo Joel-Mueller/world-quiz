@@ -1,10 +1,4 @@
-export interface Card {
-  count: number;
-  front: string;
-  back: string;
-  place: Place;
-  finished: boolean;
-}
+import { Tag } from "./Tag";
 
 export interface Place {
   id: number;
@@ -14,5 +8,5 @@ export interface Place {
   capitalInfo?: string;
   flag?: string;
   map: string;
-  tags: string[];
+  tags: Tag[];
 }

@@ -16,3 +16,4 @@
 | 26.02.2025 | Add a selector, for selecting a quiz                                | 01:00          |
 | 26.02.2025 | Add usability for selecting quiz and add draft for docker compose   | 01:00          |
 | 26.02.2025 | Make Dockerfiles and docker compose for client, server and Database | 02:00          |
+| 01.03.2025 | Start adding quiz logic to the front end                            | 04:00          |

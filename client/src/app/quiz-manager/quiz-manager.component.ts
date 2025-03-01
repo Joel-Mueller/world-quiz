@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
 import { QuizComponent } from '../quiz/quiz.component';
 import { ApiService } from '../api.service';
+import { QuizService } from '../quiz.service';
 import { FormsModule } from '@angular/forms';
+import { Tag } from '../ressources/Tag';
+import { Quiz } from '../ressources/Quiz';
+import { Category } from '../ressources/Category';
 
 @Component({
   selector: 'app-quiz-manager',
@@ -10,24 +14,24 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './quiz-manager.component.scss',
 })
 export class QuizManagerComponent {
-  quizId?: number;
+  Category = Category; // Enum has to be exported like this to use it in the html
   selectedTags: string[] = [];
+  currentQuiz?: Quiz;
 
-  // left is for presentation and right is for the api
-  tagMap: Record<string, string> = {
-    'Europe': 'Europe',
-    'Asia': 'Asia',
-    'Oceania': 'Oceania',
-    'North America': 'North_America',
-    'South America': 'South_America',
-    'Africa': 'Africa',
-    'Oceans and Seas': 'Oceans+Seas',
-    'Continents': 'Continents',
+  tagMap: Record<string, Tag> = {
+    'Europe': Tag.EUROPE,
+    'Asia': Tag.ASIA,
+    'Oceania': Tag.OCEANIA,
+    'North America': Tag.NORTH_AMERICA,
+    'South America': Tag.SOUTH_AMERICA,
+    'Africa': Tag.AFRICA,
+    'Oceans and Seas': Tag.OCEANS_AND_SEAS,
+    'Continents': Tag.CONTINENTS,
   };
 
   tagOptions = Object.keys(this.tagMap);
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private quizService : QuizService) {}
 
   toggleTag(tag: string): void {
     const index = this.selectedTags.indexOf(tag);
@@ -40,21 +44,15 @@ export class QuizManagerComponent {
 
   endQuiz() {
     this.selectedTags = [];
-    this.quizId = undefined;
+    this.currentQuiz = undefined;
   }
 
-  startQuiz(selectedFront : string, selectedBack : string): void {
+  startQuiz(selectedFront : Category, selectedBack : Category): void {
     if (this.selectedTags.length === 0) {
       alert('Please select at least one tag.');
       return;
     }
-
-    const mappedTags = this.selectedTags.map(tag => this.tagMap[tag]);
-
-    this.apiService
-      .startQuiz(mappedTags, selectedFront, selectedBack)
-      .subscribe(response => {
-        this.quizId = response.id;
-      });
+    const mappedTags : Tag[] = this.selectedTags.map(tag => this.tagMap[tag]);
+    this.currentQuiz = this.quizService.getQuiz(mappedTags, selectedFront, selectedBack);
   }
 }

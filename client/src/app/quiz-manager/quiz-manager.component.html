@@ -1,8 +1,8 @@
 <p>quiz-manager works!</p>
 
 <div class="quiz-manager">
-  @if (quizId) {
-  <app-quiz [quizId]="this.quizId"></app-quiz>
+  @if (currentQuiz) {
+  <app-quiz [quiz]="this.currentQuiz"></app-quiz>
   <button (click)="endQuiz()">Go back to menu</button>
   } @else {
   <h2>Start a Quiz</h2>
@@ -19,9 +19,9 @@
     }
   </fieldset>
 
-  <button (click)="startQuiz('Name', 'Capital')">Name Capital</button>
-  <button (click)="startQuiz('Capital', 'Name')">Capital Name</button>
-  <button (click)="startQuiz('Map', 'Name+Capital')">Map Name(Capital)</button>
-  <button (click)="startQuiz('Flag', 'Name+Capital')">Flag Name(Capital)</button>
+  <button (click)="startQuiz(Category.NAME, Category.CAPITAL)">Name Capital</button>
+  <button (click)="startQuiz(Category.CAPITAL, Category.NAME)">Capital Name</button>
+  <button (click)="startQuiz(Category.MAP, Category.NAME_AND_CAPITAL)">Map Name(Capital)</button>
+  <button (click)="startQuiz(Category.FLAG, Category.NAME_AND_CAPITAL)">Flag Name(Capital)</button>
   }
 </div>

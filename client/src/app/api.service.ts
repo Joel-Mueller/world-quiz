@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Card } from './quiz/quiz.types';
 
 @Injectable({
   providedIn: 'root'
@@ -19,13 +18,13 @@ export class ApiService {
     });
   }
 
-  getCard(quizId: number): Observable<Card> {
-    return this.http.get<Card>(`${this.apiUrl}/${quizId}/card`);
-  }
+  // getCard(quizId: number): Observable<Card> {
+  //   return this.http.get<Card>(`${this.apiUrl}/${quizId}/card`);
+  // }
 
-  submitGuess(quizId: number, guessed: boolean): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}/${quizId}/guess`, { guessed });
-  }
+  // submitGuess(quizId: number, guessed: boolean): Observable<any> {
+  //   return this.http.post<any>(`${this.apiUrl}/${quizId}/guess`, { guessed });
+  // }
 }
 
   

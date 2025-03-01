@@ -5,19 +5,19 @@
 <div class="quiz-card">
   <h2>Quiz</h2>
   <div class="card-content">
-    @if (card && card.finished === false) {
-      @if (card.front == 'Flag' || card.front == 'Map') {
+    @if (this.currentPlace) {
+      @if (this.quiz.front == Category.FLAG || this.quiz.front == Category.MAP) {
         <img [src]="getFront()" />
       } @else {
         <p>{{ getFront() }}</p>
-        @if (card.place.info) {
-          <p>{{ "ℹ️ " + card.place.info }}</p>
+        @if (currentPlace.info) {
+          <p>{{ "ℹ️ " + currentPlace.info }}</p>
         }
       }
       @if (showBack) {
         <p>{{ getBack() }}</p>
-        @if (card.place.capitalInfo) {
-          <p>{{ "ℹ️ " + card.place.capitalInfo }}</p>
+        @if (currentPlace.capitalInfo) {
+          <p>{{ "ℹ️ " + currentPlace.capitalInfo }}</p>
         }
       }
     } @else {
