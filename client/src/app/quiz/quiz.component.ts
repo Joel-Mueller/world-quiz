@@ -1,8 +1,8 @@
 import { Component, Input, HostListener } from '@angular/core';
-import { Place } from '../ressources/Place';
+import { Place } from '../entities/Place';
 import { ApiService } from '../api.service';
-import { Quiz } from '../ressources/Quiz';
-import { Category } from '../ressources/Category';
+import { Quiz } from '../entities/Quiz';
+import { Category } from '../entities/Category';
 
 @Component({
   selector: 'app-quiz',

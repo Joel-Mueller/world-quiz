@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Place } from './ressources/Place';
-import { PlaceRaw } from './ressources/Place';
-import { Quiz } from './ressources/Quiz';
-import { PlaceConverter } from './ressources/Place';
+import { Place } from './entities/Place';
+import { PlaceRaw } from './entities/Place';
+import { Quiz } from './entities/Quiz';
+import { PlaceConverter } from './entities/Place';
 import { HttpClient } from '@angular/common/http';
-import { Tag } from './ressources/Tag';
-import { Category } from './ressources/Category';
+import { Tag } from './entities/Tag';
+import { Category } from './entities/Category';
 
 @Injectable({
   providedIn: 'root',
@@ -20,24 +20,53 @@ export class QuizService {
     this.loadMain();
   }
 
-  public getQuiz(tags: Tag[], category1: Category, category2: Category) {
+  public getQuiz(tags: Tag[], frontCategory: Category, backCategory: Category) {
     return {
-      front: Category.MAP,
-      back: Category.NAME_AND_CAPITAL,
-      places: [
-        {
-          id: 1,
-          name: 'Abkhazia',
-          info: 'A region in the South Caucasus.',
-          capital: 'Sukhumi',
-          capitalInfo: 'The capital city of Abkhazia.',
-          flag: 'ug-flag-abkhazia.svg',
-          map: 'ug-map-abkhazia.png',
-          tags: [Tag.AFRICA, Tag.ASIA],
-        },
-      ],
+      front: frontCategory,
+      back: backCategory,
+      places: this.getWithFilter(tags, frontCategory, backCategory)
     };
   }
+
+  // Place Manager
+
+  public getAllPlaces() {
+    return this.places.slice();
+  }
+
+  public getWithFilter(tags: Tag[], category1: Category, category2: Category): Place[] {
+    let filteredTags = this.filterTags(tags, this.getAllPlaces());
+    let filteredCategory = this.filterCategory(category1, filteredTags);
+    let filteredCategory2 = this.filterCategory(category2, filteredCategory);
+    return filteredCategory2;
+  }
+
+  private filterTags(tags: Tag[], places: Place[]): Place[] {
+    return places.filter(place => 
+      place.tags.some(tag => tags.includes(tag))
+    );
+  }
+
+  private filterCategory(category: Category, places: Place[]): Place[] {
+    return places.filter((place) => {
+      switch (category) {
+        case Category.NAME:
+          return !!place.name;
+        case Category.CAPITAL:
+          return !!place.capital;
+        case Category.FLAG:
+          return !!place.flag;
+        case Category.MAP:
+          return !!place.map;
+        case Category.NAME_AND_CAPITAL:
+          return !!place.name;
+        default:
+          return false;
+      }
+    });
+  }
+
+  // Load the CSV files
 
   public loadMain() {
     this.http.get('data/main.csv', { responseType: 'text' }).subscribe({
@@ -164,9 +193,9 @@ export class QuizService {
   public makePlaces() {
     this.places = PlaceConverter.getPlaces(this.placesRaw);
     console.log('Places successfully convertet')
-    console.log(this.places);
-    for (const c of this.places) {
-      console.log(PlaceConverter.toString(c));
-    }
+    // console.log(this.places);
+    // for (const c of this.places) {
+    //   console.log(PlaceConverter.toString(c));
+    // }
   }
 }

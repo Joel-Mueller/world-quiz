@@ -3,9 +3,9 @@ import { QuizComponent } from '../quiz/quiz.component';
 import { ApiService } from '../api.service';
 import { QuizService } from '../quiz.service';
 import { FormsModule } from '@angular/forms';
-import { Tag } from '../ressources/Tag';
-import { Quiz } from '../ressources/Quiz';
-import { Category } from '../ressources/Category';
+import { Tag } from '../entities/Tag';
+import { Quiz } from '../entities/Quiz';
+import { Category } from '../entities/Category';
 
 @Component({
   selector: 'app-quiz-manager',
@@ -19,15 +19,22 @@ export class QuizManagerComponent {
   currentQuiz?: Quiz;
 
   tagMap: Record<string, Tag> = {
-    'Europe': Tag.EUROPE,
-    'Asia': Tag.ASIA,
-    'Oceania': Tag.OCEANIA,
-    'North America': Tag.NORTH_AMERICA,
-    'South America': Tag.SOUTH_AMERICA,
-    'Africa': Tag.AFRICA,
-    'Oceans and Seas': Tag.OCEANS_AND_SEAS,
-    'Continents': Tag.CONTINENTS,
-  };
+    'Europe 🌍': Tag.EUROPE,
+    'Asia 🏯': Tag.ASIA,
+    'Oceania 🏝️': Tag.OCEANIA,
+    'North America 🦅': Tag.NORTH_AMERICA,
+    'South America 🦜': Tag.SOUTH_AMERICA,
+    'Africa 🦁': Tag.AFRICA,
+    'Oceans and Seas 🌊': Tag.OCEANS_AND_SEAS,
+    'Continents 🗺️': Tag.CONTINENTS,
+    'Sovereign State 🏛️': Tag.SOVEREIGN_STATE,
+    'Mediterranean 🌿': Tag.MEDITERRANEAN,
+    'European Union 🇪🇺': Tag.EUROPEAN_UNION,
+    'Middle East 🏜️': Tag.MIDDLE_EAST,
+    'East Africa 🦓': Tag.EAST_AFRICA,
+    'Southeast Asia 🍜': Tag.SOUTHEAST_ASIA,
+    'Caribbean 🏖️': Tag.CARIBBEAN,
+  };  
 
   tagOptions = Object.keys(this.tagMap);
 
