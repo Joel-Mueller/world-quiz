@@ -1,0 +1,8 @@
+<p>dashboard works!</p>
+
+@if (!this.authenticationService.isLoggedIn()) {
+    <app-login></app-login>
+} @else {
+    <button (click)="this.authenticationService.logOut()">Log Out</button>
+    <p>dashboard</p>
+}
