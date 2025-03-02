@@ -41,7 +41,7 @@ export class LoginComponent {
         this.alert = 'Login successful!';
       },
       error: (err) => {
-        this.alert = 'Login failed!';
+        this.alert = 'Login failed! ' + (err.error?.message || 'An unexpected error occurred.');;
         console.error('Login error:', err);
       }
     });
@@ -53,7 +53,7 @@ export class LoginComponent {
         this.alert = response.message;
       },
       error: (err) => {
-        this.alert = 'Registration failed!';
+        this.alert = 'Registration failed! ' + (err.error?.message || 'An unexpected error occurred.');
         console.error('Registration error:', err);
       }
     });

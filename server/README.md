@@ -42,21 +42,6 @@ Start a js file
 node dist/app.js
 ```
 
-## Environment variables
-
-Example
-
-```txt
-JWT_SECRET=<secure random string>
-PORT=3000
-```
-
-Generate a secure random string with:
-
-```shell
-openssl rand -hex 32
-```
-
 ## Curl commands to test API
 
 Register a user

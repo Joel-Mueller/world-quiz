@@ -13,3 +13,34 @@ Github from the user --> https://github.com/anki-geo/ultimate-geography/tree/mas
 - [ ] Testing
 - [ ] Navigation (Login/Dashboard, Quiz)
 - [ ] Add US States, Canada, Australia and Switzerland
+
+## Envorinment Variables
+
+## Environment variables
+
+Example
+
+```txt
+JWT_SECRET=<secure random string>
+PORT=3000
+```
+
+Generate a secure random string with:
+
+```shell
+openssl rand -hex 32
+```
+
+## Deployment
+
+```shell
+docker compose build
+```
+
+```shell
+docker compose up -d
+```
+
+```shell
+docker compose down
+```
