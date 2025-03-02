@@ -30,7 +30,7 @@ export class QuizService {
 
   // Place Manager
 
-  public getAllPlaces() {
+  public getAllPlaces() : Place[] {
     return this.places.slice();
   }
 
@@ -99,7 +99,7 @@ export class QuizService {
         this.placesRaw = rows.slice(1).map((row) => {
           const values = row.split(',').map((v) => v.trim());
           const tags = values.slice(4).filter((v) => v.length > 0);
-          //console.log(tags.join(','));
+          // console.log(tags.join(','));
           return {
             id: idCounter++,
             name: values[0],
@@ -116,8 +116,8 @@ export class QuizService {
         console.error('Error loading CSV:', err);
       },
       complete: () => {
-        console.log('Main CSV file successfully loaded.');
-        //console.log(this.placesRaw);
+        // console.log('Main CSV file successfully loaded.');
+        // console.log(this.placesRaw);
         this.loadCapitals();
       },
     });
@@ -144,8 +144,8 @@ export class QuizService {
         console.error('Error loading CSV:', err);
       },
       complete: () => {
-        console.log('Capital CSV file successfully loaded.');
-        //console.log(this.placesRaw)
+        // console.log('Capital CSV file successfully loaded.');
+        // console.log(this.placesRaw)
         this.loadCapitalInfo();
       },
     });
@@ -172,8 +172,8 @@ export class QuizService {
         console.error('Error loading CSV:', err);
       },
       complete: () => {
-        console.log('Capital Info CSV file successfully loaded.');
-        //console.log(this.placesRaw)
+        // console.log('Capital Info CSV file successfully loaded.');
+        // console.log(this.placesRaw)
         this.loadCountryInfo();
       },
     });
@@ -200,7 +200,7 @@ export class QuizService {
         console.error('Error loading CSV:', err);
       },
       complete: () => {
-        console.log('Country Info CSV file successfully loaded.');
+        //console.log('Country Info CSV file successfully loaded.');
         //console.log(this.placesRaw);
         this.makePlaces();
       },
@@ -209,10 +209,33 @@ export class QuizService {
 
   public makePlaces() {
     this.places = PlaceConverter.getPlaces(this.placesRaw);
-    console.log('Places successfully convertet')
+    // console.log('Places successfully convertet')
     // console.log(this.places);
     // for (const c of this.places) {
     //   console.log(PlaceConverter.toString(c));
     // }
+    this.compareToTestFile();
+  }
+
+
+  public compareToTestFile(): void {
+    const jsonUrl = 'test/places.json';
+    this.http.get(jsonUrl).subscribe({
+      next: (data) => {
+        const dataJson = JSON.stringify(data);
+        const dataCSV = JSON.stringify(this.places);
+        if (dataJson == dataCSV) {
+          console.log('Data is properly loaded')
+        } else {
+          console.log('Data is not properly loaded')
+        }
+      },
+      error: (err) => {
+        console.error('Error loading JSON:', err);
+      },
+      complete: () => {
+        console.log('JSON file successfully loaded.');
+      },
+    });
   }
 }

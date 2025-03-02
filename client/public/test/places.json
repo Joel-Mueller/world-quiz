@@ -1,0 +1,2312 @@
+[
+  {
+    "id": 1,
+    "name": "England",
+    "capital": "London",
+    "flag": "ug-flag-england.svg",
+    "map": "ug-map-england.png",
+    "tags": [1]
+  },
+  {
+    "id": 2,
+    "name": "Scotland",
+    "capital": "Edinburgh",
+    "flag": "ug-flag-scotland.svg",
+    "map": "ug-map-scotland.png",
+    "tags": [1]
+  },
+  {
+    "id": 3,
+    "name": "United Kingdom",
+    "capital": "London",
+    "flag": "ug-flag-united_kingdom.svg",
+    "map": "ug-map-united_kingdom.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 4,
+    "name": "Northern Ireland",
+    "capital": "Belfast",
+    "map": "ug-map-northern_ireland.png",
+    "tags": [1]
+  },
+  {
+    "id": 5,
+    "name": "France",
+    "capital": "Paris",
+    "flag": "ug-flag-france.svg",
+    "map": "ug-map-france.png",
+    "tags": [1, 11, 10, 9]
+  },
+  {
+    "id": 6,
+    "name": "Wales",
+    "capital": "Cardiff",
+    "flag": "ug-flag-wales.svg",
+    "map": "ug-map-wales.png",
+    "tags": [1]
+  },
+  {
+    "id": 7,
+    "name": "Georgia",
+    "capital": "Tbilisi",
+    "flag": "ug-flag-georgia.svg",
+    "map": "ug-map-georgia.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 8,
+    "name": "Germany",
+    "capital": "Berlin",
+    "flag": "ug-flag-germany.svg",
+    "map": "ug-map-germany.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 9,
+    "name": "Greece",
+    "capital": "Athens",
+    "flag": "ug-flag-greece.svg",
+    "map": "ug-map-greece.png",
+    "tags": [1, 11, 10, 9]
+  },
+  {
+    "id": 10,
+    "name": "Greenland",
+    "info": "",
+    "capital": "Nuuk",
+    "capitalInfo": "",
+    "flag": "ug-flag-greenland.svg",
+    "map": "ug-map-greenland.png",
+    "tags": [4]
+  },
+  {
+    "id": 11,
+    "name": "Hungary",
+    "capital": "Budapest",
+    "flag": "ug-flag-hungary.svg",
+    "map": "ug-map-hungary.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 12,
+    "name": "Albania",
+    "capital": "Tirana",
+    "flag": "ug-flag-albania.svg",
+    "map": "ug-map-albania.png",
+    "tags": [1, 10, 9]
+  },
+  {
+    "id": 13,
+    "name": "Andorra",
+    "capital": "Andorra la Vella",
+    "flag": "ug-flag-andorra.svg",
+    "map": "ug-map-andorra.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 14,
+    "name": "Austria",
+    "capital": "Vienna",
+    "flag": "ug-flag-austria.svg",
+    "map": "ug-map-austria.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 15,
+    "name": "Azerbaijan",
+    "capital": "Baku",
+    "flag": "ug-flag-azerbaijan.svg",
+    "map": "ug-map-azerbaijan.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 16,
+    "name": "Belarus",
+    "capital": "Minsk",
+    "flag": "ug-flag-belarus.svg",
+    "map": "ug-map-belarus.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 17,
+    "name": "Belgium",
+    "capital": "Brussels",
+    "flag": "ug-flag-belgium.svg",
+    "map": "ug-map-belgium.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 18,
+    "name": "Bosnia and Herzegovina",
+    "capital": "Sarajevo",
+    "flag": "ug-flag-bosnia_and_herzegovina.svg",
+    "map": "ug-map-bosnia_and_herzegovina.png",
+    "tags": [1, 10, 9]
+  },
+  {
+    "id": 19,
+    "name": "Bulgaria",
+    "capital": "Sofia",
+    "flag": "ug-flag-bulgaria.svg",
+    "map": "ug-map-bulgaria.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 20,
+    "name": "Croatia",
+    "capital": "Zagreb",
+    "flag": "ug-flag-croatia.svg",
+    "map": "ug-map-croatia.png",
+    "tags": [1, 11, 10, 9]
+  },
+  {
+    "id": 21,
+    "name": "Czech Republic",
+    "capital": "Prague",
+    "flag": "ug-flag-czech_republic.svg",
+    "map": "ug-map-czech_republic.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 22,
+    "name": "Denmark",
+    "capital": "Copenhagen",
+    "flag": "ug-flag-denmark.svg",
+    "map": "ug-map-denmark.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 23,
+    "name": "Estonia",
+    "capital": "Tallinn",
+    "flag": "ug-flag-estonia.svg",
+    "map": "ug-map-estonia.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 24,
+    "name": "Faroe Islands",
+    "capital": "Tórshavn",
+    "flag": "ug-flag-faroe_islands.svg",
+    "map": "ug-map-faroe_islands.png",
+    "tags": [1]
+  },
+  {
+    "id": 25,
+    "name": "Finland",
+    "info": "",
+    "capital": "Helsinki",
+    "capitalInfo": "",
+    "flag": "ug-flag-finland.svg",
+    "map": "ug-map-finland.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 26,
+    "name": "Iceland",
+    "capital": "Reykjavík",
+    "flag": "ug-flag-iceland.svg",
+    "map": "ug-map-iceland.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 27,
+    "name": "Ireland",
+    "capital": "Dublin",
+    "flag": "ug-flag-ireland.svg",
+    "map": "ug-map-ireland.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 28,
+    "name": "Italy",
+    "capital": "Rome",
+    "flag": "ug-flag-italy.svg",
+    "map": "ug-map-italy.png",
+    "tags": [1, 11, 10, 9]
+  },
+  {
+    "id": 29,
+    "name": "Latvia",
+    "capital": "Riga",
+    "flag": "ug-flag-latvia.svg",
+    "map": "ug-map-latvia.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 30,
+    "name": "Liechtenstein",
+    "capital": "Vaduz",
+    "flag": "ug-flag-liechtenstein.svg",
+    "map": "ug-map-liechtenstein.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 31,
+    "name": "Lithuania",
+    "capital": "Vilnius",
+    "flag": "ug-flag-lithuania.svg",
+    "map": "ug-map-lithuania.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 32,
+    "name": "Luxembourg",
+    "info": "Officially Luxembourg.",
+    "capital": "Luxembourg City",
+    "capitalInfo": "Officially Luxembourg.",
+    "flag": "ug-flag-luxembourg.svg",
+    "map": "ug-map-luxembourg.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 33,
+    "name": "North Macedonia",
+    "capital": "Skopje",
+    "flag": "ug-flag-north_macedonia.svg",
+    "map": "ug-map-north_macedonia.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 34,
+    "name": "Malta",
+    "capital": "Valletta",
+    "flag": "ug-flag-malta.svg",
+    "map": "ug-map-malta.png",
+    "tags": [1, 11, 10, 9]
+  },
+  {
+    "id": 35,
+    "name": "Moldova",
+    "capital": "Chișinău",
+    "flag": "ug-flag-moldova.svg",
+    "map": "ug-map-moldova.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 36,
+    "name": "Monaco",
+    "capital": "Monaco",
+    "flag": "ug-flag-monaco.svg",
+    "map": "ug-map-monaco.png",
+    "tags": [1, 10, 9]
+  },
+  {
+    "id": 37,
+    "name": "Montenegro",
+    "info": "Cetinje is an honorary capital.",
+    "capital": "Podgorica",
+    "capitalInfo": "Cetinje is an honorary capital.",
+    "flag": "ug-flag-montenegro.svg",
+    "map": "ug-map-montenegro.png",
+    "tags": [1, 10, 9]
+  },
+  {
+    "id": 38,
+    "name": "Netherlands",
+    "info": "\"While Amsterdam is the official capital",
+    "capital": "Amsterdam",
+    "capitalInfo": "\"While Amsterdam is the official capital",
+    "flag": "ug-flag-netherlands.svg",
+    "map": "ug-map-netherlands.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 39,
+    "name": "Norway",
+    "capital": "Oslo",
+    "flag": "ug-flag-norway.svg",
+    "map": "ug-map-norway.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 40,
+    "name": "Poland",
+    "capital": "Warsaw",
+    "flag": "ug-flag-poland.svg",
+    "map": "ug-map-poland.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 41,
+    "name": "Portugal",
+    "capital": "Lisbon",
+    "flag": "ug-flag-portugal.svg",
+    "map": "ug-map-portugal.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 42,
+    "name": "Romania",
+    "capital": "Bucharest",
+    "flag": "ug-flag-romania.svg",
+    "map": "ug-map-romania.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 43,
+    "name": "Russia",
+    "capital": "Moscow",
+    "flag": "ug-flag-russia.svg",
+    "map": "ug-map-russia.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 44,
+    "name": "San Marino",
+    "capital": "City of San Marino",
+    "flag": "ug-flag-san_marino.svg",
+    "map": "ug-map-san_marino.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 45,
+    "name": "Serbia",
+    "capital": "Belgrade",
+    "flag": "ug-flag-serbia.svg",
+    "map": "ug-map-serbia.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 46,
+    "name": "Slovakia",
+    "capital": "Bratislava",
+    "flag": "ug-flag-slovakia.svg",
+    "map": "ug-map-slovakia.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 47,
+    "name": "Slovenia",
+    "capital": "Ljubljana",
+    "flag": "ug-flag-slovenia.svg",
+    "map": "ug-map-slovenia.png",
+    "tags": [1, 11, 10, 9]
+  },
+  {
+    "id": 48,
+    "name": "Spain",
+    "capital": "Madrid",
+    "flag": "ug-flag-spain.svg",
+    "map": "ug-map-spain.png",
+    "tags": [1, 11, 10, 9]
+  },
+  {
+    "id": 49,
+    "name": "Sweden",
+    "capital": "Stockholm",
+    "flag": "ug-flag-sweden.svg",
+    "map": "ug-map-sweden.png",
+    "tags": [1, 11, 9]
+  },
+  {
+    "id": 50,
+    "name": "Switzerland",
+    "info": "Switzerland has no official capital; Bern is the de facto capital.",
+    "capital": "Bern",
+    "capitalInfo": "Switzerland has no official capital; Bern is the de facto capital.",
+    "flag": "ug-flag-switzerland.svg",
+    "map": "ug-map-switzerland.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 51,
+    "name": "Turkey",
+    "capital": "Ankara",
+    "flag": "ug-flag-turkey.svg",
+    "map": "ug-map-turkey.png",
+    "tags": [2, 10, 12, 9]
+  },
+  {
+    "id": 52,
+    "name": "Ukraine",
+    "info": "Also known as Kiev.",
+    "capital": "Kyiv",
+    "capitalInfo": "Also known as Kiev.",
+    "flag": "ug-flag-ukraine.svg",
+    "map": "ug-map-ukraine.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 53,
+    "name": "Vatican City",
+    "capital": "Vatican City",
+    "flag": "ug-flag-vatican_city.svg",
+    "map": "ug-map-vatican_city.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 54,
+    "name": "Armenia",
+    "capital": "Yerevan",
+    "flag": "ug-flag-armenia.svg",
+    "map": "ug-map-armenia.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 55,
+    "name": "Cyprus",
+    "capital": "Nicosia",
+    "flag": "ug-flag-cyprus.svg",
+    "map": "ug-map-cyprus.png",
+    "tags": [2, 11, 10, 12, 9]
+  },
+  {
+    "id": 56,
+    "name": "Kazakhstan",
+    "info": "Known as Nur-Sultan until September 2022.",
+    "capital": "Astana",
+    "capitalInfo": "Known as Nur-Sultan until September 2022.",
+    "flag": "ug-flag-kazakhstan.svg",
+    "map": "ug-map-kazakhstan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 57,
+    "name": "Egypt",
+    "capital": "Cairo",
+    "flag": "ug-flag-egypt.svg",
+    "map": "ug-map-egypt.png",
+    "tags": [6, 10, 12, 9]
+  },
+  {
+    "id": 58,
+    "name": "Algeria",
+    "capital": "Algiers",
+    "flag": "ug-flag-algeria.svg",
+    "map": "ug-map-algeria.png",
+    "tags": [6, 10, 9]
+  },
+  {
+    "id": 59,
+    "name": "Angola",
+    "capital": "Luanda",
+    "flag": "ug-flag-angola.svg",
+    "map": "ug-map-angola.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 60,
+    "name": "Benin",
+    "info": "\"While Porto-Novo is the official capital",
+    "capital": "Porto-Novo",
+    "capitalInfo": "\"While Porto-Novo is the official capital",
+    "flag": "ug-flag-benin.svg",
+    "map": "ug-map-benin.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 61,
+    "name": "Botswana",
+    "capital": "Gaborone",
+    "flag": "ug-flag-botswana.svg",
+    "map": "ug-map-botswana.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 62,
+    "name": "Burkina Faso",
+    "info": "",
+    "capital": "Ouagadougou",
+    "capitalInfo": "",
+    "flag": "ug-flag-burkina_faso.svg",
+    "map": "ug-map-burkina_faso.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 63,
+    "name": "Cameroon",
+    "capital": "Yaoundé",
+    "flag": "ug-flag-cameroon.svg",
+    "map": "ug-map-cameroon.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 64,
+    "name": "Burundi",
+    "info": "Official capital was moved from Bujumbura to Gitega in 2019.",
+    "capital": "Gitega",
+    "capitalInfo": "Official capital was moved from Bujumbura to Gitega in 2019.",
+    "flag": "ug-flag-burundi.svg",
+    "map": "ug-map-burundi.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 65,
+    "name": "Cape Verde",
+    "capital": "Praia",
+    "flag": "ug-flag-cape_verde.svg",
+    "map": "ug-map-cape_verde.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 66,
+    "name": "São Tomé and Príncipe",
+    "capital": "São Tomé",
+    "flag": "ug-flag-sao_tome_and_principe.svg",
+    "map": "ug-map-sao_tome_and_principe.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 67,
+    "name": "Central African Republic",
+    "capital": "Bangui",
+    "flag": "ug-flag-central_african_republic.svg",
+    "map": "ug-map-central_african_republic.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 68,
+    "name": "Chad",
+    "capital": "N'Djamena",
+    "flag": "ug-flag-chad.svg",
+    "map": "ug-map-chad.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 69,
+    "name": "Equatorial Guinea",
+    "info": "Ciudad de la Paz is being built to replace Malabo as capital.",
+    "capital": "Malabo",
+    "capitalInfo": "Ciudad de la Paz is being built to replace Malabo as capital.",
+    "flag": "ug-flag-equatorial_guinea.svg",
+    "map": "ug-map-equatorial_guinea.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 70,
+    "name": "Kenya",
+    "capital": "Nairobi",
+    "flag": "ug-flag-kenya.svg",
+    "map": "ug-map-kenya.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 71,
+    "name": "Comoros",
+    "capital": "Moroni",
+    "flag": "ug-flag-comoros.svg",
+    "map": "ug-map-comoros.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 72,
+    "name": "Ivory Coast",
+    "info": "\"While Yamoussoukro is the official capital",
+    "capital": "Yamoussoukro",
+    "capitalInfo": "\"While Yamoussoukro is the official capital",
+    "flag": "ug-flag-ivory_coast.svg",
+    "map": "ug-map-ivory_coast.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 73,
+    "name": "Democratic Republic of the Congo",
+    "capital": "Kinshasa",
+    "flag": "ug-flag-democratic_republic_of_the_congo.svg",
+    "map": "ug-map-democratic_republic_of_the_congo.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 74,
+    "name": "Djibouti",
+    "capital": "Djibouti",
+    "flag": "ug-flag-djibouti.svg",
+    "map": "ug-map-djibouti.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 75,
+    "name": "Guinea-Bissau",
+    "capital": "Bissau",
+    "flag": "ug-flag-guinea-bissau.svg",
+    "map": "ug-map-guinea-bissau.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 76,
+    "name": "Eritrea",
+    "capital": "Asmara",
+    "flag": "ug-flag-eritrea.svg",
+    "map": "ug-map-eritrea.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 77,
+    "name": "Ethiopia",
+    "capital": "Addis Ababa",
+    "flag": "ug-flag-ethiopia.svg",
+    "map": "ug-map-ethiopia.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 78,
+    "name": "Gabon",
+    "capital": "Libreville",
+    "flag": "ug-flag-gabon.svg",
+    "map": "ug-map-gabon.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 79,
+    "name": "The Gambia",
+    "capital": "Banjul",
+    "flag": "ug-flag-the_gambia.svg",
+    "map": "ug-map-the_gambia.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 80,
+    "name": "Lesotho",
+    "capital": "Maseru",
+    "flag": "ug-flag-lesotho.svg",
+    "map": "ug-map-lesotho.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 81,
+    "name": "Liberia",
+    "capital": "Monrovia",
+    "flag": "ug-flag-liberia.svg",
+    "map": "ug-map-liberia.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 82,
+    "name": "Madagascar",
+    "capital": "Antananarivo",
+    "flag": "ug-flag-madagascar.svg",
+    "map": "ug-map-madagascar.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 83,
+    "name": "Malawi",
+    "capital": "Lilongwe",
+    "flag": "ug-flag-malawi.svg",
+    "map": "ug-map-malawi.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 84,
+    "name": "Mali",
+    "capital": "Bamako",
+    "flag": "ug-flag-mali.svg",
+    "map": "ug-map-mali.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 85,
+    "name": "Mauritania",
+    "capital": "Nouakchott",
+    "flag": "ug-flag-mauritania.svg",
+    "map": "ug-map-mauritania.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 86,
+    "name": "Mauritius",
+    "capital": "Port Louis",
+    "flag": "ug-flag-mauritius.svg",
+    "map": "ug-map-mauritius.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 87,
+    "name": "Morocco",
+    "capital": "Rabat",
+    "flag": "ug-flag-morocco.svg",
+    "map": "ug-map-morocco.png",
+    "tags": [6, 10, 9]
+  },
+  {
+    "id": 88,
+    "name": "Mozambique",
+    "capital": "Maputo",
+    "flag": "ug-flag-mozambique.svg",
+    "map": "ug-map-mozambique.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 89,
+    "name": "Namibia",
+    "capital": "Windhoek",
+    "flag": "ug-flag-namibia.svg",
+    "map": "ug-map-namibia.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 90,
+    "name": "Niger",
+    "capital": "Niamey",
+    "flag": "ug-flag-niger.svg",
+    "map": "ug-map-niger.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 91,
+    "name": "Nigeria",
+    "capital": "Abuja",
+    "flag": "ug-flag-nigeria.svg",
+    "map": "ug-map-nigeria.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 92,
+    "name": "Republic of the Congo",
+    "capital": "Brazzaville",
+    "flag": "ug-flag-republic_of_the_congo.svg",
+    "map": "ug-map-republic_of_the_congo.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 93,
+    "name": "Rwanda",
+    "capital": "Kigali",
+    "flag": "ug-flag-rwanda.svg",
+    "map": "ug-map-rwanda.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 94,
+    "name": "Senegal",
+    "capital": "Dakar",
+    "flag": "ug-flag-senegal.svg",
+    "map": "ug-map-senegal.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 95,
+    "name": "Seychelles",
+    "capital": "Victoria",
+    "flag": "ug-flag-seychelles.svg",
+    "map": "ug-map-seychelles.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 96,
+    "name": "Sierra Leone",
+    "capital": "Freetown",
+    "flag": "ug-flag-sierra_leone.svg",
+    "map": "ug-map-sierra_leone.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 97,
+    "name": "South Africa",
+    "info": "\"South Africa has no legally defined capital: the branches of government are split over three cities: Pretoria (executive)",
+    "capital": "\"Pretoria",
+    "capitalInfo": "\"South Africa has no legally defined capital: the branches of government are split over three cities: Pretoria (executive)",
+    "flag": "ug-flag-south_africa.svg",
+    "map": "ug-map-south_africa.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 98,
+    "name": "Sudan",
+    "capital": "Khartoum",
+    "flag": "ug-flag-sudan.svg",
+    "map": "ug-map-sudan.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 99,
+    "name": "Eswatini",
+    "info": "\"While Mbabane is the official",
+    "capital": "Mbabane",
+    "capitalInfo": "\"While Mbabane is the official",
+    "flag": "ug-flag-eswatini.svg",
+    "map": "ug-map-eswatini.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 100,
+    "name": "Tanzania",
+    "info": "\"While Dodoma is the official capital",
+    "capital": "Dodoma",
+    "capitalInfo": "\"While Dodoma is the official capital",
+    "flag": "ug-flag-tanzania.svg",
+    "map": "ug-map-tanzania.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 101,
+    "name": "Togo",
+    "capital": "Lomé",
+    "flag": "ug-flag-togo.svg",
+    "map": "ug-map-togo.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 102,
+    "name": "Tunisia",
+    "capital": "Tunis",
+    "flag": "ug-flag-tunisia.svg",
+    "map": "ug-map-tunisia.png",
+    "tags": [6, 10, 9]
+  },
+  {
+    "id": 103,
+    "name": "Uganda",
+    "capital": "Kampala",
+    "flag": "ug-flag-uganda.svg",
+    "map": "ug-map-uganda.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 104,
+    "name": "Sahrawi Arab Democratic Republic",
+    "info": "\"While Laayoune",
+    "capital": "Laayoune",
+    "capitalInfo": "\"While Laayoune",
+    "flag": "ug-flag-sahrawi_arab_democratic_republic.svg",
+    "map": "ug-map-sahrawi_arab_democratic_republic.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 105,
+    "name": "Zambia",
+    "capital": "Lusaka",
+    "flag": "ug-flag-zambia.svg",
+    "map": "ug-map-zambia.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 106,
+    "name": "Zimbabwe",
+    "capital": "Harare",
+    "flag": "ug-flag-zimbabwe.svg",
+    "map": "ug-map-zimbabwe.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 107,
+    "name": "Canary Islands",
+    "map": "ug-map-canary_islands.png",
+    "tags": [6]
+  },
+  {
+    "id": 108,
+    "name": "Afghanistan",
+    "capital": "Kabul",
+    "flag": "ug-flag-afghanistan.svg",
+    "map": "ug-map-afghanistan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 109,
+    "name": "Bahrain",
+    "capital": "Manama",
+    "flag": "ug-flag-bahrain.svg",
+    "map": "ug-map-bahrain.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 110,
+    "name": "Bangladesh",
+    "capital": "Dhaka",
+    "flag": "ug-flag-bangladesh.svg",
+    "map": "ug-map-bangladesh.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 111,
+    "name": "Bhutan",
+    "capital": "Thimphu",
+    "flag": "ug-flag-bhutan.svg",
+    "map": "ug-map-bhutan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 112,
+    "name": "Brunei",
+    "capital": "Bandar Seri Begawan",
+    "flag": "ug-flag-brunei.svg",
+    "map": "ug-map-brunei.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 113,
+    "name": "China",
+    "info": "",
+    "capital": "Beijing",
+    "capitalInfo": "",
+    "flag": "ug-flag-china.svg",
+    "map": "ug-map-china.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 114,
+    "name": "Cambodia",
+    "capital": "Phnom Penh",
+    "flag": "ug-flag-cambodia.svg",
+    "map": "ug-map-cambodia.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 115,
+    "name": "Indonesia",
+    "capital": "Jakarta",
+    "flag": "ug-flag-indonesia.svg",
+    "map": "ug-map-indonesia.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 116,
+    "name": "India",
+    "capital": "New Delhi",
+    "flag": "ug-flag-india.svg",
+    "map": "ug-map-india.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 117,
+    "name": "Hong Kong",
+    "flag": "ug-flag-hong_kong.svg",
+    "map": "ug-map-hong_kong.png",
+    "tags": [2]
+  },
+  {
+    "id": 118,
+    "name": "Iran",
+    "capital": "Tehran",
+    "flag": "ug-flag-iran.svg",
+    "map": "ug-map-iran.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 119,
+    "name": "Israel",
+    "info": "Disputed; claimed by Palestine.",
+    "capital": "Jerusalem",
+    "capitalInfo": "Disputed; claimed by Palestine.",
+    "flag": "ug-flag-israel.svg",
+    "map": "ug-map-israel.png",
+    "tags": [2, 10, 12, 9]
+  },
+  {
+    "id": 120,
+    "name": "Iraq",
+    "capital": "Baghdad",
+    "flag": "ug-flag-iraq.svg",
+    "map": "ug-map-iraq.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 121,
+    "name": "South Korea",
+    "capital": "Seoul",
+    "flag": "ug-flag-south_korea.svg",
+    "map": "ug-map-south_korea.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 122,
+    "name": "North Korea",
+    "capital": "Pyongyang",
+    "flag": "ug-flag-north_korea.svg",
+    "map": "ug-map-north_korea.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 123,
+    "name": "Jordan",
+    "capital": "Amman",
+    "flag": "ug-flag-jordan.svg",
+    "map": "ug-map-jordan.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 124,
+    "name": "Japan",
+    "capital": "Tokyo",
+    "flag": "ug-flag-japan.svg",
+    "map": "ug-map-japan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 125,
+    "name": "Lebanon",
+    "capital": "Beirut",
+    "flag": "ug-flag-lebanon.svg",
+    "map": "ug-map-lebanon.png",
+    "tags": [2, 10, 12, 9]
+  },
+  {
+    "id": 126,
+    "name": "Laos",
+    "capital": "Vientiane",
+    "flag": "ug-flag-laos.svg",
+    "map": "ug-map-laos.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 127,
+    "name": "Kyrgyzstan",
+    "capital": "Bishkek",
+    "flag": "ug-flag-kyrgyzstan.svg",
+    "map": "ug-map-kyrgyzstan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 128,
+    "name": "Kuwait",
+    "capital": "Kuwait City",
+    "flag": "ug-flag-kuwait.svg",
+    "map": "ug-map-kuwait.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 129,
+    "name": "Myanmar",
+    "info": "",
+    "capital": "Naypyidaw",
+    "capitalInfo": "",
+    "flag": "ug-flag-myanmar.svg",
+    "map": "ug-map-myanmar.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 130,
+    "name": "Mongolia",
+    "info": "",
+    "capital": "Ulaanbaatar",
+    "capitalInfo": "",
+    "flag": "ug-flag-mongolia.svg",
+    "map": "ug-map-mongolia.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 131,
+    "name": "Maldives",
+    "capital": "Malé",
+    "flag": "ug-flag-maldives.svg",
+    "map": "ug-map-maldives.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 132,
+    "name": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "flag": "ug-flag-malaysia.svg",
+    "map": "ug-map-malaysia.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 133,
+    "name": "Oman",
+    "capital": "Muscat",
+    "flag": "ug-flag-oman.svg",
+    "map": "ug-map-oman.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 134,
+    "name": "Nepal",
+    "capital": "Kathmandu",
+    "flag": "ug-flag-nepal-nobox.svg",
+    "map": "ug-map-nepal.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 135,
+    "name": "Palestine",
+    "info": "Disputed; claimed by Israel; Ramallah is the administrative centre.",
+    "capital": "Jerusalem",
+    "capitalInfo": "Disputed; claimed by Israel; Ramallah is the administrative centre.",
+    "flag": "ug-flag-palestine.svg",
+    "map": "ug-map-palestine.png",
+    "tags": [2, 10, 12, 9]
+  },
+  {
+    "id": 136,
+    "name": "Pakistan",
+    "capital": "Islamabad",
+    "flag": "ug-flag-pakistan.svg",
+    "map": "ug-map-pakistan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 137,
+    "name": "Qatar",
+    "capital": "Doha",
+    "flag": "ug-flag-qatar.svg",
+    "map": "ug-map-qatar.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 138,
+    "name": "Saudi Arabia",
+    "capital": "Riyadh",
+    "flag": "ug-flag-saudi_arabia.svg",
+    "map": "ug-map-saudi_arabia.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 139,
+    "name": "Singapore",
+    "capital": "Singapore",
+    "flag": "ug-flag-singapore.svg",
+    "map": "ug-map-singapore.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 140,
+    "name": "Syria",
+    "capital": "Damascus",
+    "flag": "ug-flag-syria.svg",
+    "map": "ug-map-syria.png",
+    "tags": [2, 10, 12, 9]
+  },
+  {
+    "id": 141,
+    "name": "Taiwan",
+    "capital": "Taipei",
+    "flag": "ug-flag-taiwan.svg",
+    "map": "ug-map-taiwan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 142,
+    "name": "Sri Lanka",
+    "info": "\"Colombo is often referred to as the capital but Sri Jayawardenepura Kotte",
+    "capital": "Sri Jayawardenepura Kotte",
+    "capitalInfo": "\"Colombo is often referred to as the capital but Sri Jayawardenepura Kotte",
+    "flag": "ug-flag-sri_lanka.svg",
+    "map": "ug-map-sri_lanka.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 143,
+    "name": "Tajikistan",
+    "capital": "Dushanbe",
+    "flag": "ug-flag-tajikistan.svg",
+    "map": "ug-map-tajikistan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 144,
+    "name": "Thailand",
+    "capital": "Bangkok",
+    "flag": "ug-flag-thailand.svg",
+    "map": "ug-map-thailand.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 145,
+    "name": "Timor-Leste",
+    "capital": "Dili",
+    "flag": "ug-flag-timor-leste.svg",
+    "map": "ug-map-timor-leste.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 146,
+    "name": "United Arab Emirates",
+    "capital": "Abu Dhabi",
+    "flag": "ug-flag-united_arab_emirates.svg",
+    "map": "ug-map-united_arab_emirates.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 147,
+    "name": "Turkmenistan",
+    "info": "",
+    "capital": "Ashgabat",
+    "capitalInfo": "",
+    "flag": "ug-flag-turkmenistan.svg",
+    "map": "ug-map-turkmenistan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 148,
+    "name": "Yemen",
+    "info": "Also spelled as Sana'a.",
+    "capital": "Sanaa",
+    "capitalInfo": "Also spelled as Sana'a.",
+    "flag": "ug-flag-yemen.svg",
+    "map": "ug-map-yemen.png",
+    "tags": [2, 12, 9]
+  },
+  {
+    "id": 149,
+    "name": "Vietnam",
+    "capital": "Hanoi",
+    "flag": "ug-flag-vietnam.svg",
+    "map": "ug-map-vietnam.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 150,
+    "name": "Uzbekistan",
+    "capital": "Tashkent",
+    "flag": "ug-flag-uzbekistan.svg",
+    "map": "ug-map-uzbekistan.png",
+    "tags": [2, 9]
+  },
+  {
+    "id": 151,
+    "name": "Fiji",
+    "capital": "Suva",
+    "flag": "ug-flag-fiji.svg",
+    "map": "ug-map-fiji.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 152,
+    "name": "Papua New Guinea",
+    "capital": "Port Moresby",
+    "flag": "ug-flag-papua_new_guinea.svg",
+    "map": "ug-map-papua_new_guinea.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 153,
+    "name": "Australia",
+    "capital": "Canberra",
+    "flag": "ug-flag-australia.svg",
+    "map": "ug-map-australia.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 154,
+    "name": "Solomon Islands",
+    "capital": "Honiara",
+    "flag": "ug-flag-solomon_islands.svg",
+    "map": "ug-map-solomon_islands.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 155,
+    "name": "Argentina",
+    "capital": "Buenos Aires",
+    "flag": "ug-flag-argentina.svg",
+    "map": "ug-map-argentina.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 156,
+    "name": "Bolivia",
+    "info": "\"While Sucre is the constitutional capital",
+    "capital": "Sucre",
+    "capitalInfo": "\"While Sucre is the constitutional capital",
+    "flag": "ug-flag-bolivia-blur.svg",
+    "map": "ug-map-bolivia.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 157,
+    "name": "Brazil",
+    "capital": "Brasília",
+    "flag": "ug-flag-brazil.svg",
+    "map": "ug-map-brazil.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 158,
+    "name": "Chile",
+    "capital": "Santiago",
+    "flag": "ug-flag-chile.svg",
+    "map": "ug-map-chile.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 159,
+    "name": "Colombia",
+    "capital": "Bogotá",
+    "flag": "ug-flag-colombia.svg",
+    "map": "ug-map-colombia.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 160,
+    "name": "Ecuador",
+    "capital": "Quito",
+    "flag": "ug-flag-ecuador.svg",
+    "map": "ug-map-ecuador.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 161,
+    "name": "Guyana",
+    "capital": "Georgetown",
+    "flag": "ug-flag-guyana.svg",
+    "map": "ug-map-guyana.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 162,
+    "name": "Paraguay",
+    "capital": "Asunción",
+    "flag": "ug-flag-paraguay-blur.svg",
+    "map": "ug-map-paraguay.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 163,
+    "name": "Peru",
+    "capital": "Lima",
+    "flag": "ug-flag-peru.svg",
+    "map": "ug-map-peru.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 164,
+    "name": "Suriname",
+    "capital": "Paramaribo",
+    "flag": "ug-flag-suriname.svg",
+    "map": "ug-map-suriname.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 165,
+    "name": "Uruguay",
+    "capital": "Montevideo",
+    "flag": "ug-flag-uruguay.svg",
+    "map": "ug-map-uruguay.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 166,
+    "name": "Venezuela",
+    "capital": "Caracas",
+    "flag": "ug-flag-venezuela.svg",
+    "map": "ug-map-venezuela.png",
+    "tags": [5, 9]
+  },
+  {
+    "id": 167,
+    "name": "Cook Islands",
+    "capital": "Avarua",
+    "flag": "ug-flag-cook_islands.svg",
+    "map": "ug-map-cook_islands.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 168,
+    "name": "Federated States of Micronesia",
+    "capital": "Palikir",
+    "flag": "ug-flag-federated_states_of_micronesia.svg",
+    "map": "ug-map-federated_states_of_micronesia.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 169,
+    "name": "Guam",
+    "capital": "Hagåtña",
+    "flag": "ug-flag-guam-blur.svg",
+    "map": "ug-map-guam.png",
+    "tags": [3]
+  },
+  {
+    "id": 170,
+    "name": "Vanuatu",
+    "capital": "Port Vila",
+    "flag": "ug-flag-vanuatu.svg",
+    "map": "ug-map-vanuatu.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 171,
+    "name": "Canada",
+    "capital": "Ottawa",
+    "flag": "ug-flag-canada.svg",
+    "map": "ug-map-canada.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 172,
+    "name": "United States of America",
+    "capital": "\"Washington",
+    "flag": "ug-flag-united_states_of_america.svg",
+    "map": "ug-map-united_states_of_america.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 173,
+    "name": "Mexico",
+    "capital": "Mexico City",
+    "flag": "ug-flag-mexico.svg",
+    "map": "ug-map-mexico.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 174,
+    "name": "Puerto Rico",
+    "capital": "San Juan",
+    "flag": "ug-flag-puerto_rico.svg",
+    "map": "ug-map-puerto_rico.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 175,
+    "name": "Cuba",
+    "capital": "Havana",
+    "flag": "ug-flag-cuba.svg",
+    "map": "ug-map-cuba.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 176,
+    "name": "Dominican Republic",
+    "capital": "Santo Domingo",
+    "flag": "ug-flag-dominican_republic.svg",
+    "map": "ug-map-dominican_republic.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 177,
+    "name": "Haiti",
+    "capital": "Port-au-Prince",
+    "flag": "ug-flag-haiti.svg",
+    "map": "ug-map-haiti.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 178,
+    "name": "Jamaica",
+    "capital": "Kingston",
+    "flag": "ug-flag-jamaica.svg",
+    "map": "ug-map-jamaica.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 179,
+    "name": "Trinidad and Tobago",
+    "capital": "Port of Spain",
+    "flag": "ug-flag-trinidad_and_tobago.svg",
+    "map": "ug-map-trinidad_and_tobago.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 180,
+    "name": "Bermuda",
+    "map": "ug-map-bermuda.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 181,
+    "name": "Guadeloupe",
+    "map": "ug-map-guadeloupe.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 182,
+    "name": "The Bahamas",
+    "capital": "Nassau",
+    "flag": "ug-flag-the_bahamas.svg",
+    "map": "ug-map-the_bahamas.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 183,
+    "name": "Barbados",
+    "capital": "Bridgetown",
+    "flag": "ug-flag-barbados.svg",
+    "map": "ug-map-barbados.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 184,
+    "name": "Belize",
+    "capital": "Belmopan",
+    "flag": "ug-flag-belize.svg",
+    "map": "ug-map-belize.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 185,
+    "name": "Costa Rica",
+    "capital": "San José",
+    "flag": "ug-flag-costa_rica-blur.svg",
+    "map": "ug-map-costa_rica.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 186,
+    "name": "El Salvador",
+    "capital": "San Salvador",
+    "flag": "ug-flag-el_salvador-blur.svg",
+    "map": "ug-map-el_salvador.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 187,
+    "name": "Guatemala",
+    "capital": "Guatemala City",
+    "flag": "ug-flag-guatemala.svg",
+    "map": "ug-map-guatemala.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 188,
+    "name": "Honduras",
+    "capital": "Tegucigalpa",
+    "flag": "ug-flag-honduras.svg",
+    "map": "ug-map-honduras.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 189,
+    "name": "Nicaragua",
+    "capital": "Managua",
+    "flag": "ug-flag-nicaragua-blur.svg",
+    "map": "ug-map-nicaragua.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 190,
+    "name": "Panama",
+    "capital": "Panama City",
+    "flag": "ug-flag-panama.svg",
+    "map": "ug-map-panama.png",
+    "tags": [4, 9]
+  },
+  {
+    "id": 191,
+    "name": "Antigua and Barbuda",
+    "capital": "St. John's",
+    "flag": "ug-flag-antigua_and_barbuda.svg",
+    "map": "ug-map-antigua_and_barbuda.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 192,
+    "name": "Dominica",
+    "capital": "Roseau",
+    "flag": "ug-flag-dominica.svg",
+    "map": "ug-map-dominica.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 193,
+    "name": "Saint Vincent and the Grenadines",
+    "capital": "Kingstown",
+    "flag": "ug-flag-saint_vincent_and_the_grenadines.svg",
+    "map": "ug-map-saint_vincent_and_the_grenadines.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 194,
+    "name": "Somalia",
+    "capital": "Mogadishu",
+    "flag": "ug-flag-somalia.svg",
+    "map": "ug-map-somalia.png",
+    "tags": [6, 13, 9]
+  },
+  { "id": 195, "name": "Zanzibar", "map": "ug-map-zanzibar.png", "tags": [6] },
+  {
+    "id": 196,
+    "name": "Ghana",
+    "capital": "Accra",
+    "flag": "ug-flag-ghana.svg",
+    "map": "ug-map-ghana.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 197,
+    "name": "Guinea",
+    "capital": "Conakry",
+    "flag": "ug-flag-guinea.svg",
+    "map": "ug-map-guinea.png",
+    "tags": [6, 9]
+  },
+  {
+    "id": 198,
+    "name": "New Zealand",
+    "capital": "Wellington",
+    "flag": "ug-flag-new_zealand.svg",
+    "map": "ug-map-new_zealand.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 199,
+    "name": "French Polynesia",
+    "capital": "Papeete",
+    "flag": "ug-flag-french_polynesia.svg",
+    "map": "ug-map-french_polynesia.png",
+    "tags": [3]
+  },
+  {
+    "id": 200,
+    "name": "Philippines",
+    "capital": "Manila",
+    "flag": "ug-flag-philippines.svg",
+    "map": "ug-map-philippines.png",
+    "tags": [2, 14, 9]
+  },
+  {
+    "id": 201,
+    "name": "Kosovo",
+    "capital": "Pristina",
+    "flag": "ug-flag-kosovo.svg",
+    "map": "ug-map-kosovo.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 202,
+    "name": "Libya",
+    "capital": "Tripoli",
+    "flag": "ug-flag-libya.svg",
+    "map": "ug-map-libya.png",
+    "tags": [6, 10, 9]
+  },
+  {
+    "id": 203,
+    "name": "Palau",
+    "capital": "Ngerulmud",
+    "flag": "ug-flag-palau.svg",
+    "map": "ug-map-palau.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 204,
+    "name": "Saint Lucia",
+    "capital": "Castries",
+    "flag": "ug-flag-saint_lucia.svg",
+    "map": "ug-map-saint_lucia.png",
+    "tags": [15, 4, 9]
+  },
+  { "id": 205, "name": "Bali", "map": "ug-map-bali.png", "tags": [2] },
+  {
+    "id": 206,
+    "name": "Grenada",
+    "capital": "St. George's",
+    "flag": "ug-flag-grenada.svg",
+    "map": "ug-map-grenada.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 207,
+    "name": "British Virgin Islands",
+    "map": "ug-map-british_virgin_islands.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 208,
+    "name": "Turks and Caicos Islands",
+    "map": "ug-map-turks_and_caicos_islands.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 209,
+    "name": "Cayman Islands",
+    "map": "ug-map-cayman_islands.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 210,
+    "name": "Anguilla",
+    "map": "ug-map-anguilla.png",
+    "tags": [15, 4]
+  },
+  { "id": 211, "name": "Azores", "map": "ug-map-azores.png", "tags": [1] },
+  {
+    "id": 212,
+    "name": "Curaçao",
+    "capital": "Willemstad",
+    "flag": "ug-flag-curacao.svg",
+    "map": "ug-map-curacao.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 213,
+    "name": "French Guiana",
+    "map": "ug-map-french_guiana.png",
+    "tags": [5]
+  },
+  {
+    "id": 214,
+    "name": "Gibraltar",
+    "map": "ug-map-gibraltar.png",
+    "tags": [1, 10]
+  },
+  { "id": 215, "name": "Guernsey", "map": "ug-map-guernsey.png", "tags": [1] },
+  {
+    "id": 216,
+    "name": "Isle of Man",
+    "map": "ug-map-isle_of_man.png",
+    "tags": [1]
+  },
+  { "id": 217, "name": "Jersey", "map": "ug-map-jersey.png", "tags": [1] },
+  {
+    "id": 218,
+    "name": "Kiribati",
+    "info": "",
+    "capital": "South Tarawa",
+    "capitalInfo": "",
+    "flag": "ug-flag-kiribati.svg",
+    "map": "ug-map-kiribati.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 219,
+    "name": "Macau",
+    "flag": "ug-flag-macau.svg",
+    "map": "ug-map-macau.png",
+    "tags": [2]
+  },
+  { "id": 220, "name": "Madeira", "map": "ug-map-madeira.png", "tags": [1] },
+  {
+    "id": 221,
+    "name": "Marshall Islands",
+    "capital": "Majuro",
+    "flag": "ug-flag-marshall_islands.svg",
+    "map": "ug-map-marshall_islands.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 222,
+    "name": "Nauru",
+    "info": "Nauru has no official capital; the Yaren District is the de facto capital.",
+    "capital": "Yaren",
+    "capitalInfo": "Nauru has no official capital; the Yaren District is the de facto capital.",
+    "flag": "ug-flag-nauru.svg",
+    "map": "ug-map-nauru.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 223,
+    "name": "New Caledonia",
+    "capital": "Nouméa",
+    "flag": "ug-flag-new_caledonia.svg",
+    "map": "ug-map-new_caledonia.png",
+    "tags": [3]
+  },
+  {
+    "id": 224,
+    "name": "Niue",
+    "capital": "Alofi",
+    "flag": "ug-flag-niue.svg",
+    "map": "ug-map-niue.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 225,
+    "name": "Northern Cyprus",
+    "capital": "North Nicosia",
+    "flag": "ug-flag-northern_cyprus.svg",
+    "map": "ug-map-northern_cyprus.png",
+    "tags": [2, 10, 12, 9]
+  },
+  {
+    "id": 226,
+    "name": "Saint Kitts and Nevis",
+    "capital": "Basseterre",
+    "flag": "ug-flag-saint_kitts_and_nevis.svg",
+    "map": "ug-map-saint_kitts_and_nevis.png",
+    "tags": [15, 4, 9]
+  },
+  {
+    "id": 227,
+    "name": "Samoa",
+    "capital": "Apia",
+    "flag": "ug-flag-samoa.svg",
+    "map": "ug-map-samoa.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 228,
+    "name": "Somaliland",
+    "capital": "Hargeisa",
+    "flag": "ug-flag-somaliland.svg",
+    "map": "ug-map-somaliland.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 229,
+    "name": "South Sudan",
+    "capital": "Juba",
+    "flag": "ug-flag-south_sudan.svg",
+    "map": "ug-map-south_sudan.png",
+    "tags": [6, 13, 9]
+  },
+  {
+    "id": 230,
+    "name": "Tuvalu",
+    "capital": "Funafuti",
+    "flag": "ug-flag-tuvalu.svg",
+    "map": "ug-map-tuvalu.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 231,
+    "name": "United States Virgin Islands",
+    "capital": "Charlotte Amalie",
+    "flag": "ug-flag-united_states_virgin_islands.svg",
+    "map": "ug-map-united_states_virgin_islands.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 232,
+    "name": "Åland Islands",
+    "capital": "Mariehamn",
+    "flag": "ug-flag-aland_islands.svg",
+    "map": "ug-map-aland_islands.png",
+    "tags": [1]
+  },
+  {
+    "id": 233,
+    "name": "South Ossetia",
+    "capital": "Tskhinvali",
+    "flag": "ug-flag-south_ossetia.svg",
+    "map": "ug-map-south_ossetia.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 234,
+    "name": "American Samoa",
+    "map": "ug-map-american_samoa.png",
+    "tags": [3]
+  },
+  {
+    "id": 235,
+    "name": "Northern Mariana Islands",
+    "map": "ug-map-northern_mariana_islands.png",
+    "tags": [3]
+  },
+  {
+    "id": 236,
+    "name": "Aruba",
+    "capital": "Oranjestad",
+    "flag": "ug-flag-aruba.svg",
+    "map": "ug-map-aruba.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 237,
+    "name": "Abkhazia",
+    "capital": "Sukhumi",
+    "flag": "ug-flag-abkhazia.svg",
+    "map": "ug-map-abkhazia.png",
+    "tags": [1, 9]
+  },
+  {
+    "id": 238,
+    "name": "Sint Maarten",
+    "map": "ug-map-sint_maarten.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 239,
+    "name": "Tonga",
+    "capital": "Nukuʻalofa",
+    "flag": "ug-flag-tonga.svg",
+    "map": "ug-map-tonga.png",
+    "tags": [3, 9]
+  },
+  {
+    "id": 240,
+    "name": "Transnistria",
+    "capital": "Tiraspol",
+    "flag": "ug-flag-transnistria.svg",
+    "map": "ug-map-transnistria.png",
+    "tags": [1, 9]
+  },
+  { "id": 241, "name": "Sardinia", "map": "ug-map-sardinia.png", "tags": [1] },
+  {
+    "id": 242,
+    "name": "Kaliningrad Oblast",
+    "map": "ug-map-kaliningrad_oblast.png",
+    "tags": [1]
+  },
+  {
+    "id": 243,
+    "name": "Martinique",
+    "map": "ug-map-martinique.png",
+    "tags": [15, 4]
+  },
+  { "id": 244, "name": "Java", "map": "ug-map-java.png", "tags": [2] },
+  { "id": 245, "name": "Corsica", "map": "ug-map-corsica.png", "tags": [1] },
+  {
+    "id": 246,
+    "name": "European Union",
+    "flag": "ug-flag-european_union.svg",
+    "map": "ug-map-european_union.png",
+    "tags": [1]
+  },
+  {
+    "id": 247,
+    "name": "Gulf of Mexico",
+    "map": "ug-map-gulf_of_mexico.png",
+    "tags": [7]
+  },
+  {
+    "id": 248,
+    "name": "Philippine Sea",
+    "map": "ug-map-philippine_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 249,
+    "name": "Southern Ocean",
+    "map": "ug-map-southern_ocean-nobox.png",
+    "tags": [7]
+  },
+  {
+    "id": 250,
+    "name": "Gulf of Thailand",
+    "map": "ug-map-gulf_of_thailand.png",
+    "tags": [7]
+  },
+  {
+    "id": 251,
+    "name": "Micronesia",
+    "map": "ug-map-micronesia.png",
+    "tags": [3]
+  },
+  {
+    "id": 252,
+    "name": "Pacific Ocean",
+    "map": "ug-map-pacific_ocean-nobox.png",
+    "tags": [7]
+  },
+  {
+    "id": 253,
+    "name": "Atlantic Ocean",
+    "map": "ug-map-atlantic_ocean-nobox.png",
+    "tags": [7]
+  },
+  {
+    "id": 254,
+    "name": "Indian Ocean",
+    "map": "ug-map-indian_ocean-nobox.png",
+    "tags": [7]
+  },
+  {
+    "id": 255,
+    "name": "Arctic Ocean",
+    "map": "ug-map-arctic_ocean-nobox.png",
+    "tags": [7]
+  },
+  {
+    "id": 256,
+    "name": "Hudson Bay",
+    "map": "ug-map-hudson_bay.png",
+    "tags": [7]
+  },
+  {
+    "id": 257,
+    "name": "Labrador Sea",
+    "map": "ug-map-labrador_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 258,
+    "name": "White Sea",
+    "map": "ug-map-white_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 259,
+    "name": "Denmark Strait",
+    "map": "ug-map-denmark_strait.png",
+    "tags": [7]
+  },
+  {
+    "id": 260,
+    "name": "Norwegian Sea",
+    "map": "ug-map-norwegian_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 261,
+    "name": "Baltic Sea",
+    "map": "ug-map-baltic_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 262,
+    "name": "Celtic Sea",
+    "map": "ug-map-celtic_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 263,
+    "name": "English Channel",
+    "map": "ug-map-english_channel.png",
+    "tags": [7]
+  },
+  {
+    "id": 264,
+    "name": "Adriatic Sea",
+    "map": "ug-map-adriatic_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 265,
+    "name": "Bay of Biscay",
+    "map": "ug-map-bay_of_biscay.png",
+    "tags": [7]
+  },
+  {
+    "id": 266,
+    "name": "Black Sea",
+    "map": "ug-map-black_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 267,
+    "name": "Aegean Sea",
+    "map": "ug-map-aegean_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 268,
+    "name": "Balkan Peninsula",
+    "map": "ug-map-balkan_peninsula.png",
+    "tags": [1]
+  },
+  {
+    "id": 269,
+    "name": "Caspian Sea",
+    "map": "ug-map-caspian_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 270,
+    "name": "Mediterranean Sea",
+    "map": "ug-map-mediterranean_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 271,
+    "name": "East Siberian Sea",
+    "map": "ug-map-east_siberian_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 272,
+    "name": "Bering Strait",
+    "map": "ug-map-bering_strait.png",
+    "tags": [7]
+  },
+  {
+    "id": 273,
+    "name": "Arabian Sea",
+    "map": "ug-map-arabian_sea.png",
+    "tags": [7]
+  },
+  { "id": 274, "name": "Red Sea", "map": "ug-map-red_sea.png", "tags": [7] },
+  { "id": 275, "name": "Dead Sea", "map": "ug-map-dead_sea.png", "tags": [7] },
+  {
+    "id": 276,
+    "name": "Bay of Bengal",
+    "map": "ug-map-bay_of_bengal.png",
+    "tags": [7]
+  },
+  {
+    "id": 277,
+    "name": "Sea of Japan",
+    "map": "ug-map-sea_of_japan.png",
+    "tags": [7]
+  },
+  {
+    "id": 278,
+    "name": "Yellow Sea",
+    "map": "ug-map-yellow_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 279,
+    "name": "Coral Sea",
+    "map": "ug-map-coral_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 280,
+    "name": "South China Sea",
+    "map": "ug-map-south_china_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 281,
+    "name": "Tasman Sea",
+    "map": "ug-map-tasman_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 282,
+    "name": "Gulf of Carpentaria",
+    "map": "ug-map-gulf_of_carpentaria.png",
+    "tags": [7]
+  },
+  { "id": 283, "name": "Aral Sea", "map": "ug-map-aral_sea.png", "tags": [7] },
+  {
+    "id": 284,
+    "name": "Persian Gulf",
+    "map": "ug-map-persian_gulf.png",
+    "tags": [7]
+  },
+  {
+    "id": 285,
+    "name": "Caribbean Sea",
+    "map": "ug-map-caribbean_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 286,
+    "name": "Gulf of California",
+    "map": "ug-map-gulf_of_california.png",
+    "tags": [7]
+  },
+  {
+    "id": 287,
+    "name": "Polynesia",
+    "map": "ug-map-polynesia.png",
+    "tags": [3]
+  },
+  {
+    "id": 288,
+    "name": "Melanesia",
+    "map": "ug-map-melanesia.png",
+    "tags": [3]
+  },
+  {
+    "id": 289,
+    "name": "Scandinavia",
+    "map": "ug-map-scandinavia.png",
+    "tags": [1]
+  },
+  {
+    "id": 290,
+    "name": "Sea of Galilee",
+    "map": "ug-map-sea_of_galilee.png",
+    "tags": [7]
+  },
+  { "id": 291, "name": "Sumatra", "map": "ug-map-sumatra.png", "tags": [2] },
+  { "id": 292, "name": "Sicily", "map": "ug-map-sicily.png", "tags": [1] },
+  {
+    "id": 293,
+    "name": "Mayotte",
+    "map": "ug-map-mayotte.png",
+    "tags": [6, 13]
+  },
+  {
+    "id": 294,
+    "name": "Réunion",
+    "map": "ug-map-reunion.png",
+    "tags": [6, 13]
+  },
+  {
+    "id": 295,
+    "name": "Falkland Islands",
+    "map": "ug-map-falkland_islands.png",
+    "tags": [5]
+  },
+  {
+    "id": 296,
+    "name": "Europe",
+    "map": "ug-map-europe-nobox.png",
+    "tags": [8]
+  },
+  {
+    "id": 297,
+    "name": "North America",
+    "map": "ug-map-north_america-nobox.png",
+    "tags": [8]
+  },
+  {
+    "id": 298,
+    "name": "South America",
+    "map": "ug-map-south_america-nobox.png",
+    "tags": [8]
+  },
+  { "id": 299, "name": "Asia", "map": "ug-map-asia-nobox.png", "tags": [8] },
+  {
+    "id": 300,
+    "name": "Africa",
+    "map": "ug-map-africa-nobox.png",
+    "tags": [8]
+  },
+  {
+    "id": 301,
+    "name": "Oceania",
+    "map": "ug-map-oceania-nobox.png",
+    "tags": [8]
+  },
+  {
+    "id": 302,
+    "name": "Antarctica",
+    "map": "ug-map-antarctica-nobox.png",
+    "tags": [8]
+  },
+  {
+    "id": 303,
+    "name": "Saint Martin",
+    "map": "ug-map-saint_martin.png",
+    "tags": [15, 4]
+  },
+  {
+    "id": 304,
+    "name": "Wallis and Futuna",
+    "map": "ug-map-wallis_and_futuna.png",
+    "tags": [3]
+  },
+  {
+    "id": 305,
+    "name": "Akrotiri and Dhekelia",
+    "map": "ug-map-akrotiri_and_dhekelia.png",
+    "tags": [2, 10, 12]
+  },
+  { "id": 306, "name": "Svalbard", "map": "ug-map-svalbard.png", "tags": [1] },
+  { "id": 307, "name": "Hawaii", "map": "ug-map-hawaii.png", "tags": [3] },
+  { "id": 308, "name": "Alaska", "map": "ug-map-alaska.png", "tags": [4] },
+  {
+    "id": 309,
+    "name": "Bougainville",
+    "map": "ug-map-bougainville.png",
+    "tags": [3]
+  },
+  { "id": 310, "name": "Jeju", "map": "ug-map-jeju.png", "tags": [2] },
+  {
+    "id": 311,
+    "name": "Banda Sea",
+    "map": "ug-map-banda_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 312,
+    "name": "Barents Sea",
+    "map": "ug-map-barents_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 313,
+    "name": "Celebes Sea",
+    "map": "ug-map-celebes_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 314,
+    "name": "East China Sea",
+    "map": "ug-map-east_china_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 315,
+    "name": "Gulf of Alaska",
+    "map": "ug-map-gulf_of_alaska.png",
+    "tags": [7]
+  },
+  {
+    "id": 316,
+    "name": "Gulf of Guinea",
+    "map": "ug-map-gulf_of_guinea.png",
+    "tags": [7]
+  },
+  {
+    "id": 317,
+    "name": "North Sea",
+    "map": "ug-map-north_sea.png",
+    "tags": [7]
+  },
+  {
+    "id": 318,
+    "name": "Sea of Okhotsk",
+    "map": "ug-map-sea_of_okhotsk.png",
+    "tags": [7]
+  },
+  { "id": 319, "name": "Timor Sea", "map": "ug-map-timor_sea.png", "tags": [7] }
+]

@@ -22,3 +22,5 @@
 | 01.03.2025 | Add small changes in for improving playing the game                 | 01:00          |
 | 02.03.2025 | Add components for dashboard and login and write simple logic       | 04:00          |
 | 02.03.2025 | Add user authentication and registration and put it into the client | 04:00          |
+| 02.03.2025 | Test out docker and update data from geography master               | 00:30          |
+| 02.03.2025 | Add small test to check weater the data is properly loaded          | 01:00          |
