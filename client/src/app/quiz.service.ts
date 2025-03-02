@@ -13,8 +13,10 @@ import { Category } from './entities/Category';
 export class QuizService {
   private placesRaw: PlaceRaw[];
   private places: Place[];
+  private loadedSuccessfully : boolean;
 
   constructor(private http: HttpClient) {
+    this.loadedSuccessfully = false;
     this.placesRaw = [];
     this.places = [];
     this.loadMain();
@@ -225,9 +227,10 @@ export class QuizService {
         const dataJson = JSON.stringify(data);
         const dataCSV = JSON.stringify(this.places);
         if (dataJson == dataCSV) {
-          console.log('Data is properly loaded')
+          console.log('Data is properly loaded');
+          this.loadedSuccessfully = true;
         } else {
-          console.log('Data is not properly loaded')
+          console.log('Data is not properly loaded');
         }
       },
       error: (err) => {
@@ -237,5 +240,9 @@ export class QuizService {
         console.log('JSON file successfully loaded.');
       },
     });
+  }
+
+  public isLoadedSuccessfully() {
+    return this.loadedSuccessfully;
   }
 }

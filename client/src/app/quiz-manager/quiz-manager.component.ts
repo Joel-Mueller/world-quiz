@@ -68,4 +68,8 @@ export class QuizManagerComponent {
     const mappedTags: Tag[] = this.selectedTags.map((tag) => this.tagMap[tag]);
     this.currentQuiz = this.quizService.getQuiz(mappedTags, selectedFront, selectedBack, this.maxCards);
   }
+
+  loadedSuccessfully() {
+    return this.quizService.isLoadedSuccessfully();
+  }
 }

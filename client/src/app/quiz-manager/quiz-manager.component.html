@@ -1,5 +1,6 @@
 <p>quiz-manager works!</p>
 
+@if (this.loadedSuccessfully()) {
 <div class="quiz-manager">
   @if (currentQuiz) {
   <app-quiz [quiz]="this.currentQuiz"></app-quiz>
@@ -20,7 +21,7 @@
     }
     <legend>Max Cards:</legend>
     <input type="number" [(ngModel)]="maxCards" placeholder="Enter max cards" />
-    
+
     <legend>Select Front and Back</legend>
     <button (click)="startQuiz(Category.NAME, Category.CAPITAL)">
       Name | Capital
@@ -37,3 +38,6 @@
   </fieldset>
   }
 </div>
+} @else {
+<p>⚠️ Places not loaded successfully</p>
+}
