@@ -24,3 +24,5 @@
 | 02.03.2025 | Add user authentication and registration and put it into the client | 04:00          |
 | 02.03.2025 | Test out docker and update data from geography master               | 00:30          |
 | 02.03.2025 | Add small test to check weater the data is properly loaded          | 01:00          |
+| 02.03.2025 | Find a way to make quiz fail if data is not properly loaded         | 00:10          |
+| 02.03.2025 | Add MongoDB to the Authentication and a lot of troubleshooting      | 03:30          |

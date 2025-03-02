@@ -3,43 +3,65 @@ const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 const bcrypt = require("bcryptjs");
 const cors = require("cors");
+const mongoose = require("mongoose");
 
 dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const users = []; // Mock database
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => console.log("MongoDB connected"))
+  .catch(err => console.error("MongoDB connection error:", err));
 
-// Register user
+// User Schema & Model
+const userSchema = new mongoose.Schema({
+    username: { type: String, unique: true, required: true },
+    password: { type: String, required: true }
+});
+
+const User = mongoose.model("User", userSchema);
+
+
 app.post("/register", async (req, res) => {
     const { username, password } = req.body;
     if (username === '' || password === '') {
         return res.status(400).json({ message: "Username or password empty" });
     }
-    const existingUser = users.find((u) => u.username === username);
-    if (existingUser) {
-        return res.status(400).json({ message: "Username already exists" });
+
+    try {
+        const existingUser = await User.findOne({ username });
+        if (existingUser) {
+            return res.status(400).json({ message: "Username already exists" });
+        }
+
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const newUser = await User.create({ username, password: hashedPassword });
+
+        res.json({ message: "User registered successfully", userId: newUser._id });
+    } catch (err) {
+        res.status(500).json({ message: "Error registering user", error: err.message });
     }
-    const hashedPassword = await bcrypt.hash(password, 10);
-    users.push({ username, password: hashedPassword });
-    res.json({ message: "User registered successfully" });
 });
 
-// Login user
 app.post("/login", async (req, res) => {
     const { username, password } = req.body;
-    const user = users.find((u) => u.username === username);
-    
-    if (!user || !(await bcrypt.compare(password, user.password))) {
-        return res.status(401).json({ message: "Invalid credentials" });
-    }
 
-    const token = jwt.sign({ username }, process.env.JWT_SECRET, { expiresIn: "1h" });
-    res.json({ token });
+    try {
+        const user = await User.findOne({ username });
+        if (!user || !(await bcrypt.compare(password, user.password))) {
+            return res.status(401).json({ message: "Invalid credentials" });
+        }
+
+        const token = jwt.sign({ userId: user._id, username }, process.env.JWT_SECRET, { expiresIn: "1h" });
+        res.json({ token, userId: user._id });
+    } catch (err) {
+        res.status(500).json({ message: "Error logging in", error: err.message });
+    }
 });
 
-// Middleware to verify JWT
 const authenticateToken = (req, res, next) => {
     const token = req.headers["authorization"];
     if (!token) return res.status(403).json({ message: "Token required" });
@@ -51,7 +73,6 @@ const authenticateToken = (req, res, next) => {
     });
 };
 
-// Protected route
 app.get("/protected", authenticateToken, (req, res) => {
     res.json({ message: `Hello, ${req.user.username}! This is a protected route.` });
 });

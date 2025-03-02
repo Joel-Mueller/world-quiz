@@ -66,3 +66,47 @@ access secret
 curl -X GET http://localhost:3000/protected \
      -H "Authorization: Bearer <TOKEN>"
 ```
+
+## Run Server locally
+
+Environment variables
+
+```txt
+JWT_SECRET=<SECRET_STRING>
+PORT=3000
+NODE_ENV=production
+MONGO_URI=mongodb://localhost:27017/worldquiz
+```
+
+Docker compose variables
+
+```yml
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:6
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: worldquiz
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: password
+    depends_on:
+      - mongo
+
+volumes:
+  mongo_data:
+```
