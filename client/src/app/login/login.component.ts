@@ -9,15 +9,53 @@ import { AuthenticationService } from '../authentication.service';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
+  registerView : boolean = false;
   username: string = '';
   password: string = '';
+  usernameRegister: string = '';
+  passwordRegister: string = '';
   alert? : string;
 
   constructor(private authenthicationService: AuthenticationService) {}
 
+  openRegisterView() {
+    this.registerView = true;
+    this.clearUsernamePasswordFields();
+  }
+
+  closerRegisterView() {
+    this.registerView = false;
+    this.clearUsernamePasswordFields();
+  }
+
+  clearUsernamePasswordFields() {
+    this.username = '';
+    this.usernameRegister = '';
+    this.password = '';
+    this.passwordRegister = '';
+  }
+
   login() {
-    if (!this.authenthicationService.login(this.username, this.password)) {
-      this.alert = 'authenthication failed';
-    }
+    this.authenthicationService.login(this.username, this.password).subscribe({
+      next: () => {
+        this.alert = 'Login successful!';
+      },
+      error: (err) => {
+        this.alert = 'Login failed!';
+        console.error('Login error:', err);
+      }
+    });
+  }
+
+  register() {
+    this.authenthicationService.register(this.usernameRegister, this.passwordRegister).subscribe({
+      next: (response) => {
+        this.alert = response.message;
+      },
+      error: (err) => {
+        this.alert = 'Registration failed!';
+        console.error('Registration error:', err);
+      }
+    });
   }
 }

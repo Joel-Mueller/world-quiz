@@ -42,26 +42,42 @@ Start a js file
 node dist/app.js
 ```
 
+## Environment variables
+
+Example
+
+```txt
+JWT_SECRET=<secure random string>
+PORT=3000
+```
+
+Generate a secure random string with:
+
+```shell
+openssl rand -hex 32
+```
+
 ## Curl commands to test API
 
-```shell
-curl -X POST http://localhost:3000/quiz \
-     -H "Content-Type: application/json" \
-     -d '{"tags": ["Oceans+Seas", "North_America"], "frontCategory": "Map", "backCategory": "Name+Capital"}'
-```
+Register a user
 
 ```shell
-curl -X POST http://localhost:3000/quiz \
+curl -X POST http://localhost:3000/register \
      -H "Content-Type: application/json" \
-     -d '{"tags": ["Continents"], "frontCategory": "Map", "backCategory": "Name+Capital"}'
+     -d '{"username": "testuser", "password": "password123"}'
 ```
 
-```shell
-curl -X GET http://localhost:3000/quiz/1/card
-```
+login to get jwt
 
 ```shell
-curl -X POST http://localhost:3000/quiz/1/guess \
+curl -X POST http://localhost:3000/login \
      -H "Content-Type: application/json" \
-     -d '{"guessed": true}'
+     -d '{"username": "testuser", "password": "password123"}'
+```
+
+access secret
+
+```shell
+curl -X GET http://localhost:3000/protected \
+     -H "Authorization: Bearer <TOKEN>"
 ```
