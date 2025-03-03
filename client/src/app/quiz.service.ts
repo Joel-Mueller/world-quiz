@@ -231,6 +231,7 @@ export class QuizService {
           this.loadedSuccessfully = true;
         } else {
           console.log('Data is not properly loaded');
+          console.log(dataCSV);
         }
       },
       error: (err) => {

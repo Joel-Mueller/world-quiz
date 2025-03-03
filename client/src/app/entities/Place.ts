@@ -49,8 +49,8 @@ export class PlaceConverter {
       info: this.removeEmptyStrings(p.info),
       capital: this.removeEmptyStrings(p.capital),
       capitalInfo: this.removeEmptyStrings(p.capitalInfo),
-      flag: p.flag ? this.extractHTML(p.flag) : undefined,
-      map: this.extractHTML(p.map),
+      flag: p.flag ? `media/flags/${this.extractHTML(p.flag)}` : undefined,
+      map: `media/maps/${this.extractHTML(p.map)}`,
       tags: p.tag ? this.extractTags(p.tag) : [],
     }));
   }

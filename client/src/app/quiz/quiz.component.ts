@@ -58,10 +58,10 @@ export class QuizComponent {
       return this.currentPlace.capital ? this.currentPlace.capital : "error";
     }
     if (this.quiz.front === Category.MAP) {
-      return this.currentPlace.map ? `media/maps/${this.currentPlace.map}` : "error";
+      return this.currentPlace.map ? this.currentPlace.map : "error";
     }
     if (this.quiz.front === Category.FLAG) {
-      return this.currentPlace.flag ? `media/flags/${this.currentPlace.flag}` : "error";
+      return this.currentPlace.flag ? this.currentPlace.flag : "error";
     }
     return "error";
   }

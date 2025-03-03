@@ -20,14 +20,14 @@
           <p>{{ "ℹ️ " + currentPlace.capitalInfo }}</p>
         }
       }
+      <div>
+        <button (click)="toggleCard()">Flip</button>
+        <button (click)="submitGuess(true)">Right</button>
+        <button (click)="submitGuess(false)">Wrong</button>
+      </div>
+      <p>{{this.quiz.places.length + 1}} Cards left</p>
     } @else {
       <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
     }
   </div>
-  <div>
-    <button (click)="toggleCard()">Flip</button>
-    <button (click)="submitGuess(true)">Right</button>
-    <button (click)="submitGuess(false)">Wrong</button>
-  </div>
-  <p>{{this.quiz.places.length}} Cards left</p>
 </div>
