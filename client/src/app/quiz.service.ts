@@ -14,6 +14,7 @@ export class QuizService {
   private placesRaw: PlaceRaw[];
   private places: Place[];
   private loadedSuccessfully : boolean;
+  private idCounter = 1;
 
   constructor(private http: HttpClient) {
     this.loadedSuccessfully = false;
@@ -96,14 +97,12 @@ export class QuizService {
           .filter((row) => row.length > 0);
         const headers = rows[0].split(',').map((h) => h.trim());
 
-        let idCounter = 1;
-
         this.placesRaw = rows.slice(1).map((row) => {
           const values = row.split(',').map((v) => v.trim());
           const tags = values.slice(4).filter((v) => v.length > 0);
           // console.log(tags.join(','));
           return {
-            id: idCounter++,
+            id: this.idCounter++,
             name: values[0],
             info: undefined,
             capital: undefined,
@@ -216,7 +215,44 @@ export class QuizService {
     // for (const c of this.places) {
     //   console.log(PlaceConverter.toString(c));
     // }
-    this.compareToTestFile();
+    this.readUSStates();
+  }
+
+  readUSStates() {
+    this.http.get('us-states/usa-state-capitals.csv', { responseType: 'text' }).subscribe({
+      next: (data) => {
+        const rows = data
+          .split('\n')
+          .map((row) => row.trim())
+          .filter((row) => row.length > 0);
+        const headers = rows[0].split(',').map((h) => h.trim());
+        rows.slice(1).forEach((row) => {
+          const values = row.split(',').map((v) => v.trim());
+          const nameState = values[0];
+          const capitalState = values[2];
+          const mapState = values[5];
+          const place : Place = {
+              id : this.idCounter++,
+              name : nameState,
+              info : undefined,
+              capital : capitalState,
+              capitalInfo : undefined,
+              flag : undefined,
+              map : `us-states/map/${mapState}`,
+              tags : [Tag.USA_STATES]
+          }
+          this.places.push(place)
+        });
+      },
+      error: (err) => {
+        console.error('Error loading CSV:', err);
+      },
+      complete: () => {
+        //console.log('Country Info CSV file successfully loaded.');
+        //console.log(this.placesRaw);
+        this.compareToTestFile();
+      },
+    });
   }
 
 

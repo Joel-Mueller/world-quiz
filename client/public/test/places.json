@@ -2408,5 +2408,355 @@
     "name": "Timor Sea",
     "map": "media/maps/ug-map-timor_sea.png",
     "tags": [7]
+  },
+  {
+    "id": 320,
+    "name": "Alabama",
+    "capital": "Montgomery",
+    "map": "us-states/map/640px-Alabama_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 321,
+    "name": "Alaska",
+    "capital": "Juneau",
+    "map": "us-states/map/640px-Alaska_in_United_States_(US50)_(+grid)_(W3).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 322,
+    "name": "Arizona",
+    "capital": "Phoenix",
+    "map": "us-states/map/640px-Arizona_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 323,
+    "name": "Arkansas",
+    "capital": "Little Rock",
+    "map": "us-states/map/640px-Arkansas_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 324,
+    "name": "California",
+    "capital": "Sacramento",
+    "map": "us-states/map/640px-California_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 325,
+    "name": "Colorado",
+    "capital": "Denver",
+    "map": "us-states/map/640px-Colorado_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 326,
+    "name": "Connecticut",
+    "capital": "Hartford",
+    "map": "us-states/map/640px-Connecticut_in_United_States_(zoom).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 327,
+    "name": "Delaware",
+    "capital": "Dover",
+    "map": "us-states/map/640px-Delaware_in_United_States_(zoom).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 328,
+    "name": "Florida",
+    "capital": "Tallahassee",
+    "map": "us-states/map/640px-Florida_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 329,
+    "name": "Georgia",
+    "capital": "Atlanta",
+    "map": "us-states/map/640px-Georgia_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 330,
+    "name": "Hawaii",
+    "capital": "Honolulu",
+    "map": "us-states/map/640px-Hawaii_in_United_States_(US50)_(+grid)_(zoom)_(W3).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 331,
+    "name": "Idaho",
+    "capital": "Boise",
+    "map": "us-states/map/640px-Idaho_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 332,
+    "name": "Illinois",
+    "capital": "Springfield",
+    "map": "us-states/map/640px-Illinois_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 333,
+    "name": "Indiana",
+    "capital": "Indianapolis",
+    "map": "us-states/map/640px-Indiana_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 334,
+    "name": "Iowa",
+    "capital": "Des Moines",
+    "map": "us-states/map/640px-Iowa_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 335,
+    "name": "Kansas",
+    "capital": "Topeka",
+    "map": "us-states/map/640px-Kansas_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 336,
+    "name": "Kentucky",
+    "capital": "Frankfort",
+    "map": "us-states/map/640px-Kentucky_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 337,
+    "name": "Louisiana",
+    "capital": "Baton Rouge",
+    "map": "us-states/map/640px-Louisiana_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 338,
+    "name": "Maine",
+    "capital": "Augusta",
+    "map": "us-states/map/640px-Maine_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 339,
+    "name": "Maryland",
+    "capital": "Annapolis",
+    "map": "us-states/map/640px-Maryland_in_United_States_(zoom).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 340,
+    "name": "Massachusetts",
+    "capital": "Boston",
+    "map": "us-states/map/640px-Massachusetts_in_United_States_(zoom).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 341,
+    "name": "Michigan",
+    "capital": "Lansing",
+    "map": "us-states/map/640px-Michigan_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 342,
+    "name": "Minnesota",
+    "capital": "St. Paul",
+    "map": "us-states/map/640px-Minnesota_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 343,
+    "name": "Mississippi",
+    "capital": "Jackson",
+    "map": "us-states/map/640px-Mississippi_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 344,
+    "name": "Missouri",
+    "capital": "Jefferson City",
+    "map": "us-states/map/640px-Missouri_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 345,
+    "name": "Montana",
+    "capital": "Helena",
+    "map": "us-states/map/640px-Montana_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 346,
+    "name": "Nebraska",
+    "capital": "Lincoln",
+    "map": "us-states/map/640px-Nebraska_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 347,
+    "name": "Nevada",
+    "capital": "Carson City",
+    "map": "us-states/map/640px-Nevada_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 348,
+    "name": "New Hampshire",
+    "capital": "Concord",
+    "map": "us-states/map/640px-New_Hampshire_in_United_States_(zoom).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 349,
+    "name": "New Jersey",
+    "capital": "Trenton",
+    "map": "us-states/map/640px-New_Jersey_in_United_States_(zoom).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 350,
+    "name": "New Mexico",
+    "capital": "Santa Fe",
+    "map": "us-states/map/640px-New_Mexico_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 351,
+    "name": "New York",
+    "capital": "Albany",
+    "map": "us-states/map/640px-New_York_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 352,
+    "name": "North Carolina",
+    "capital": "Raleigh",
+    "map": "us-states/map/640px-North_Carolina_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 353,
+    "name": "North Dakota",
+    "capital": "Bismarck",
+    "map": "us-states/map/640px-North_Dakota_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 354,
+    "name": "Ohio",
+    "capital": "Columbus",
+    "map": "us-states/map/640px-Ohio_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 355,
+    "name": "Oklahoma",
+    "capital": "Oklahoma City",
+    "map": "us-states/map/640px-Oklahoma_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 356,
+    "name": "Oregon",
+    "capital": "Salem",
+    "map": "us-states/map/640px-Oregon_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 357,
+    "name": "Pennsylvania",
+    "capital": "Harrisburg",
+    "map": "us-states/map/640px-Pennsylvania_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 358,
+    "name": "Rhode Island",
+    "capital": "Providence",
+    "map": "us-states/map/640px-Rhode_Island_in_United_States_(zoom)_(extra_close).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 359,
+    "name": "South Carolina",
+    "capital": "Columbia",
+    "map": "us-states/map/640px-South_Carolina_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 360,
+    "name": "South Dakota",
+    "capital": "Pierre",
+    "map": "us-states/map/640px-South_Dakota_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 361,
+    "name": "Tennessee",
+    "capital": "Nashville",
+    "map": "us-states/map/640px-Tennessee_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 362,
+    "name": "Texas",
+    "capital": "Austin",
+    "map": "us-states/map/640px-Texas_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 363,
+    "name": "Utah",
+    "capital": "Salt Lake City",
+    "map": "us-states/map/640px-Utah_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 364,
+    "name": "Vermont",
+    "capital": "Montpelier",
+    "map": "us-states/map/640px-Vermont_in_United_States_(zoom).svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 365,
+    "name": "Virginia",
+    "capital": "Richmond",
+    "map": "us-states/map/640px-Virginia_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 366,
+    "name": "Washington",
+    "capital": "Olympia",
+    "map": "us-states/map/640px-Washington_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 367,
+    "name": "West Virginia",
+    "capital": "Charleston",
+    "map": "us-states/map/640px-West_Virginia_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 368,
+    "name": "Wisconsin",
+    "capital": "Madison",
+    "map": "us-states/map/640px-Wisconsin_in_United_States.svg.png",
+    "tags": [16]
+  },
+  {
+    "id": 369,
+    "name": "Wyoming",
+    "capital": "Cheyenne",
+    "map": "us-states/map/640px-Wyoming_in_United_States.svg.png",
+    "tags": [16]
   }
 ]

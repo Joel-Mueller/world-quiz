@@ -6,6 +6,7 @@ Projekt vom Modul Web Programming Lab.
 
 - **Countries, Continents, Oceans and Seas**: Ultimate Geography v5.2 ([Anki Deck](https://ankiweb.net/shared/info/2109889812), [Github Page](https://github.com/anki-geo/ultimate-geography/tree/master))
 - **USA States Capital**: Geo Data Viewer ([CSV File](https://github.com/RandomFractals/geo-data-viewer/blob/master/data/excel/usa-state-capitals.csv), [US States Wikipedia](https://en.wikipedia.org/wiki/U.S._state)) (CSV changed from original)
+- **Canada Provinces and Territories**: ([Canada Provinces and Territories](https://en.wikipedia.org/wiki/Provinces_and_territories_of_Canada))
 
 ## TODO
 
@@ -13,8 +14,6 @@ Projekt vom Modul Web Programming Lab.
 - [ ] Testing
 - [ ] Navigation (Login/Dashboard, Quiz)
 - [ ] Add US States, Canada, Australia and Switzerland
-
-## Envorinment Variables
 
 ## Environment variables
 
