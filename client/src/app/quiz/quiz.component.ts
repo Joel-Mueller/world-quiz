@@ -18,7 +18,6 @@ export class QuizComponent {
   Category = Category;
   showBack: boolean = false;
   currentPlace?: Place;
-  stat?: Stat;
 
   constructor(private apiService: ApiService) {
     this.quizPlaces = [];
@@ -27,14 +26,10 @@ export class QuizComponent {
   ngOnInit() {
     this.quizPlaces = this.quiz.places.slice();
     this.loadCard();
-    this.stat = undefined;
   }
 
   loadCard(): void {
     this.currentPlace = this.quizPlaces.shift();
-    if (this.quizPlaces.length > 0) {
-      this.stat = this.apiService.finishQuiz();
-    }
   }
 
   submitGuess(guessed: boolean): void {
@@ -110,11 +105,19 @@ export class QuizComponent {
     return `You guessed ${this.quiz.places.length} Cards`;
   }
 
+  getStat() {
+    return this.apiService.getCurrentStat();
+  }
+
   loadSummary(): string {
     return `You guessed ${this.quiz.places.length} Cards`;
   }
 
-  getTopFiveAttempts(stat: Stat): string {
+  getTopFiveAttempts(): string {
+    const stat : Stat | undefined = this.getStat();
+    if (stat == undefined) {
+      return 'Error, stats could not get loaded'
+    }
     const filteredAttempts = Object.entries(stat.attempts)
       .map(([key, value]) => ({ key: Number(key), value }))
       .filter(({ value }) => value > 1)

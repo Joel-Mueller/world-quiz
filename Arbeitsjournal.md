@@ -29,3 +29,4 @@
 | 03.03.2025 | Add path of data to the countries for future separation of data source | 01:30          |
 | 03.03.2025 | Collect stats and pass it back to the quiz                             | 01:00          |
 | 03.03.2025 | Add summary after every quiz                                           | 00:30          |
+| 03.03.2025 | Write quiz to database after finished it                               | 01:50          |

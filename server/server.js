@@ -22,7 +22,16 @@ const userSchema = new mongoose.Schema({
     password: { type: String, required: true }
 });
 
+const statSchema = new mongoose.Schema({
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+    front: { type: Object, required: true },
+    back: { type: Object, required: true },
+    attempts: { type: Object, required: true }
+});
+
 const User = mongoose.model("User", userSchema);
+const Stat = mongoose.model("Stat", statSchema);
+
 
 
 app.post("/register", async (req, res) => {
@@ -75,6 +84,28 @@ const authenticateToken = (req, res, next) => {
 
 app.get("/protected", authenticateToken, (req, res) => {
     res.json({ message: `Hello, ${req.user.username}! This is a protected route.` });
+});
+
+app.post("/stats", authenticateToken, async (req, res) => {
+    try {
+        const { front, back, attempts } = req.body;
+
+        if (!front || !back || !attempts) {
+            return res.status(400).json({ message: "Missing stat data" });
+        }
+
+        const newStat = new Stat({
+            userId: req.user.userId,
+            front,
+            back,
+            attempts
+        });
+
+        await newStat.save();
+        res.status(201).json({ message: "Stat saved successfully", stat: newStat });
+    } catch (err) {
+        res.status(500).json({ message: "Error saving stat", error: err.message });
+    }
 });
 
 const PORT = process.env.PORT || 3000;

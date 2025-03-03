@@ -28,10 +28,10 @@
       <p>{{this.quizPlaces.length + 1}} Cards left</p>
     } @else {
       <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
-      @if (this.stat) {
+      @if (getStat()) {
         <p>{{loadSummary()}}</p>
         <br>
-        <p>{{getTopFiveAttempts(this.stat)}}</p>
+        <p>{{getTopFiveAttempts()}}</p>
       }
     }
   </div>

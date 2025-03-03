@@ -58,6 +58,7 @@ export class QuizManagerComponent {
     this.selectedTags = [];
     this.currentQuiz = undefined;
     this.maxCards = undefined;
+    this.apiService.finishQuiz();
   }
 
   startQuiz(selectedFront: Category, selectedBack: Category): void {
