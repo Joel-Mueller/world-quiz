@@ -13,6 +13,14 @@ export class AuthenticationService {
 
   constructor(private http: HttpClient) {}
 
+  public getToken() {
+    return localStorage.getItem(this.tokenKey);
+  }
+
+  public getApiUrl() {
+    return this.apiUrl;
+  }
+
   public login(username: string, password: string): Observable<{ token: string }> {
     return this.http.post<{ token: string }>(`${this.apiUrl}/login`, { username, password }).pipe(
       tap(response => {

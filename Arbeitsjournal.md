@@ -32,3 +32,4 @@
 | 03.03.2025 | Write quiz to database after finished it                               | 01:50          |
 | 03.03.2025 | Add date and tags to the store object and store it in the database     | 00:30          |
 | 03.03.2025 | Read last attempts out of the database                                 | 02:15          |
+| 03.03.2025 | Add usa and canada and fix some bugs                                   | 02:00          |
