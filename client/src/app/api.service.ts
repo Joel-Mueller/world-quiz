@@ -1,30 +1,51 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Stat } from './entities/Stat';
+import { Category } from './entities/Category';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
   private apiUrl = 'http://localhost:3000/quiz';
+  private currentFrontCategory?: Category;
+  private currentBackCategory?: Category;
+  private currentAttempts?: Map<number, number>;
 
   constructor(private http: HttpClient) {}
 
-  startQuiz(tags: string[], frontCategory: string, backCategory: string): Observable<any> {
-    return this.http.post<any>(this.apiUrl, {
-      tags,
-      frontCategory,
-      backCategory
-    });
+  newQuiz(frontCategory: Category, backCategory: Category) {
+    this.currentFrontCategory = frontCategory;
+    this.currentBackCategory = backCategory;
+    this.currentAttempts = new Map<number, number>();
   }
 
-  // getCard(quizId: number): Observable<Card> {
-  //   return this.http.get<Card>(`${this.apiUrl}/${quizId}/card`);
-  // }
+  guessedCard(id: number) {
+    if (!this.currentAttempts) {
+      this.currentAttempts = new Map<number, number>();
+    }
+    if (this.currentAttempts.has(id)) {
+      this.currentAttempts.set(id, this.currentAttempts.get(id)! + 1);
+    } else {
+      this.currentAttempts.set(id, 1);
+    }
+  }
 
-  // submitGuess(quizId: number, guessed: boolean): Observable<any> {
-  //   return this.http.post<any>(`${this.apiUrl}/${quizId}/guess`, { guessed });
-  // }
+  finishQuiz(): Stat | undefined {
+    if (
+      this.currentFrontCategory &&
+      this.currentBackCategory &&
+      this.currentAttempts
+    ) {
+      const stat : Stat = {
+        front: this.currentFrontCategory,
+        back: this.currentBackCategory,
+        attempts: Object.fromEntries(this.currentAttempts),
+      };
+      // TBD send to server
+      return stat;
+    }
+    return undefined;
+  }
 }
-
-  

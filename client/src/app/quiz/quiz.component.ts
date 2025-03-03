@@ -3,12 +3,13 @@ import { Place } from '../entities/Place';
 import { ApiService } from '../api.service';
 import { Quiz } from '../entities/Quiz';
 import { Category } from '../entities/Category';
+import { Stat } from '../entities/Stat';
 
 @Component({
   selector: 'app-quiz',
   imports: [],
   templateUrl: './quiz.component.html',
-  styleUrl: './quiz.component.scss'
+  styleUrl: './quiz.component.scss',
 })
 export class QuizComponent {
   @Input({ required: true })
@@ -16,16 +17,20 @@ export class QuizComponent {
   Category = Category;
   showBack: boolean = false;
   currentPlace?: Place;
+  stat?: Stat;
 
-  constructor() {}
+  constructor(private apiService: ApiService) {}
 
   ngOnInit() {
     this.loadCard();
+    this.stat = undefined;
   }
-
 
   loadCard(): void {
     this.currentPlace = this.quiz.places.shift();
+    if (this.quiz.places.length > 0) {
+      this.stat = this.apiService.finishQuiz();
+    }
   }
 
   submitGuess(guessed: boolean): void {
@@ -34,6 +39,9 @@ export class QuizComponent {
       return;
     }
     this.showBack = false;
+    if (this.currentPlace) {
+      this.apiService.guessedCard(this.currentPlace.id);
+    }
     if (!guessed && this.currentPlace) {
       this.quiz.places.push(this.currentPlace);
     }
@@ -44,42 +52,42 @@ export class QuizComponent {
     this.showBack = !this.showBack;
   }
 
-  getFront() : string {
-    if (!this.currentPlace) return "error";
+  getFront(): string {
+    if (!this.currentPlace) return 'error';
     if (this.quiz.front === Category.NAME_AND_CAPITAL) {
-      return this.currentPlace.capital 
-        ? `${this.currentPlace.name} (${this.currentPlace.capital})` 
+      return this.currentPlace.capital
+        ? `${this.currentPlace.name} (${this.currentPlace.capital})`
         : this.currentPlace.name;
     }
     if (this.quiz.front === Category.NAME) {
       return this.currentPlace.name;
     }
     if (this.quiz.front === Category.CAPITAL) {
-      return this.currentPlace.capital ? this.currentPlace.capital : "error";
+      return this.currentPlace.capital ? this.currentPlace.capital : 'error';
     }
     if (this.quiz.front === Category.MAP) {
-      return this.currentPlace.map ? this.currentPlace.map : "error";
+      return this.currentPlace.map ? this.currentPlace.map : 'error';
     }
     if (this.quiz.front === Category.FLAG) {
-      return this.currentPlace.flag ? this.currentPlace.flag : "error";
+      return this.currentPlace.flag ? this.currentPlace.flag : 'error';
     }
-    return "error";
+    return 'error';
   }
 
-  getBack() : string {
-    if (!this.currentPlace) return "error";
+  getBack(): string {
+    if (!this.currentPlace) return 'error';
     if (this.quiz.back === Category.NAME_AND_CAPITAL) {
-      return this.currentPlace.capital 
-        ? `${this.currentPlace.name} (${this.currentPlace.capital})` 
+      return this.currentPlace.capital
+        ? `${this.currentPlace.name} (${this.currentPlace.capital})`
         : this.currentPlace.name;
     }
     if (this.quiz.back === Category.NAME) {
       return this.currentPlace.name;
     }
     if (this.quiz.back === Category.CAPITAL) {
-      return this.currentPlace.capital ? this.currentPlace.capital : "error";
+      return this.currentPlace.capital ? this.currentPlace.capital : 'error';
     }
-    return "error";
+    return 'error';
   }
 
   @HostListener('document:keydown', ['$event'])

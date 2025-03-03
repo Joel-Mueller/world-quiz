@@ -27,3 +27,4 @@
 | 02.03.2025 | Find a way to make quiz fail if data is not properly loaded            | 00:10          |
 | 02.03.2025 | Add MongoDB to the Authentication and a lot of troubleshooting         | 03:30          |
 | 03.03.2025 | Add path of data to the countries for future separation of data source | 01:30          |
+| 03.03.2025 | Collect stats and pass it back to the quiz                             | 01:00          |
