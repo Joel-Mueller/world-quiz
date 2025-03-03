@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Stat } from './entities/Stat';
 import { Category } from './entities/Category';
 import { HttpHeaders } from '@angular/common/http';
+import { Tag } from './entities/Tag';
 
 @Injectable({
   providedIn: 'root',
@@ -14,13 +15,15 @@ export class ApiService {
   private currentFrontCategory?: Category;
   private currentBackCategory?: Category;
   private currentAttempts?: Map<number, number>;
+  private currentTags?: Tag[];
 
   constructor(private http: HttpClient) {}
 
-  newQuiz(frontCategory: Category, backCategory: Category) {
+  newQuiz(frontCategory: Category, backCategory: Category, tags : Tag[]) {
     this.currentFrontCategory = frontCategory;
     this.currentBackCategory = backCategory;
     this.currentAttempts = new Map<number, number>();
+    this.currentTags = tags;
   }
 
   guessedCard(id: number) {
@@ -38,11 +41,14 @@ export class ApiService {
     if (
       this.currentFrontCategory &&
       this.currentBackCategory &&
-      this.currentAttempts
+      this.currentAttempts &&
+      this.currentTags
     ) {
       const stat: Stat = {
+        date: new Date(),
         front: this.currentFrontCategory,
         back: this.currentBackCategory,
+        tags: this.currentTags,
         attempts: Object.fromEntries(this.currentAttempts),
       };
       return stat;

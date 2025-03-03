@@ -24,10 +24,12 @@ const userSchema = new mongoose.Schema({
 
 const statSchema = new mongoose.Schema({
     userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+    date: { type: Date, required: true },
     front: { type: Object, required: true },
     back: { type: Object, required: true },
-    attempts: { type: Object, required: true }
-});
+    tags: [{ type: Object, required: true }],
+    attempts: { type: Map, of: Number, required: true },
+  });
 
 const User = mongoose.model("User", userSchema);
 const Stat = mongoose.model("Stat", statSchema);
@@ -88,16 +90,18 @@ app.get("/protected", authenticateToken, (req, res) => {
 
 app.post("/stats", authenticateToken, async (req, res) => {
     try {
-        const { front, back, attempts } = req.body;
+        const { front, back, attempts, date, tags } = req.body;
 
-        if (!front || !back || !attempts) {
+        if (!front || !back || !attempts || !tags || !date) {
             return res.status(400).json({ message: "Missing stat data" });
         }
 
         const newStat = new Stat({
             userId: req.user.userId,
+            date,
             front,
             back,
+            tags,
             attempts
         });
 
