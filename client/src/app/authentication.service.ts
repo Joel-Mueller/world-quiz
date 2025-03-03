@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, tap } from 'rxjs';
+import { Observable, tap, BehaviorSubject } from 'rxjs';
 import { jwtDecode } from 'jwt-decode';
 
 @Injectable({
@@ -9,6 +9,7 @@ import { jwtDecode } from 'jwt-decode';
 export class AuthenticationService {
   private apiUrl = 'http://localhost:3000';
   private tokenKey = 'auth_token';
+  private loginStatus = new BehaviorSubject<boolean>(this.isLoggedIn());
 
   constructor(private http: HttpClient) {}
 
@@ -16,6 +17,7 @@ export class AuthenticationService {
     return this.http.post<{ token: string }>(`${this.apiUrl}/login`, { username, password }).pipe(
       tap(response => {
         localStorage.setItem(this.tokenKey, response.token);
+        this.loginStatus.next(true);
       })
     );
   }
@@ -26,18 +28,15 @@ export class AuthenticationService {
 
   public logOut(): void {
     localStorage.removeItem(this.tokenKey);
+    this.loginStatus.next(false);
   }
 
   public isLoggedIn(): boolean {
     return this.isTokenValid();
   }
 
-  public getToken(): string | null {
-    return localStorage.getItem(this.tokenKey);
-  }
-
   private isTokenValid(): boolean {
-    const token = this.getToken();
+    const token = localStorage.getItem(this.tokenKey);
     if (!token) return false;
 
     try {
@@ -56,5 +55,9 @@ export class AuthenticationService {
         }
       })
     );
+  }
+
+  getLoginStatus(): Observable<boolean> {
+    return this.loginStatus.asObservable();
   }
 }

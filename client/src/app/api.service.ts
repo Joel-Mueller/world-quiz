@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Stat } from './entities/Stat';
 import { Category } from './entities/Category';
 import { HttpHeaders } from '@angular/common/http';
@@ -19,7 +19,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  newQuiz(frontCategory: Category, backCategory: Category, tags : Tag[]) {
+  newQuiz(frontCategory: Category, backCategory: Category, tags: Tag[]) {
     this.currentFrontCategory = frontCategory;
     this.currentBackCategory = backCategory;
     this.currentAttempts = new Map<number, number>();
@@ -77,4 +77,13 @@ export class ApiService {
       error: (error) => console.error('Error sending stat:', error),
     });
   }
+
+  getLatestStats(): Observable<Stat[]> {
+    const token = localStorage.getItem(this.tokenKey);
+    console.log('reload dashboard');
+    return this.http.get<Stat[]>(`${this.apiUrl}/latest`, {
+      headers: { Authorization: `Bearer ${token}` }
+    });
+  }
+  
 }

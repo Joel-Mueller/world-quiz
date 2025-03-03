@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI, {
 }).then(() => console.log("MongoDB connected"))
   .catch(err => console.error("MongoDB connection error:", err));
 
-// User Schema & Model
+
 const userSchema = new mongoose.Schema({
     username: { type: String, unique: true, required: true },
     password: { type: String, required: true }
@@ -33,8 +33,6 @@ const statSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 const Stat = mongoose.model("Stat", statSchema);
-
-
 
 app.post("/register", async (req, res) => {
     const { username, password } = req.body;
@@ -111,6 +109,19 @@ app.post("/stats", authenticateToken, async (req, res) => {
         res.status(500).json({ message: "Error saving stat", error: err.message });
     }
 });
+
+app.get("/stats/latest", authenticateToken, async (req, res) => {
+    try {
+        const userId = req.user.userId;
+        const stats = await Stat.find({ userId })
+            .sort({ date: -1 })
+            .limit(100);
+        res.json(stats);
+    } catch (error) {
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+});
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -1,8 +1,12 @@
 <p>dashboard works!</p>
 
-@if (!this.authenticationService.isLoggedIn()) {
+@if (!isLoggedIn()) {
     <app-login></app-login>
 } @else {
     <button (click)="this.authenticationService.logOut()">Log Out</button>
-    <p>dashboard</p>
+    @if (this.stats.length > 0) {
+        <p>{{ this.stats | json }}</p>
+        <br>
+        <p>{{this.stats.length}}</p>
+    }
 }
