@@ -5,7 +5,7 @@ Projekt vom Modul Web Programming Lab.
 ## Data Source Quiz
 
 - **Countries, Continents, Oceans and Seas**: Ultimate Geography v5.2 ([Anki Deck](https://ankiweb.net/shared/info/2109889812), [Github Page](https://github.com/anki-geo/ultimate-geography/tree/master))
-- **USA States Capital**: Geo Data Viewer ([CSV File](https://github.com/RandomFractals/geo-data-viewer/blob/master/data/excel/usa-state-capitals.csv))
+- **USA States Capital**: Geo Data Viewer ([CSV File](https://github.com/RandomFractals/geo-data-viewer/blob/master/data/excel/usa-state-capitals.csv), [US States Wikipedia](https://en.wikipedia.org/wiki/U.S._state)) (CSV changed from original)
 
 ## TODO
 
