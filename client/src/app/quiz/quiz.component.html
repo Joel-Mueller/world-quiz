@@ -25,11 +25,13 @@
         <button (click)="submitGuess(true)">Right</button>
         <button (click)="submitGuess(false)">Wrong</button>
       </div>
-      <p>{{this.quiz.places.length + 1}} Cards left</p>
+      <p>{{this.quizPlaces.length + 1}} Cards left</p>
     } @else {
       <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
       @if (this.stat) {
-        <p>{{this.stat.front}}</p>
+        <p>{{loadSummary()}}</p>
+        <br>
+        <p>{{getTopFiveAttempts(this.stat)}}</p>
       }
     }
   </div>

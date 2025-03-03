@@ -14,21 +14,25 @@ import { Stat } from '../entities/Stat';
 export class QuizComponent {
   @Input({ required: true })
   quiz!: Quiz;
+  quizPlaces: Place[];
   Category = Category;
   showBack: boolean = false;
   currentPlace?: Place;
   stat?: Stat;
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService) {
+    this.quizPlaces = [];
+  }
 
   ngOnInit() {
+    this.quizPlaces = this.quiz.places.slice();
     this.loadCard();
     this.stat = undefined;
   }
 
   loadCard(): void {
-    this.currentPlace = this.quiz.places.shift();
-    if (this.quiz.places.length > 0) {
+    this.currentPlace = this.quizPlaces.shift();
+    if (this.quizPlaces.length > 0) {
       this.stat = this.apiService.finishQuiz();
     }
   }
@@ -43,7 +47,7 @@ export class QuizComponent {
       this.apiService.guessedCard(this.currentPlace.id);
     }
     if (!guessed && this.currentPlace) {
-      this.quiz.places.push(this.currentPlace);
+      this.quizPlaces.push(this.currentPlace);
     }
     this.loadCard();
   }
@@ -92,9 +96,45 @@ export class QuizComponent {
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    if (event.key === 'Enter' || event.key === ' ') {
+    if (event.key === 'Enter' || event.key === ' ' || event.key === '2') {
       event.preventDefault();
       this.submitGuess(true);
     }
+    if (event.key === '1') {
+      event.preventDefault();
+      this.submitGuess(false);
+    }
+  }
+
+  loadCardsCompleted(): string {
+    return `You guessed ${this.quiz.places.length} Cards`;
+  }
+
+  loadSummary(): string {
+    return `You guessed ${this.quiz.places.length} Cards`;
+  }
+
+  getTopFiveAttempts(stat: Stat): string {
+    const filteredAttempts = Object.entries(stat.attempts)
+      .map(([key, value]) => ({ key: Number(key), value }))
+      .filter(({ value }) => value > 1)
+      .sort((a, b) => b.value - a.value)
+      .slice(0, 5);
+
+    if (filteredAttempts.length === 0) {
+      return 'Everything was guessed on the first attempt!';
+    }
+
+    let output = 'Places you struggled the most: ';
+    output += filteredAttempts
+      .map(({ key, value }) => {
+        const place = this.quiz.places.find((p) => p.id === key);
+        return place
+          ? `${place.name} (${value} attempts)`
+          : `Unknown Place (${value} attempts)`;
+      })
+      .join(', ');
+
+    return output;
   }
 }

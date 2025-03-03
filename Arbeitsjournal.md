@@ -28,3 +28,4 @@
 | 02.03.2025 | Add MongoDB to the Authentication and a lot of troubleshooting         | 03:30          |
 | 03.03.2025 | Add path of data to the countries for future separation of data source | 01:30          |
 | 03.03.2025 | Collect stats and pass it back to the quiz                             | 01:00          |
+| 03.03.2025 | Add summary after every quiz                                           | 00:30          |
