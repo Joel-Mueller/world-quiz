@@ -39,7 +39,6 @@ export class LoginComponent {
     this.authenthicationService.login(this.username, this.password).subscribe({
       next: () => {
         this.alert = 'Login successful!';
-        this.authenthicationService.getLoginStatus();
       },
       error: (err) => {
         this.alert = 'Login failed! ' + (err.error?.message || 'An unexpected error occurred.');;
