@@ -63,9 +63,11 @@ export class QuizService {
   }
 
   public finish() {
-    const stat: Stat | undefined = this.getCurrentStat();
-    if (stat) {
-      this.apiService.sendStat(stat);
+    if (this.currentQuizPlaces.length === 0 && !this.currentPlace) {
+      const stat: Stat | undefined = this.getCurrentStat();
+      if (stat) {
+        this.apiService.sendStat(stat);
+      }
     }
     this.currentQuiz = undefined;
     this.currentPlace = undefined;

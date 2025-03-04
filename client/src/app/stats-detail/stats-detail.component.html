@@ -1,0 +1,16 @@
+<div class="stats-container">
+  <h2>Statistics</h2>
+
+  @if (streak > 0) {
+  <div class="streak">
+    <span>🔥 Streak: {{ streak }} days</span>
+  </div>
+  }
+
+  <div><strong>Guessed Today:</strong> {{ guessedToday }}</div>
+  <div><strong>Guessed This Month:</strong> {{ guessedThisMonth }}</div>
+  <div><strong>Stats Today:</strong> {{ statsToday }}</div>
+  <div><strong>Stats This Week:</strong> {{ statsThisWeek }}</div>
+  <div><strong>Stats This Month:</strong> {{ statsThisMonth }}</div>
+  
+</div>

@@ -34,3 +34,4 @@
 | 03.03.2025 | Read last attempts out of the database                                      | 02:15          |
 | 03.03.2025 | Add usa and canada and fix some bugs                                        | 02:00          |
 | 04.03.2025 | Move quiz service to card service, make quiz service new and refactor a lot | 04:00          |
+| 04.03.2025 | Add stat view                                                               | 01:30          |

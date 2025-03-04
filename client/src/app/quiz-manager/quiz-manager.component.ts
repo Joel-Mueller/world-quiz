@@ -1,6 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { QuizComponent } from '../quiz/quiz.component';
-import { ApiService } from '../api.service';
 import { CardService } from '../card.service';
 import { FormsModule } from '@angular/forms';
 import { Tag } from '../entities/Tag';

@@ -5,8 +5,6 @@
 } @else {
     <button (click)="this.authenticationService.logOut()">Log Out</button>
     @if (this.stats.length > 0) {
-        <p>{{ this.stats | json }}</p>
-        <br>
-        <p>{{this.stats.length}}</p>
+        <app-stats-detail [stats]="this.stats"></app-stats-detail>
     }
 }

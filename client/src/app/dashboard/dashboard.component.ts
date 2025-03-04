@@ -5,10 +5,11 @@ import { ApiService } from '../api.service';
 import { Stat } from '../entities/Stat';
 import { Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { StatsDetailComponent } from '../stats-detail/stats-detail.component';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [LoginComponent, CommonModule],
+  imports: [LoginComponent, CommonModule, StatsDetailComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
