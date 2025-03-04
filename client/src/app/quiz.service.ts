@@ -1,285 +1,200 @@
 import { Injectable } from '@angular/core';
-import { Place } from './entities/Place';
-import { PlaceRaw } from './entities/Place';
 import { Quiz } from './entities/Quiz';
-import { PlaceConverter } from './entities/Place';
-import { HttpClient } from '@angular/common/http';
-import { Tag } from './entities/Tag';
+import { Place } from './entities/Place';
+import { CardService } from './card.service';
 import { Category } from './entities/Category';
+import { Tag } from './entities/Tag';
+import { Stat } from './entities/Stat';
+import { ApiService } from './api.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class QuizService {
-  private placesRaw: PlaceRaw[];
-  private places: Place[];
-  private loadedSuccessfully : boolean;
-  private idCounter = 1;
+  private currentQuiz?: Quiz;
+  private currentQuizPlaces: Place[];
+  private currentPlace?: Place;
+  private currentAttempts?: Map<number, number>;
+  private currentTags?: Tag[];
 
-  constructor(private http: HttpClient) {
-    this.loadedSuccessfully = false;
-    this.placesRaw = [];
-    this.places = [];
-    this.loadMain();
+  constructor(
+    private cardService: CardService,
+    private apiService: ApiService
+  ) {
+    this.currentQuizPlaces = [];
   }
 
-  public getQuiz(tags: Tag[], frontCategory: Category, backCategory: Category, maxCount : number | undefined) {
-    return {
-      front: frontCategory,
-      back: backCategory,
-      places: this.getWithFilter(tags, frontCategory, backCategory, maxCount)
-    };
-  }
-
-  // Place Manager
-
-  public getAllPlaces() : Place[] {
-    return this.places.slice();
-  }
-
-  public getWithFilter(tags: Tag[], category1: Category, category2: Category, maxCount : number | undefined): Place[] {
-    let filteredTags = this.filterTags(tags, this.getAllPlaces());
-    let filteredCategory = this.filterCategory(category1, filteredTags);
-    let filteredCategory2 = this.filterCategory(category2, filteredCategory);
-    let shuffled = this.shuffleArray(filteredCategory2);
-    let reduced = this.reduceArray(shuffled, maxCount);
-    return reduced;
-  }
-
-  private filterTags(tags: Tag[], places: Place[]): Place[] {
-    if (tags.includes(Tag.ALL)) return places;
-    return places.filter(place => 
-      place.tags.some(tag => tags.includes(tag))
+  public startQuiz(
+    tags: Tag[],
+    frontCategory: Category,
+    backCategory: Category,
+    maxCount: number | undefined
+  ) {
+    this.currentQuiz = this.cardService.getQuiz(
+      tags,
+      frontCategory,
+      backCategory,
+      maxCount
     );
-  }
-
-  private filterCategory(category: Category, places: Place[]): Place[] {
-    return places.filter((place) => {
-      switch (category) {
-        case Category.NAME:
-          return !!place.name;
-        case Category.CAPITAL:
-          return !!place.capital;
-        case Category.FLAG:
-          return !!place.flag;
-        case Category.MAP:
-          return !!place.map;
-        case Category.NAME_AND_CAPITAL:
-          return !!place.name;
-        default:
-          return false;
-      }
-    });
-  }
-
-  private shuffleArray(array: any[]): any[] {
-    let shuffledArray = [...array];
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    this.currentAttempts = new Map<number, number>();
+    this.currentTags = tags;
+    if (this.currentQuiz) {
+      this.currentQuizPlaces = this.currentQuiz.places.slice();
     }
-    return shuffledArray;
+    this.loadNewCard();
   }
 
-  private reduceArray<T>(arr: T[], size: number | undefined): T[] {
-    if (!size) return arr;
-    return arr.length > size ? arr.slice(0, size) : arr;
+  private loadNewCard() {
+    this.currentPlace = this.currentQuizPlaces.shift();
   }
 
-  // Load the CSV files
-
-  public loadMain() {
-    this.http.get('data/main.csv', { responseType: 'text' }).subscribe({
-      next: (data) => {
-        const rows = data
-          .split('\n')
-          .map((row) => row.trim())
-          .filter((row) => row.length > 0);
-        const headers = rows[0].split(',').map((h) => h.trim());
-
-        this.placesRaw = rows.slice(1).map((row) => {
-          const values = row.split(',').map((v) => v.trim());
-          const tags = values.slice(4).filter((v) => v.length > 0);
-          // console.log(tags.join(','));
-          return {
-            id: this.idCounter++,
-            name: values[0],
-            info: undefined,
-            capital: undefined,
-            capitalInfo: undefined,
-            flag: values[1],
-            map: values[2],
-            tag: tags.join(','),
-          } as PlaceRaw;
-        });
-      },
-      error: (err) => {
-        console.error('Error loading CSV:', err);
-      },
-      complete: () => {
-        // console.log('Main CSV file successfully loaded.');
-        // console.log(this.placesRaw);
-        this.loadCapitals();
-      },
-    });
+  public getCurrentPlace(): Place | undefined {
+    return this.currentPlace;
   }
 
-  public loadCapitals() {
-    this.http.get('data/capital.csv', { responseType: 'text' }).subscribe({
-      next: (data) => {
-        const rows = data
-          .split('\n')
-          .map((row) => row.trim())
-          .filter((row) => row.length > 0);
-        const headers = rows[0].split(',').map((h) => h.trim());
-        rows.slice(1).forEach((row) => {
-          const values = row.split(',').map((v) => v.trim());
-          const name = values[0];
-          const place = this.placesRaw.find((p) => p.name === name);
-          if (place) {
-            place.capital = values[1];
-          }
-        });
-      },
-      error: (err) => {
-        console.error('Error loading CSV:', err);
-      },
-      complete: () => {
-        // console.log('Capital CSV file successfully loaded.');
-        // console.log(this.placesRaw)
-        this.loadCapitalInfo();
-      },
-    });
+  public guessed(guessed: boolean) {
+    if (this.currentPlace) {
+      if (!guessed) {
+        this.currentQuizPlaces.push(this.currentPlace);
+      }
+      this.incrementAttempt(this.currentPlace.id);
+      this.loadNewCard();
+    }
   }
 
-  public loadCapitalInfo() {
-    this.http.get('data/capital_info.csv', { responseType: 'text' }).subscribe({
-      next: (data) => {
-        const rows = data
-          .split('\n')
-          .map((row) => row.trim())
-          .filter((row) => row.length > 0);
-        const headers = rows[0].split(',').map((h) => h.trim());
-        rows.slice(1).forEach((row) => {
-          const values = row.split(',').map((v) => v.trim());
-          const name = values[0];
-          const place = this.placesRaw.find((p) => p.name === name);
-          if (place) {
-            place.capitalInfo = values[1];
-          }
-        });
-      },
-      error: (err) => {
-        console.error('Error loading CSV:', err);
-      },
-      complete: () => {
-        // console.log('Capital Info CSV file successfully loaded.');
-        // console.log(this.placesRaw)
-        this.loadCountryInfo();
-      },
-    });
+  public finish() {
+    const stat: Stat | undefined = this.getCurrentStat();
+    if (stat) {
+      this.apiService.sendStat(stat);
+    }
+    this.currentQuiz = undefined;
+    this.currentPlace = undefined;
+    this.currentQuizPlaces = [];
   }
 
-  public loadCountryInfo() {
-    this.http.get('data/capital_info.csv', { responseType: 'text' }).subscribe({
-      next: (data) => {
-        const rows = data
-          .split('\n')
-          .map((row) => row.trim())
-          .filter((row) => row.length > 0);
-        const headers = rows[0].split(',').map((h) => h.trim());
-        rows.slice(1).forEach((row) => {
-          const values = row.split(',').map((v) => v.trim());
-          const name = values[0];
-          const place = this.placesRaw.find((p) => p.name === name);
-          if (place) {
-            place.info = values[1];
-          }
-        });
-      },
-      error: (err) => {
-        console.error('Error loading CSV:', err);
-      },
-      complete: () => {
-        //console.log('Country Info CSV file successfully loaded.');
-        //console.log(this.placesRaw);
-        this.makePlaces();
-      },
-    });
+  public quizRunning() {
+    if (this.currentQuiz) {
+      return true;
+    }
+    return false;
   }
 
-  public makePlaces() {
-    this.places = PlaceConverter.getPlaces(this.placesRaw);
-    // console.log('Places successfully convertet')
-    // console.log(this.places);
-    // for (const c of this.places) {
-    //   console.log(PlaceConverter.toString(c));
-    // }
-    this.readUSStates();
+  public getFrontCategory(): Category | undefined {
+    if (this.currentQuiz) {
+      return this.currentQuiz.front;
+    }
+    return undefined;
   }
 
-  readUSStates() {
-    this.http.get('us-states/usa-state-capitals.csv', { responseType: 'text' }).subscribe({
-      next: (data) => {
-        const rows = data
-          .split('\n')
-          .map((row) => row.trim())
-          .filter((row) => row.length > 0);
-        const headers = rows[0].split(',').map((h) => h.trim());
-        rows.slice(1).forEach((row) => {
-          const values = row.split(',').map((v) => v.trim());
-          const nameState = values[0];
-          const capitalState = values[2];
-          const mapState = values[5];
-          const place : Place = {
-              id : this.idCounter++,
-              name : nameState,
-              info : undefined,
-              capital : capitalState,
-              capitalInfo : undefined,
-              flag : undefined,
-              map : `us-states/map/${mapState}`,
-              tags : [Tag.USA_STATES]
-          }
-          this.places.push(place)
-        });
-      },
-      error: (err) => {
-        console.error('Error loading CSV:', err);
-      },
-      complete: () => {
-        //console.log('Country Info CSV file successfully loaded.');
-        //console.log(this.placesRaw);
-        this.compareToTestFile();
-      },
-    });
+  public getBackCategory(): Category | undefined {
+    if (this.currentQuiz) {
+      return this.currentQuiz.back;
+    }
+    return undefined;
   }
 
+  public getFront(): string {
+    if (!this.currentPlace || !this.currentQuiz) return 'error';
+    if (this.currentQuiz.front === Category.NAME_AND_CAPITAL) {
+      return this.currentPlace.capital
+        ? `${this.currentPlace.name} (${this.currentPlace.capital})`
+        : this.currentPlace.name;
+    }
+    if (this.currentQuiz.front === Category.NAME) {
+      return this.currentPlace.name;
+    }
+    if (this.currentQuiz.front === Category.CAPITAL) {
+      return this.currentPlace.capital ? this.currentPlace.capital : 'error';
+    }
+    if (this.currentQuiz.front === Category.MAP) {
+      return this.currentPlace.map ? this.currentPlace.map : 'error';
+    }
+    if (this.currentQuiz.front === Category.FLAG) {
+      return this.currentPlace.flag ? this.currentPlace.flag : 'error';
+    }
+    return 'error';
+  }
 
-  public compareToTestFile(): void {
-    const jsonUrl = 'test/places.json';
-    this.http.get(jsonUrl).subscribe({
-      next: (data) => {
-        const dataJson = JSON.stringify(data);
-        const dataCSV = JSON.stringify(this.places);
-        if (dataJson == dataCSV) {
-          console.log('Data is properly loaded');
-          this.loadedSuccessfully = true;
-        } else {
-          console.log('Data is not properly loaded');
-          console.log(dataCSV);
+  public getBack(): string {
+    if (!this.currentPlace || !this.currentQuiz) return 'error';
+    if (this.currentQuiz.back === Category.NAME_AND_CAPITAL) {
+      return this.currentPlace.capital
+        ? `${this.currentPlace.name} (${this.currentPlace.capital})`
+        : this.currentPlace.name;
+    }
+    if (this.currentQuiz.back === Category.NAME) {
+      return this.currentPlace.name;
+    }
+    if (this.currentQuiz.back === Category.CAPITAL) {
+      return this.currentPlace.capital ? this.currentPlace.capital : 'error';
+    }
+    return 'error';
+  }
+
+  public getLentgh() {
+    return this.currentQuizPlaces.length + 1;
+  }
+
+  private incrementAttempt(id: number) {
+    if (!this.currentAttempts) {
+      this.currentAttempts = new Map<number, number>();
+    }
+    if (this.currentAttempts.has(id)) {
+      this.currentAttempts.set(id, this.currentAttempts.get(id)! + 1);
+    } else {
+      this.currentAttempts.set(id, 1);
+    }
+  }
+
+  public getCurrentStat(): Stat | undefined {
+    if (this.currentQuiz && this.currentAttempts && this.currentTags) {
+      const stat: Stat = {
+        date: new Date(),
+        front: this.currentQuiz.front,
+        back: this.currentQuiz.back,
+        tags: this.currentTags,
+        attempts: Object.fromEntries(this.currentAttempts),
+      };
+      return stat;
+    }
+    return undefined;
+  }
+
+  public loadSummary(): string {
+    if (this.currentQuiz) {
+      return `You guessed ${this.currentQuiz.places.length} Cards`;
+    }
+    return 'error, could not count the cards you studied';
+  }
+
+  public getTopFiveAttempts(): string {
+    const stat: Stat | undefined = this.getCurrentStat();
+    if (stat == undefined) {
+      return 'Error, stats could not get loaded';
+    }
+    const filteredAttempts = Object.entries(stat.attempts)
+      .map(([key, value]) => ({ key: Number(key), value }))
+      .filter(({ value }) => value > 1)
+      .sort((a, b) => b.value - a.value)
+      .slice(0, 5);
+
+    if (filteredAttempts.length === 0) {
+      return 'Everything was guessed on the first attempt!';
+    }
+
+    let output = 'Places you struggled the most: ';
+    output += filteredAttempts
+      .map(({ key, value }) => {
+        if (this.currentQuiz) {
+          const place = this.currentQuiz.places.find((p) => p.id === key);
+          return place
+            ? `${place.name} (${value} attempts)`
+            : `Unknown Place (${value} attempts)`;
         }
-      },
-      error: (err) => {
-        console.error('Error loading JSON:', err);
-      },
-      complete: () => {
-        console.log('JSON file successfully loaded.');
-      },
-    });
-  }
+        return 'error';
+      })
+      .join(', ');
 
-  public isLoadedSuccessfully() {
-    return this.loadedSuccessfully;
+    return output;
   }
 }

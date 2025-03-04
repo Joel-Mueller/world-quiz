@@ -5,34 +5,28 @@
 <div class="quiz-card">
   <h2>Quiz</h2>
   <div class="card-content">
-    @if (this.currentPlace) {
-      @if (this.quiz.front == Category.FLAG || this.quiz.front == Category.MAP) {
-        <img [src]="getFront()" />
-      } @else {
-        <p>{{ getFront() }}</p>
-        @if (currentPlace.info) {
-          <p>{{ "ℹ️ " + currentPlace.info }}</p>
-        }
-      }
-      @if (showBack) {
-        <p>{{ getBack() }}</p>
-        @if (currentPlace.capitalInfo) {
-          <p>{{ "ℹ️ " + currentPlace.capitalInfo }}</p>
-        }
-      }
-      <div>
-        <button (click)="toggleCard()">Flip</button>
-        <button (click)="submitGuess(true)">Right</button>
-        <button (click)="submitGuess(false)">Wrong</button>
-      </div>
-      <p>{{this.quizPlaces.length + 1}} Cards left</p>
+    @if (this.currentPlace) { @if (this.frontCategory == Category.FLAG ||
+    this.frontCategory == Category.MAP) {
+    <img [src]="getFront()" />
     } @else {
-      <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
-      @if (getStat()) {
-        <p>{{loadSummary()}}</p>
-        <br>
-        <p>{{getTopFiveAttempts()}}</p>
-      }
+    <p>{{ getFront() }}</p>
+    @if (currentPlace.info) {
+    <p>{{ "ℹ️ " + currentPlace.info }}</p>
+    } } @if (showBack) {
+    <p>{{ getBack() }}</p>
+    @if (currentPlace.capitalInfo) {
+    <p>{{ "ℹ️ " + currentPlace.capitalInfo }}</p>
+    } }
+    <div>
+      <button (click)="toggleCard()">Flip</button>
+      <button (click)="submitGuess(true)">Right</button>
+      <button (click)="submitGuess(false)">Wrong</button>
+    </div>
+    <p>{{ this.getLength() }} Cards left</p>
+    } @else {
+    <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
+    <p>{{ loadSummary() }}</p>
+    <p>{{ getTopFiveAttempts() }}</p>
     }
   </div>
 </div>

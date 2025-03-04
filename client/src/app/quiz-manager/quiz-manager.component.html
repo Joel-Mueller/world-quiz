@@ -2,8 +2,8 @@
 
 @if (this.loadedSuccessfully()) {
 <div class="quiz-manager">
-  @if (currentQuiz) {
-  <app-quiz [quiz]="this.currentQuiz"></app-quiz>
+  @if (quizActive()) {
+  <app-quiz></app-quiz>
   <button (click)="endQuiz()">Go back to menu</button>
   } @else {
   <h2>Start a Quiz</h2>

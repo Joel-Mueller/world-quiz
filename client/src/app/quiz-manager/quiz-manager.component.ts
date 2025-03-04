@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { QuizComponent } from '../quiz/quiz.component';
 import { ApiService } from '../api.service';
-import { QuizService } from '../quiz.service';
+import { CardService } from '../card.service';
 import { FormsModule } from '@angular/forms';
 import { Tag } from '../entities/Tag';
-import { Quiz } from '../entities/Quiz';
 import { Category } from '../entities/Category';
+import { QuizService } from '../quiz.service';
 
 @Component({
   selector: 'app-quiz-manager',
@@ -16,7 +16,6 @@ import { Category } from '../entities/Category';
 export class QuizManagerComponent {
   Category = Category; // Enum has to be exported like this to use it in the html
   selectedTags: string[] = [];
-  currentQuiz?: Quiz;
   maxCards?: number;
 
   tagMap: Record<string, Tag> = {
@@ -44,8 +43,8 @@ export class QuizManagerComponent {
   tagOptions = Object.keys(this.tagMap);
 
   constructor(
-    private apiService: ApiService,
-    private quizService: QuizService
+    private quizService: QuizService,
+    private cardService: CardService
   ) {}
 
   toggleTag(tag: string): void {
@@ -57,11 +56,9 @@ export class QuizManagerComponent {
     }
   }
 
-  endQuiz() {
+  reset() {
     this.selectedTags = [];
-    this.currentQuiz = undefined;
     this.maxCards = undefined;
-    this.apiService.finishQuiz();
   }
 
   startQuiz(selectedFront: Category, selectedBack: Category): void {
@@ -70,11 +67,24 @@ export class QuizManagerComponent {
       return;
     }
     const mappedTags: Tag[] = this.selectedTags.map((tag) => this.tagMap[tag]);
-    this.currentQuiz = this.quizService.getQuiz(mappedTags, selectedFront, selectedBack, this.maxCards);
-    this.apiService.newQuiz(selectedFront, selectedBack, mappedTags);
+    this.quizService.startQuiz(
+      mappedTags,
+      selectedFront,
+      selectedBack,
+      this.maxCards
+    );
+    this.reset();
+  }
+
+  endQuiz() {
+    this.quizService.finish();
   }
 
   loadedSuccessfully() {
-    return this.quizService.isLoadedSuccessfully();
+    return this.cardService.isLoadedSuccessfully();
+  }
+
+  quizActive() {
+    return this.quizService.quizRunning();
   }
 }
