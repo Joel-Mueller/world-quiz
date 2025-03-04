@@ -7,10 +7,18 @@
   </div>
   }
 
-  <div><strong>Guessed Today:</strong> {{ guessedToday }}</div>
-  <div><strong>Guessed This Month:</strong> {{ guessedThisMonth }}</div>
-  <div><strong>Stats Today:</strong> {{ statsToday }}</div>
-  <div><strong>Stats This Week:</strong> {{ statsThisWeek }}</div>
-  <div><strong>Stats This Month:</strong> {{ statsThisMonth }}</div>
+  <div><strong>Cards Guessed Today:</strong> {{ guessedToday }}</div>
+  <div><strong>Cards Guessed This Week:</strong> {{ guessedThisWeek }}</div>
+  <div><strong>Cards Guessed This Month:</strong> {{ guessedThisMonth }}</div>
+  <div><strong>Game Played Today:</strong> {{ statsToday }}</div>
+  <div><strong>Game Played This Week:</strong> {{ statsThisWeek }}</div>
+  <div><strong>Game Played This Month:</strong> {{ statsThisMonth }}</div>
+
+  <h3>All Stats</h3>
+  <ul>
+    @for (stat of statsList; track $index) {
+      <li>{{ stat }}</li>
+    }
+  </ul>
   
 </div>
