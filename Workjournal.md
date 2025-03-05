@@ -39,3 +39,4 @@
 | 05.03.2025 | Add canada states and maps                                                  | 00:30          |
 | 05.03.2025 | Add some basic styles                                                       | 00:30          |
 | 05.03.2025 | Finsh source code and a lot of formatting                                   | 01:30          |
+| 05.03.2025 | Write Arc42 Documentation                                                   | 03:00          |
