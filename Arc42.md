@@ -73,133 +73,154 @@ Zu allen Diagrammen wird eine Beschreibung erwartet. -->
 ### Whitebox Overall System
 
 ```mermaid
-C4Context
+C4Container
   title C4 Model - Context Level
   Person(user, "User", "Interacts with the system")
+  Enterprise_Boundary(b1, "World Quiz System") {
+    System(system, "World Quiz", "The application")
+  }
+  Person(admin, "admin", "Interacts with the system and sees database entry")
+  Rel(user, system, "Uses")
+  Rel(admin, system, "Uses")
+```
+
+### Level 2
+
+```mermaid
+C4Container
+  title C4 Model - Context Level
+  Person(user, "User", "Interacts with the system")
+  Person(admin, "admin", "Interacts with the system and sees database entry")
 
   Enterprise_Boundary(b1, "World Quiz") {
     System(frontend, "Client", "The frontend of the application")
     System(backend, "Server", "The backend of the application")
     SystemDb(database, "Database", "Stores quiz data")
+    System(mongoexpress, "MongoExpress", "Database administration interface")
   }
 
   Rel(user, frontend, "Uses")
+  Rel(admin, frontend, "Uses")
   Rel(frontend, backend, "Communicates with")
   Rel(backend, database, "Reads/Writes data")
+  Rel(admin, mongoexpress, "Administers")
+  Rel(mongoexpress, database, "Manages")
 ```
-
-<!--
-
-TODO: Vollständiges System in seinem Kontext beschreiben.
-
-_**<Overview Diagram>**_
-
-Motivation::
-
-_<text explanation>_
-
-Contained Building Blocks::
-_<Description of contained building block (black boxes)>_
-
-Important Interfaces::
-_<Description of important interfaces>_
-
-
-#### <Name black box 1>
-
-_<Purpose/Responsibility>_
-
-_<Interface(s)>_
-
-_<(Optional) Quality/Performance Characteristics>_
-
-_<(Optional) Directory/File Location>_
-
-_<(Optional) Fulfilled Requirements>_
-
-_<(optional) Open Issues/Problems/Risks>_
-
-#### <Name black box 2>
-
-_<black box template>_
-
-#### <Name black box n>
-
-_<black box template>_
-
-#### <Name interface 1>
-
-...
-
-#### <Name interface m>
-
--->
-
-### Level 2
-
-<!--
-
-// TODO: Sicht auf Module, welche mehrere Komponenten umfassen (z.B. Teilsysteme oder Services).
-
-#### White Box _<building block 1>_
-
-_<white box template>_
-
-#### White Box _<building block 2>_
-
-_<white box template>_
-
-...
-
-#### White Box _<building block m>_
-
-_<white box template>_
-
--->
 
 ### Level 3
 
-<!--
+#### Client
 
-TODO: Pro Modul, welches mehrere Komponenten umfasst ein Unterkapitel: Sicht in das Modul (Teilsystem, Service, etc.) hinein (z.B. Komponentendiagram).
+```mermaid
+C4Component
+  title Client
+
+  Enterprise_Boundary(b1, "Client") {
+
+    Container(AppComponent, "App Component", "Angular")
+
+    Enterprise_Boundary(b2, "Dashboard Boundry") {
+
+        Component(Dashboard, "Dashboard", "Component")
+        Component(Login, "Login", "Component")
+        Component(StatsDetail, "Stats Detail", "Component")
+
+        Rel(Dashboard, Login, "Uses")
+        Rel(Dashboard, StatsDetail, "Uses")
+
+    }
+
+    Enterprise_Boundary(b3, "Service Boundry") {
+        Component(APIService, "API Service", "Service")
+        Component(CardService, "Card Service", "Service")
+        Component(AuthenticationService, "Authentication Service", "Service")
+        Component(QuizService, "Quiz Service", "Service")
+    }
+
+    Enterprise_Boundary(b4, "Quiz Boundry") {
+        Component(Quiz, "Quiz", "Component")
+        Component(QuizManager, "Quiz Manager", "Component")
+        Rel(QuizManager, Quiz, "Uses")
+    }
 
 
-#### White Box <_building block x.1_>
+    Rel(AppComponent, Dashboard, "Uses")
+    Rel(AppComponent, QuizManager, "Uses")
 
-_<white box template>_
+    
+    
+    Rel(Login, AuthenticationService, "Uses")
 
-#### White Box <_building block x.2_>
+    Rel(Dashboard, AuthenticationService, "Uses")
+    Rel(Dashboard, APIService, "Uses")
 
-_<white box template>_
+    Rel(Quiz, QuizService, "Uses")
+    Rel(QuizManager, QuizService, "Uses")
+    Rel(QuizManager, CardService, "Uses")
+  }
+```
 
-#### White Box <_building block y.1_>
+#### Server
 
-_<white box template>_
+```mermaid
+C4Component
+  title Server Application
 
--->
+  Enterprise_Boundary(b1, "Server") {
 
-### Level 4
+    Container(ExpressServer, "Express Server", "Node.js")
 
-<!--
+    Enterprise_Boundary(b2, "Authentication Boundary") {
+        Component(JWTAuthentication, "JWT Authentication", "Middleware")
+        Component(Bcryptjs, "Bcryptjs", "Library")
+        Rel(ExpressServer, JWTAuthentication, "Uses")
+        Rel(JWTAuthentication, Bcryptjs, "Uses")
+    }
 
-// TODO: Pro Komponente ein Unterkapitel: Sicht in die Komponente hinein (z.B. Klassen und Interfaces bei Java).
-// Hinweis: Nur für das Verständnis der Komponente relevante Details angeben.
+    Enterprise_Boundary(b3, "Database Boundary") {
+        Component(MongoDB, "MongoDB", "Database")
+        Component(UserModel, "User Model", "Mongoose Model")
+        Component(StatModel, "Stat Model", "Mongoose Model")
+        Rel(ExpressServer, MongoDB, "Connects to")
+        Rel(MongoDB, UserModel, "Stores data")
+        Rel(MongoDB, StatModel, "Stores data")
+    }
 
-#### White Box <_building block x.1_>
+    Enterprise_Boundary(b4, "API Boundary") {
+        Component(RegisterRoute, "Register Route", "API Route")
+        Component(LoginRoute, "Login Route", "API Route")
+        Component(StatsRoute, "Stats Route", "API Route")
+        Component(ProtectedRoute, "Protected Route", "API Route")
+        Rel(ExpressServer, RegisterRoute, "Handles request")
+        Rel(ExpressServer, LoginRoute, "Handles request")
+        Rel(ExpressServer, StatsRoute, "Handles request")
+        Rel(ExpressServer, ProtectedRoute, "Handles request")
+    }
 
-_<white box template>_
+    Rel(RegisterRoute, UserModel, "Uses")
+    Rel(LoginRoute, UserModel, "Uses")
+    Rel(LoginRoute, JWTAuthentication, "Uses")
+    Rel(StatsRoute, StatModel, "Uses")
+    Rel(StatsRoute, JWTAuthentication, "Uses")
+    Rel(ProtectedRoute, JWTAuthentication, "Uses")
+  }
+```
 
-#### White Box <_building block x.2_>
+#### Database
 
-_<white box template>_
+```mermaid
+C4Component
+  title Database
 
-#### White Box <_building block y.1_>
+  Enterprise_Boundary(b1, "Database") {
+    Component(UserModel, "User Model", "Mongoose")
+    Component(MongoDB, "MongoDB", "Database")
+    Component(StatModel, "Stat Model", "Mongoose")
 
-_<white box template>_
-
--->
-
-<!-- TODO: Wo sinnvoll, Laufzeitsichten (z.B. mittels Sequenzdiagrammen) von interessanten oder kritischen Abläufen dokumentieren. -->
+    Rel(MongoDB, UserModel, "Uses")
+    Rel(MongoDB, StatModel, "Uses")
+  }
+```
 
 ## Laufzeitsicht
 
