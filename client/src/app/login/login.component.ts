@@ -9,12 +9,12 @@ import { AuthenticationService } from '../authentication.service';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  registerView : boolean = false;
+  registerView: boolean = false;
   username: string = '';
   password: string = '';
   usernameRegister: string = '';
   passwordRegister: string = '';
-  alert? : string;
+  alert?: string;
 
   constructor(private authenthicationService: AuthenticationService) {}
 
@@ -41,21 +41,27 @@ export class LoginComponent {
         this.alert = 'Login successful!';
       },
       error: (err) => {
-        this.alert = 'Login failed! ' + (err.error?.message || 'An unexpected error occurred.');;
+        this.alert =
+          'Login failed! ' +
+          (err.error?.message || 'An unexpected error occurred.');
         console.error('Login error:', err);
-      }
+      },
     });
   }
 
   register() {
-    this.authenthicationService.register(this.usernameRegister, this.passwordRegister).subscribe({
-      next: (response) => {
-        this.alert = response.message;
-      },
-      error: (err) => {
-        this.alert = 'Registration failed! ' + (err.error?.message || 'An unexpected error occurred.');
-        console.error('Registration error:', err);
-      }
-    });
+    this.authenthicationService
+      .register(this.usernameRegister, this.passwordRegister)
+      .subscribe({
+        next: (response) => {
+          this.alert = response.message;
+        },
+        error: (err) => {
+          this.alert =
+            'Registration failed! ' +
+            (err.error?.message || 'An unexpected error occurred.');
+          console.error('Registration error:', err);
+        },
+      });
   }
 }

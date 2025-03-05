@@ -8,9 +8,8 @@ describe('QuizManagerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QuizManagerComponent]
-    })
-    .compileComponents();
+      imports: [QuizManagerComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(QuizManagerComponent);
     component = fixture.componentInstance;

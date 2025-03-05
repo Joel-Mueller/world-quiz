@@ -13,3 +13,7 @@ body {
     color: $dark-text;
   }
 }
+
+input, button, label, p {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}

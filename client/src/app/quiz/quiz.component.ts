@@ -1,4 +1,4 @@
-import { Component, Input, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Place } from '../entities/Place';
 import { Category } from '../entities/Category';
 import { QuizService } from '../quiz.service';

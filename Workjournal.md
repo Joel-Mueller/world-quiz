@@ -1,6 +1,6 @@
-# Arbeitsjournal
+# Work Journal
 
-| **Tag**    | **Was**                                                                     | **Zeit** hh:mm |
+| **Day**    | **Description of the Work**                                                 | **Time** hh:mm |
 | ---------- | --------------------------------------------------------------------------- | -------------- |
 | 04.02.2025 | Requirements Engineering                                                    | 01:00          |
 | 05.02.2025 | Plan Architecture Backend                                                   | 01:00          |
@@ -37,3 +37,5 @@
 | 04.03.2025 | Add stat view                                                               | 01:30          |
 | 04.03.2025 | Finish the dashboard for the stats                                          | 01:00          |
 | 05.03.2025 | Add canada states and maps                                                  | 00:30          |
+| 05.03.2025 | Add some basic styles                                                       | 00:30          |
+| 05.03.2025 | Finsh source code and a lot of formatting                                   | 01:30          |

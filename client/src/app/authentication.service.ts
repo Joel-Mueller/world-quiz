@@ -21,17 +21,28 @@ export class AuthenticationService {
     return this.apiUrl;
   }
 
-  public login(username: string, password: string): Observable<{ token: string }> {
-    return this.http.post<{ token: string }>(`${this.apiUrl}/login`, { username, password }).pipe(
-      tap(response => {
-        localStorage.setItem(this.tokenKey, response.token);
-        this.loginStatus.next(true);
-      })
-    );
+  public login(
+    username: string,
+    password: string
+  ): Observable<{ token: string }> {
+    return this.http
+      .post<{ token: string }>(`${this.apiUrl}/login`, { username, password })
+      .pipe(
+        tap((response) => {
+          localStorage.setItem(this.tokenKey, response.token);
+          this.loginStatus.next(true);
+        })
+      );
   }
 
-  public register(username: string, password: string): Observable<{ message: string }> {
-    return this.http.post<{ message: string }>(`${this.apiUrl}/register`, { username, password });
+  public register(
+    username: string,
+    password: string
+  ): Observable<{ message: string }> {
+    return this.http.post<{ message: string }>(`${this.apiUrl}/register`, {
+      username,
+      password,
+    });
   }
 
   public logOut(): void {
@@ -55,14 +66,18 @@ export class AuthenticationService {
     }
   }
 
-  public validateToken(): Observable<{ valid: boolean, username: string }> {
-    return this.http.get<{ valid: boolean, username: string }>(`${this.apiUrl}/validate-token`).pipe(
-      tap(response => {
-        if (!response.valid) {
-          this.logOut();
-        }
-      })
-    );
+  public validateToken(): Observable<{ valid: boolean; username: string }> {
+    return this.http
+      .get<{ valid: boolean; username: string }>(
+        `${this.apiUrl}/validate-token`
+      )
+      .pipe(
+        tap((response) => {
+          if (!response.valid) {
+            this.logOut();
+          }
+        })
+      );
   }
 
   getLoginStatus(): Observable<boolean> {

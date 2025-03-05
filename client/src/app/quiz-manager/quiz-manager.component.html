@@ -1,12 +1,11 @@
 @if (this.loadedSuccessfully()) {
 <div class="quiz-manager">
   @if (quizActive()) {
-  <button (click)="endQuiz()">Go back to menu</button>
-  <br>
   <app-quiz></app-quiz>
+  <br />
+  <button (click)="endQuiz()">Go back to menu</button>
   } @else {
   <h2>Start a Quiz</h2>
-
   <fieldset>
     <legend>Select Tags:</legend>
     @for (tag of tagOptions; track tag) {
@@ -20,17 +19,19 @@
     }
     <legend>Max Cards:</legend>
     <input type="number" [(ngModel)]="maxCards" placeholder="Enter max cards" />
-
-    <legend>Select Front and Back</legend>
+    <legend>Select Front and Back:</legend>
     <button (click)="startQuiz(Category.NAME, Category.CAPITAL)">
       Name | Capital
     </button>
+    <br />
     <button (click)="startQuiz(Category.CAPITAL, Category.NAME)">
       Capital | Name
     </button>
+    <br />
     <button (click)="startQuiz(Category.MAP, Category.NAME_AND_CAPITAL)">
       Map | Name(Capital)
     </button>
+    <br />
     <button (click)="startQuiz(Category.FLAG, Category.NAME_AND_CAPITAL)">
       Flag | Name(Capital)
     </button>

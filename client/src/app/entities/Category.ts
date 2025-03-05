@@ -3,5 +3,5 @@ export enum Category {
   CAPITAL,
   FLAG,
   MAP,
-  NAME_AND_CAPITAL
+  NAME_AND_CAPITAL,
 }

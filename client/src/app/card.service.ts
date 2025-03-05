@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Place } from './entities/Place';
 import { PlaceRaw } from './entities/Place';
-import { Quiz } from './entities/Quiz';
 import { PlaceConverter } from './entities/Place';
 import { HttpClient } from '@angular/common/http';
 import { Tag } from './entities/Tag';
@@ -130,8 +129,6 @@ export class CardService {
         console.error('Error loading CSV:', err);
       },
       complete: () => {
-        // console.log('Main CSV file successfully loaded.');
-        // console.log(this.placesRaw);
         this.loadCapitals();
       },
     });
@@ -158,8 +155,6 @@ export class CardService {
         console.error('Error loading CSV:', err);
       },
       complete: () => {
-        // console.log('Capital CSV file successfully loaded.');
-        // console.log(this.placesRaw)
         this.loadCapitalInfo();
       },
     });
@@ -186,8 +181,6 @@ export class CardService {
         console.error('Error loading CSV:', err);
       },
       complete: () => {
-        // console.log('Capital Info CSV file successfully loaded.');
-        // console.log(this.placesRaw)
         this.loadCountryInfo();
       },
     });
@@ -214,8 +207,6 @@ export class CardService {
         console.error('Error loading CSV:', err);
       },
       complete: () => {
-        //console.log('Country Info CSV file successfully loaded.');
-        //console.log(this.placesRaw);
         this.makePlaces();
       },
     });
@@ -223,11 +214,6 @@ export class CardService {
 
   private makePlaces() {
     this.places = PlaceConverter.getPlaces(this.placesRaw);
-    // console.log('Places successfully convertet')
-    // console.log(this.places);
-    // for (const c of this.places) {
-    //   console.log(PlaceConverter.toString(c));
-    // }
     this.readUSStates();
   }
 
@@ -263,8 +249,6 @@ export class CardService {
           console.error('Error loading CSV:', err);
         },
         complete: () => {
-          //console.log('Country Info CSV file successfully loaded.');
-          //console.log(this.placesRaw);
           this.readCanada();
         },
       });

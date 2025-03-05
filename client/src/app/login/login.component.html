@@ -1,64 +1,70 @@
 @if (!this.registerView) {
 <div class="login-container">
-  <h2>Login</h2>
-  @if (this.alert) {
-  <p>{{ this.alert }}</p>
-  }
-
-  <label for="username">Username:</label>
-  <input
-    type="text"
-    id="username"
-    [(ngModel)]="username"
-    name="username"
-    required
-  />
-
-  <label for="password">Password:</label>
-  <input
-    type="password"
-    id="password"
-    [(ngModel)]="password"
-    name="password"
-    required
-  />
-
-  <button (click)="login()">Login</button>
-
-  <div>
+  <fieldset>
+    <legend>Login</legend>
+    @if (this.alert) {
+    <p>{{ this.alert }}</p>
+    }
+    <label for="username">Username:</label>
+    <br />
+    <input
+      type="text"
+      id="username"
+      [(ngModel)]="username"
+      name="username"
+      required
+    />
+    <br />
+    <label for="password">Password:</label>
+    <br />
+    <input
+      type="password"
+      id="password"
+      [(ngModel)]="password"
+      name="password"
+      required
+    />
+    <br />
+    <button (click)="login()">Login</button>
+    <br />
     <p>Dont have an account?</p>
+    <br />
     <button (click)="openRegisterView()">Register</button>
-  </div>
+    <br />
+  </fieldset>
 </div>
 } @else {
 <div class="register-container">
-  <h2>Register</h2>
-  @if (this.alert) {
-  <p>{{ this.alert }}</p>
-  }
-
-  <label for="reg-username">Username:</label>
-  <input
-    type="text"
-    id="reg-username"
-    [(ngModel)]="usernameRegister"
-    name="username"
-    required
-  />
-
-  <label for="reg-password">Password:</label>
-  <input
-    type="password"
-    id="reg-password"
-    [(ngModel)]="passwordRegister"
-    name="password"
-    required
-  />
-
-  <button (click)="register()">Register</button>
-
-  <br>
-
-  <button (click)="closerRegisterView()">login</button>
+  <fieldset>
+    <legend>Register</legend>
+    @if (this.alert) {
+    <p>{{ this.alert }}</p>
+    }
+    <label for="reg-username">Username:</label>
+    <br />
+    <input
+      type="text"
+      id="reg-username"
+      [(ngModel)]="usernameRegister"
+      name="username"
+      required
+    />
+    <br />
+    <label for="reg-password">Password:</label>
+    <br />
+    <input
+      type="password"
+      id="reg-password"
+      [(ngModel)]="passwordRegister"
+      name="password"
+      required
+    />
+    <br />
+    <button (click)="register()">Register</button>
+    <br />
+    <p>Registration successfully?</p>
+    <br />
+    <button (click)="closerRegisterView()">Login</button>
+  </fieldset>
 </div>
 }

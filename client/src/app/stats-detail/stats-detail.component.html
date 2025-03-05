@@ -1,5 +1,4 @@
 <div class="stats-container">
-  <h2>Statistics</h2>
 
   @if (streak > 0) {
   <div class="streak">
@@ -14,11 +13,10 @@
   <div><strong>Game Played This Week:</strong> {{ statsThisWeek }}</div>
   <div><strong>Game Played This Month:</strong> {{ statsThisMonth }}</div>
 
-  <h3>All Stats</h3>
+  <h3>Recent Quizzes</h3>
   <ul>
     @for (stat of statsList; track $index) {
-      <li>{{ stat }}</li>
+    <li>{{ stat }}</li>
     }
   </ul>
-  
 </div>

@@ -6,9 +6,10 @@
     <button (click)="submitGuess(false)">Wrong</button>
   </div>
   <div class="card-content">
+    @if (this.currentPlace) {
     <p>{{ this.getLength() }} Cards left</p>
-    @if (this.currentPlace) { @if (this.frontCategory == Category.FLAG ||
-    this.frontCategory == Category.MAP) {
+    @if (this.frontCategory == Category.FLAG || this.frontCategory ==
+    Category.MAP) {
     <img [src]="getFront()" />
     } @else {
     <p>{{ getFront() }}</p>
@@ -18,8 +19,7 @@
     <p>{{ getBack() }}</p>
     @if (currentPlace.capitalInfo) {
     <p>{{ "ℹ️ " + currentPlace.capitalInfo }}</p>
-    } }
-    } @else {
+    } } } @else {
     <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
     <p>{{ loadSummary() }}</p>
     <p>{{ getTopFiveAttempts() }}</p>

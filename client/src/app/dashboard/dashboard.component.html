@@ -1,8 +1,9 @@
+<h2>Dashboard</h2>
 @if (!isLoggedIn()) {
-    <app-login></app-login>
-} @else {
-    <button (click)="this.authenticationService.logOut()">Log Out</button>
-    @if (this.stats.length > 0) {
-        <app-stats-detail [stats]="this.stats"></app-stats-detail>
-    }
+<p>Hello, you need an account to see your dashboard</p>
+<app-login></app-login>
+} @else { @if (this.stats.length > 0) {
+<app-stats-detail [stats]="this.stats"></app-stats-detail>
+}
+<button (click)="this.authenticationService.logOut()">Log Out</button>
 }

@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Stat } from './entities/Stat';
-import { Category } from './entities/Category';
 import { HttpHeaders } from '@angular/common/http';
-import { Tag } from './entities/Tag';
 import { AuthenticationService } from './authentication.service';
 
 @Injectable({

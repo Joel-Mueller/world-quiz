@@ -19,28 +19,23 @@ export enum Tag {
   CANADA_STATES,
 }
 
-  //   US_STATES
-  //   Canada_STATES
-  //   SWITZERLAND_CANTON
-  //   AUSTRALIA_STATES
-
 // Used for the CSV parsing
 const tagMap: Record<string, Tag> = {
-  "Europe": Tag.EUROPE,
-  "Asia": Tag.ASIA,
-  "Oceania": Tag.OCEANIA,
-  "North_America": Tag.NORTH_AMERICA,
-  "South_America": Tag.SOUTH_AMERICA,
-  "Africa": Tag.AFRICA,
-  "Oceans+Seas": Tag.OCEANS_AND_SEAS,
-  "Continents": Tag.CONTINENTS,
-  "Sovereign_State": Tag.SOVEREIGN_STATE,
-  "Mediterranean": Tag.MEDITERRANEAN,
-  "European_Union": Tag.EUROPEAN_UNION,
-  "Middle_East": Tag.MIDDLE_EAST,
-  "East_Africa": Tag.EAST_AFRICA,
-  "Southeast_Asia": Tag.SOUTHEAST_ASIA,
-  "Caribbean" : Tag.CARIBBEAN
+  Europe: Tag.EUROPE,
+  Asia: Tag.ASIA,
+  Oceania: Tag.OCEANIA,
+  North_America: Tag.NORTH_AMERICA,
+  South_America: Tag.SOUTH_AMERICA,
+  Africa: Tag.AFRICA,
+  'Oceans+Seas': Tag.OCEANS_AND_SEAS,
+  Continents: Tag.CONTINENTS,
+  Sovereign_State: Tag.SOVEREIGN_STATE,
+  Mediterranean: Tag.MEDITERRANEAN,
+  European_Union: Tag.EUROPEAN_UNION,
+  Middle_East: Tag.MIDDLE_EAST,
+  East_Africa: Tag.EAST_AFRICA,
+  Southeast_Asia: Tag.SOUTHEAST_ASIA,
+  Caribbean: Tag.CARIBBEAN,
 };
 
 export class TagFinder {

@@ -10,118 +10,124 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log("MongoDB connected"))
-  .catch(err => console.error("MongoDB connection error:", err));
-
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 const userSchema = new mongoose.Schema({
-    username: { type: String, unique: true, required: true },
-    password: { type: String, required: true }
+  username: { type: String, unique: true, required: true },
+  password: { type: String, required: true },
 });
 
 const statSchema = new mongoose.Schema({
-    userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-    date: { type: Date, required: true },
-    front: { type: Object, required: true },
-    back: { type: Object, required: true },
-    tags: [{ type: Object, required: true }],
-    attempts: { type: Map, of: Number, required: true },
-  });
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+  date: { type: Date, required: true },
+  front: { type: Object, required: true },
+  back: { type: Object, required: true },
+  tags: [{ type: Object, required: true }],
+  attempts: { type: Map, of: Number, required: true },
+});
 
 const User = mongoose.model("User", userSchema);
 const Stat = mongoose.model("Stat", statSchema);
 
 app.post("/register", async (req, res) => {
-    const { username, password } = req.body;
-    if (username === '' || password === '') {
-        return res.status(400).json({ message: "Username or password empty" });
+  const { username, password } = req.body;
+  if (username === "" || password === "") {
+    return res.status(400).json({ message: "Username or password empty" });
+  }
+
+  try {
+    const existingUser = await User.findOne({ username });
+    if (existingUser) {
+      return res.status(400).json({ message: "Username already exists" });
     }
 
-    try {
-        const existingUser = await User.findOne({ username });
-        if (existingUser) {
-            return res.status(400).json({ message: "Username already exists" });
-        }
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const newUser = await User.create({ username, password: hashedPassword });
 
-        const hashedPassword = await bcrypt.hash(password, 10);
-        const newUser = await User.create({ username, password: hashedPassword });
-
-        res.json({ message: "User registered successfully", userId: newUser._id });
-    } catch (err) {
-        res.status(500).json({ message: "Error registering user", error: err.message });
-    }
+    res.json({ message: "User registered successfully", userId: newUser._id });
+  } catch (err) {
+    res
+      .status(500)
+      .json({ message: "Error registering user", error: err.message });
+  }
 });
 
 app.post("/login", async (req, res) => {
-    const { username, password } = req.body;
+  const { username, password } = req.body;
 
-    try {
-        const user = await User.findOne({ username });
-        if (!user || !(await bcrypt.compare(password, user.password))) {
-            return res.status(401).json({ message: "Invalid credentials" });
-        }
-
-        const token = jwt.sign({ userId: user._id, username }, process.env.JWT_SECRET, { expiresIn: "1h" });
-        res.json({ token, userId: user._id });
-    } catch (err) {
-        res.status(500).json({ message: "Error logging in", error: err.message });
+  try {
+    const user = await User.findOne({ username });
+    if (!user || !(await bcrypt.compare(password, user.password))) {
+      return res.status(401).json({ message: "Invalid credentials" });
     }
+
+    const token = jwt.sign(
+      { userId: user._id, username },
+      process.env.JWT_SECRET,
+      { expiresIn: "1h" }
+    );
+    res.json({ token, userId: user._id });
+  } catch (err) {
+    res.status(500).json({ message: "Error logging in", error: err.message });
+  }
 });
 
 const authenticateToken = (req, res, next) => {
-    const token = req.headers["authorization"];
-    if (!token) return res.status(403).json({ message: "Token required" });
+  const token = req.headers["authorization"];
+  if (!token) return res.status(403).json({ message: "Token required" });
 
-    jwt.verify(token.split(" ")[1], process.env.JWT_SECRET, (err, user) => {
-        if (err) return res.status(403).json({ message: "Invalid token" });
-        req.user = user;
-        next();
-    });
+  jwt.verify(token.split(" ")[1], process.env.JWT_SECRET, (err, user) => {
+    if (err) return res.status(403).json({ message: "Invalid token" });
+    req.user = user;
+    next();
+  });
 };
 
 app.get("/protected", authenticateToken, (req, res) => {
-    res.json({ message: `Hello, ${req.user.username}! This is a protected route.` });
+  res.json({
+    message: `Hello, ${req.user.username}! This is a protected route.`,
+  });
 });
 
 app.post("/stats", authenticateToken, async (req, res) => {
-    try {
-        const { front, back, attempts, date, tags } = req.body;
+  try {
+    const { front, back, attempts, date, tags } = req.body;
 
-        if (!front || !back || !attempts || !tags || !date) {
-            return res.status(400).json({ message: "Missing stat data" });
-        }
-
-        const newStat = new Stat({
-            userId: req.user.userId,
-            date,
-            front,
-            back,
-            tags,
-            attempts
-        });
-
-        await newStat.save();
-        res.status(201).json({ message: "Stat saved successfully", stat: newStat });
-    } catch (err) {
-        res.status(500).json({ message: "Error saving stat", error: err.message });
+    if (!front || !back || !attempts || !tags || !date) {
+      return res.status(400).json({ message: "Missing stat data" });
     }
+
+    const newStat = new Stat({
+      userId: req.user.userId,
+      date,
+      front,
+      back,
+      tags,
+      attempts,
+    });
+
+    await newStat.save();
+    res.status(201).json({ message: "Stat saved successfully", stat: newStat });
+  } catch (err) {
+    res.status(500).json({ message: "Error saving stat", error: err.message });
+  }
 });
 
 app.get("/stats/latest", authenticateToken, async (req, res) => {
-    try {
-        const userId = req.user.userId;
-        const stats = await Stat.find({ userId })
-            .sort({ date: -1 })
-            .limit(100);
-        res.json(stats);
-    } catch (error) {
-        res.status(500).json({ error: "Internal Server Error" });
-    }
+  try {
+    const userId = req.user.userId;
+    const stats = await Stat.find({ userId }).sort({ date: -1 }).limit(100);
+    res.json(stats);
+  } catch (error) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 });
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

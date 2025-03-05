@@ -1,5 +1,5 @@
-import { Tag } from "./Tag";
-import { TagFinder } from "./Tag";
+import { Tag } from './Tag';
+import { TagFinder } from './Tag';
 
 export interface Place {
   id: number;
@@ -23,21 +23,22 @@ export interface PlaceRaw {
   tag?: string;
 }
 
-
 export class PlaceConverter {
   private static extractTags(tagString: string): Tag[] {
-    const tagsString : string[] = tagString.split(',').map(tag => tag.split("::")[1].replace(/"/g, ''));
+    const tagsString: string[] = tagString
+      .split(',')
+      .map((tag) => tag.split('::')[1].replace(/"/g, ''));
     return tagsString
-      .map(tag => TagFinder.getEnumByString(tag))
+      .map((tag) => TagFinder.getEnumByString(tag))
       .filter((tag): tag is Tag => tag !== undefined);
   }
 
   private static extractHTML(html: string): string {
     const match = html.match(/([\w-]+\.(svg|png))/);
-    return match ? match[1] : "error";
+    return match ? match[1] : 'error';
   }
 
-  private static removeEmptyStrings(s : string | undefined) {
+  private static removeEmptyStrings(s: string | undefined) {
     if (s && s === '') return undefined;
     return s;
   }
@@ -57,10 +58,8 @@ export class PlaceConverter {
 
   public static toString(place: Place): string {
     const tags = place.tags
-      .map(tag => TagFinder.getStringByEnum(tag) || "Unknown")
-      .join(", ");
+      .map((tag) => TagFinder.getStringByEnum(tag) || 'Unknown')
+      .join(', ');
     return `Place: ${place.name}, Tags: [${tags}]`;
   }
-
-
 }
