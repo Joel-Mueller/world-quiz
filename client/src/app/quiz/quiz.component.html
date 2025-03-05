@@ -1,10 +1,12 @@
-<p>quiz works!</p>
-<!-- <img src="media/flags/ug-flag-aland_islands.svg" alt="Uganda Flag">
-<img src="media/maps/ug-map-akrotiri_and_dhekelia.png" alt="Akrotiri and Dhekelia Map"> -->
-
 <div class="quiz-card">
   <h2>Quiz</h2>
+  <div>
+    <button (click)="toggleCard()">Flip</button>
+    <button (click)="submitGuess(true)">Right</button>
+    <button (click)="submitGuess(false)">Wrong</button>
+  </div>
   <div class="card-content">
+    <p>{{ this.getLength() }} Cards left</p>
     @if (this.currentPlace) { @if (this.frontCategory == Category.FLAG ||
     this.frontCategory == Category.MAP) {
     <img [src]="getFront()" />
@@ -17,12 +19,6 @@
     @if (currentPlace.capitalInfo) {
     <p>{{ "ℹ️ " + currentPlace.capitalInfo }}</p>
     } }
-    <div>
-      <button (click)="toggleCard()">Flip</button>
-      <button (click)="submitGuess(true)">Right</button>
-      <button (click)="submitGuess(false)">Wrong</button>
-    </div>
-    <p>{{ this.getLength() }} Cards left</p>
     } @else {
     <p class="quiz-finished">🎉 The quiz is done! 🎉</p>
     <p>{{ loadSummary() }}</p>

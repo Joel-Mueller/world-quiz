@@ -1,10 +1,9 @@
-<p>quiz-manager works!</p>
-
 @if (this.loadedSuccessfully()) {
 <div class="quiz-manager">
   @if (quizActive()) {
-  <app-quiz></app-quiz>
   <button (click)="endQuiz()">Go back to menu</button>
+  <br>
+  <app-quiz></app-quiz>
   } @else {
   <h2>Start a Quiz</h2>
 

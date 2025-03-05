@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+$light-background: #ffffff;
+$dark-background: #121212;
+$light-text: #000000;
+$dark-text: #ffffff;
+
+body {
+  background-color: $light-background;
+  color: $light-text;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+}

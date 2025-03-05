@@ -8,17 +8,9 @@ Projekt vom Modul Web Programming Lab.
 - **USA States Capital**: Geo Data Viewer ([CSV File](https://github.com/RandomFractals/geo-data-viewer/blob/master/data/excel/usa-state-capitals.csv), [US States Wikipedia](https://en.wikipedia.org/wiki/U.S._state)) (CSV changed from original)
 - **Canada Provinces and Territories**: ([Canada Provinces and Territories](https://en.wikipedia.org/wiki/Provinces_and_territories_of_Canada))
 
-## TODO
-
-- [ ] Daily with 20 of the day or so
-- [ ] Testing
-- [x] Navigation (Login/Dashboard, Quiz)
-- [ ] Add US States Flags, Canada, Australia and Switzerland
-- [ ] Write arc 42 doc
-
 ## Environment variables
 
-Example
+Generate a `.env` file in the server (`touch server/.env`) and add following input to the file:
 
 ```txt
 JWT_SECRET=<SECRET_STRING>
@@ -27,7 +19,7 @@ NODE_ENV=production
 MONGO_URI=mongodb://mongo:27017/worldquiz
 ```
 
-Generate a secure random string with:
+Generate the `<SECRET_STRING>` string with:
 
 ```shell
 openssl rand -hex 32
