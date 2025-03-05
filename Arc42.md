@@ -42,7 +42,7 @@ Siehe [Requirements](./Requirements.md)
 | **Modul WEB Programming Lab** | Das Projekt ist vom Modul Web Programming Lab, welches im Frühlingssemester 2025 an der Hochschule Luzern durchgeführt wurde.                                                                                                                  |
 | **Hosting**                   | Die anwendung wird Lokal must lokal gehosted werden, und mit möglichst wenig aufwand auch auf einem Server Deployed werden können.                                                                                                             |
 | **Versionierung**             | Die Versionierung wird mit Git gemacht und der Source Code wird auf Github gehosted.                                                                                                                                                           |
-| **Dokumentation**             | Die Dokumentation wird in Markdown geschrieben und ist ebenfalls auf Github ansehbar. gehostet.                                                                                                                                                            |
+| **Dokumentation**             | Die Dokumentation wird in Markdown geschrieben und ist ebenfalls auf Github ansehbar.                                                                                                                                                          |
 
 ## Kontextabgrenzung
 
@@ -255,7 +255,7 @@ sequenceDiagram
     end
 ```
 
-Dieses Flussdiagramm zeigt zwei Hauptprozesse: die Registrierung und die Anmeldung eines Benutzers. 
+Dieses Flussdiagramm zeigt zwei Hauptprozesse: die Registrierung und die Anmeldung eines Benutzers.
 
 Der Client sendet eine POST-Anfrage mit Benutzername und Passwort an den Server. Der Server überprüft mittels MongoDB, ob der Benutzername bereits existiert. Wenn der Benutzer nicht existiert, wird ein neuer Benutzer mit dem Benutzernamen und dem gehashten Passwort in der Datenbank angelegt und der Server antwortet dem Client mit einer Erfolgsmeldung und der Benutzer-ID. Wenn der Benutzername jedoch bereits existiert, gibt der Server eine Fehlermeldung zurück.
 
@@ -282,27 +282,25 @@ C4Deployment
     }
 ```
 
-Auf einem Webserver werden vier Container bereitgestellt: der **Frontend Container** (Angular), der die Benutzeroberfläche für die Interaktion mit der Anwendung bereitstellt, der **Backend Container** (Node.js API), der die Geschäftslogik verarbeitet und eine REST API bereitstellt, der **MongoDB Container**, der die Daten der Anwendung speichert, und der **Mongo Express Container**, der eine webbasierte Administrationsoberfläche für MongoDB bereitstellt. Der Backend-Container kommuniziert mit der MongoDB für Datenoperationen und hat auch administrativen Zugriff auf die Datenbank über Mongo Express. Das Frontend interagiert mit dem Backend über die REST API und Mongo Express verbindet sich direkt mit MongoDB für die Administration. Diese Konfiguration gewährleistet eine gut strukturierte und skalierbare Anwendung.
+Auf einem Webserver werden vier Container bereitgestellt: der **Frontend Container** (Angular), der die Benutzeroberfläche für die Interaktion mit der Anwendung bereitstellt, der **Backend Container** (Node.js API), der die Geschäftslogik verarbeitet und eine REST API bereitstellt, der **MongoDB Container**, der die Daten der Anwendung speichert, und der **Mongo Express Container**, der eine webbasierte Administrationsoberfläche für MongoDB bereitstellt. Der Backend-Container kommuniziert mit der MongoDB für Datenoperationen und dem Frontend. Das Frontend interagiert mit dem Backend über die REST API und Mongo Express verbindet sich direkt mit MongoDB für die Administration.
 
 ### API
 
-| Methode | Endpoint         | Beschreibung                                                                                          |
-|---------|------------------|-------------------------------------------------------------------------------------------------------|
-| POST    | /register        | Registriert einen neuen Benutzer mit `username` und `password`. Gibt eine Erfolgsmeldung und Benutzer-ID zurück. |
-| POST    | /login           | Meldet einen Benutzer an, indem `username` und `password` überprüft werden. Gibt ein JWT-Token für die Authentifizierung zurück. |
-| GET     | /protected       | Ein geschützter Endpunkt, der ein gültiges JWT-Token erfordert. Ist für das Testen vom JWT gedacht. |
-| POST    | /stats           | Speichert Benutzerdaten wie `front`, `back`, `attempts`, `date` und `tags`. Erfordert ein JWT-Token. |
-| GET     | /stats/latest    | Ruft die letzten 100 Statistiken für den authentifizierten Benutzer ab. Erfordert ein JWT-Token. |
+| Methode | Endpoint      | Beschreibung                                                                                                                     |
+| ------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| POST    | /register     | Registriert einen neuen Benutzer mit `username` und `password`. Gibt eine Erfolgsmeldung und Benutzer-ID zurück.                 |
+| POST    | /login        | Meldet einen Benutzer an, indem `username` und `password` überprüft werden. Gibt ein JWT-Token für die Authentifizierung zurück. |
+| GET     | /protected    | Ein geschützter Endpunkt, der ein gültiges JWT-Token erfordert. Ist für das Testen vom JWT gedacht.                              |
+| POST    | /stats        | Speichert Benutzerdaten wie `front`, `back`, `attempts`, `date` und `tags`. Erfordert ein JWT-Token.                             |
+| GET     | /stats/latest | Ruft die letzten 100 Statistiken für den authentifizierten Benutzer ab. Erfordert ein JWT-Token.                                 |
 
 ## Querschnittsthemen
 
-- Sicherheit: Ein zentrales Querschnittsthema ist die Sicherheit der Anwendung. Dies umfasst die Implementierung von Authentifizierungsmechanismen wie JWT (JSON Web Tokens) für die Benutzeranmeldung sowie die sichere Speicherung und Verarbeitung von Passwörtern (mittels Bcrypt). Die Datensicherheit wird durch den Zugriffsschutz der MongoDB-Datenbank und die Verwendung verschlüsselter Verbindungen beim Datenaustausch gewährleistet.
+- Sicherheit: Dies umfasst die Implementierung von Authentifizierungsmechanismen wie JWT (JSON Web Tokens) für die Benutzeranmeldung sowie die sichere Speicherung und Verarbeitung von Passwörtern (mittels Bcrypt). Die Datensicherheit wird durch den Zugriffsschutz der MongoDB-Datenbank und die Verwendung verschlüsselter Verbindungen beim Datenaustausch gewährleistet.
 
-- Performance: Für eine gute Performance müssen sowohl das Frontend als auch das Backend optimiert werden. Dies betrifft vor allem die Ladezeiten des Frontends sowie die schnelle und effiziente Datenabfrage im Backend. Hier spielt MongoDB als NoSQL-Datenbank eine Rolle, da sie schnell und flexibel auf grosse Datenmengen zugreifen kann.
+- Performance: Für eine gute Performance müssen sowohl das Frontend als auch das Backend optimiert werden. Dies betrifft vor allem die Ladezeiten des Frontends sowie die schnelle und effiziente Datenabfrage im Backend. Hier spielt MongoDB als NoSQL-Datenbank eine Rolle, da sie nicht so schnell und flexibel auf grosse Datenmengen zugreifen kann.
 
-- Fehlerbehandlung und Protokollierung: Ein weiteres Querschnittsthema ist die robuste Fehlerbehandlung. Fehler müssen im Backend korrekt behandelt und an den Client kommuniziert werden. Auch ein aussagekräftiges Logging, insbesondere in der Backend-API, ist notwendig, um Probleme schnell identifizieren und beheben zu können.
-
-- Usability und Barrierefreiheit: Ein benutzerfreundliches Design ist für das Frontend von grosser Bedeutung. Insbesondere sollten die Quizfragen für den Nutzer klar verständlich und die Benutzeroberfläche intuitiv bedienbar sein. Einfache Interaktionen und Feedback-Mechanismen sind notwendig, damit der Nutzer schnell zu den gewünschten Informationen gelangt.
+- Usability und Barrierefreiheit: Ein benutzerfreundliches Design ist für das Frontend von grosser Bedeutung. Insbesondere sollten die Quizfragen für den Nutzer klar verständlich und die Benutzeroberfläche intuitiv bedienbar sein. Einfache Interaktionen und Feedback-Mechanismen sind notwendig, damit der Nutzer schnell zu den gewünschten Informationen gelangt. Die Berierrenfreiheit wurde leider aus zeitlichen Gründen etwas vernachlässigt.
 
 ## Entwurfsentscheide
 
@@ -316,8 +314,6 @@ Siehe [Requirements](./Requirements.md)
 
 ## Risiken und technische Schulden
 
-- Technische Schulden: Diese entstehen oft durch schnelle und nicht nachhaltige Implementierungen. Ein Beispiel in diesem Projekt könnte der schnelle Wechsel von einer Mock-Datenbank zu einer echten MongoDB-Datenbank sein, ohne ausreichende Testabdeckung oder Performancetests durchzuführen. Solche Entscheidungen können später zu unerwarteten Problemen wie Dateninkonsistenzen oder Performanceeinbussen führen.
-
 - Komplexität des Systems: Die Implementierung mehrerer Schichten (Frontend, Backend, Datenbank) und deren Kommunikation kann die Komplexität erhöhen. Dies bedeutet, dass mit zunehmender Funktionalität die Wartung schwieriger wird, wenn nicht regelmässig Refaktorisierungen und Optimierungen durchgeführt werden.
 
 - Skalierbarkeit: Das System ist derzeit auf eine lokale Umgebung ausgerichtet, was die Skalierbarkeit einschränken könnte, insbesondere wenn die Anzahl der Nutzer stark ansteigt. Ein Risiko ist die mögliche Verschlechterung der Performance bei hoher Last, wenn keine ausreichenden Massnahmen zur Lastverteilung oder Caching-Techniken implementiert werden.
@@ -326,11 +322,13 @@ Siehe [Requirements](./Requirements.md)
 
 - Sicherheit: Ein weiteres Risiko ist die mangelnde Absicherung von Daten und APIs. Wenn Sicherheitsmechanismen wie JWT oder Passwortschutz nicht korrekt implementiert oder gewartet werden, kann dies zu unberechtigten Zugriffen und Datenlecks führen.
 
+- Testing: Aus Zeitlichen gründen wurde nicht viele Tests geschrieben. Dies sollte bei einer Weiterentwicklung auf jeden fall nachgeholt werden.
+
 ### Reflextion
 
-Ich habe bei diesem Projekt viel über das Frontend gelernt, vor allem über TypeScript, JWT und Angular. Es war eine Herausforderung mit JavaScript oder TypeScript im Backend zu arbeiten, da ich lieber mit vertrauten Technologien wie Java oder Python gearbeitet hätte. So hätte ich die gewonnene Zeit im Frontend nutzen können. 
+Ich habe bei diesem Projekt viel über das Frontend gelernt, vor allem über TypeScript, JWT und Angular. Es war eine Herausforderung mit JavaScript oder TypeScript im Backend zu arbeiten, da ich lieber mit vertrauten Technologien wie Java oder Python gearbeitet hätte. So hätte ich die gewonnene Zeit im Frontend nutzen können.
 
-Trotzdem war es eine wertvolle Erfahrung, da ich gezwungen war, neue Konzepte und Frameworks zu lernen. Besonders spannend fand ich die Arbeit mit APIs, MongoDB und JSON-Datenmodellen sowie die Implementierung der JWT-Authentifizierung. Dies hat mein Verständnis für Websicherheit und Benutzerdatenmanagement vertieft. 
+Trotzdem war es eine wertvolle Erfahrung, da ich gezwungen war, neue Konzepte und Frameworks zu lernen. Besonders spannend fand ich die Arbeit mit APIs, MongoDB und JSON-Datenmodellen sowie die Implementierung der JWT-Authentifizierung. Dies hat mein Verständnis für Websicherheit und Benutzerdatenmanagement vertieft.
 
 Obwohl das Backend nicht meine bevorzugte Sprache war, habe ich viel darüber gelernt, wie man APIs strukturiert und Datenbanken verwaltet. Die Arbeit mit Angular und die Integration von Frontend und Backend haben mir geholfen, meine Fähigkeiten in der Entwicklung von interaktiven Webanwendungen zu verbessern. Alles in allem hat mir das Projekt geholfen, meine Webentwicklungsfähigkeiten zu erweitern und neue Technologien zu entdecken.
 
