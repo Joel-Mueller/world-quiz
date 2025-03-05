@@ -36,3 +36,4 @@
 | 04.03.2025 | Move quiz service to card service, make quiz service new and refactor a lot | 04:00          |
 | 04.03.2025 | Add stat view                                                               | 01:30          |
 | 04.03.2025 | Finish the dashboard for the stats                                          | 01:00          |
+| 05.03.2025 | Add canada states and maps                                                  | 00:30          |

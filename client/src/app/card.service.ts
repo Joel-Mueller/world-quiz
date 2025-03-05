@@ -265,6 +265,43 @@ export class CardService {
         complete: () => {
           //console.log('Country Info CSV file successfully loaded.');
           //console.log(this.placesRaw);
+          this.readCanada();
+        },
+      });
+  }
+
+  readCanada() {
+    this.http
+      .get('canada-states/canada-states.csv', { responseType: 'text' })
+      .subscribe({
+        next: (data) => {
+          const rows = data
+            .split('\n')
+            .map((row) => row.trim())
+            .filter((row) => row.length > 0);
+          const headers = rows[0].split(',').map((h) => h.trim());
+          rows.slice(1).forEach((row) => {
+            const values = row.split(',').map((v) => v.trim());
+            const nameState = values[0];
+            const capitalState = values[1];
+            const mapState = values[2];
+            const place: Place = {
+              id: this.idCounter++,
+              name: nameState,
+              info: undefined,
+              capital: capitalState,
+              capitalInfo: undefined,
+              flag: undefined,
+              map: `canada-states/map/${mapState}`,
+              tags: [Tag.CANADA_STATES],
+            };
+            this.places.push(place);
+          });
+        },
+        error: (err) => {
+          console.error('Error loading CSV:', err);
+        },
+        complete: () => {
           this.compareToTestFile();
         },
       });

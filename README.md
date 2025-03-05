@@ -12,8 +12,9 @@ Projekt vom Modul Web Programming Lab.
 
 - [ ] Daily with 20 of the day or so
 - [ ] Testing
-- [ ] Navigation (Login/Dashboard, Quiz)
-- [ ] Add US States, Canada, Australia and Switzerland
+- [x] Navigation (Login/Dashboard, Quiz)
+- [ ] Add US States Flags, Canada, Australia and Switzerland
+- [ ] Write arc 42 doc
 
 ## Environment variables
 

@@ -36,7 +36,6 @@ export class QuizManagerComponent {
     '🏖️ Caribbean': Tag.CARIBBEAN,
     '🇺🇸 USA States': Tag.USA_STATES,
     '🇨🇦 Canada Provinces and Territories': Tag.CANADA_STATES,
-    '🇦🇺 Australia ???': Tag.AUSTRALIA_STATES,
   };
 
   tagOptions = Object.keys(this.tagMap);

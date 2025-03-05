@@ -2758,5 +2758,96 @@
     "capital": "Cheyenne",
     "map": "us-states/map/640px-Wyoming_in_United_States.svg.png",
     "tags": [16]
+  },
+  {
+    "id": 370,
+    "name": "Ontario",
+    "capital": "Toronto",
+    "map": "canada-states/map/568px-Ontario_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 371,
+    "name": "Quebec",
+    "capital": "Quebec City",
+    "map": "canada-states/map/568px-Quebec_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 372,
+    "name": "Nova Scotia",
+    "capital": "Halifax",
+    "map": "canada-states/map/568px-Nova_Scotia_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 373,
+    "name": "New Brunswick",
+    "capital": "Fredericton",
+    "map": "canada-states/map/568px-New_Brunswick_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 374,
+    "name": "Manitoba",
+    "capital": "Winnipeg",
+    "map": "canada-states/map/568px-Manitoba_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 375,
+    "name": "British Columbia",
+    "capital": "Victoria",
+    "map": "canada-states/map/568px-British_Columbia_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 376,
+    "name": "Prince Edward Island",
+    "capital": "Charlottetown",
+    "map": "canada-states/map/568px-Prince_Edward_Island_in_Canada_(special_marker)_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 377,
+    "name": "Saskatchewan",
+    "capital": "Regina",
+    "map": "canada-states/map/568px-Saskatchewan_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 378,
+    "name": "Alberta",
+    "capital": "Edmonton",
+    "map": "canada-states/map/568px-Alberta_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 379,
+    "name": "Newfoundland and Labrador",
+    "capital": "St. John's",
+    "map": "canada-states/map/568px-Newfoundland_and_Labrador_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 380,
+    "name": "Northwest Territories",
+    "capital": "Yellowknife",
+    "map": "canada-states/map/568px-Northwest_Territories_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 381,
+    "name": "Yukon",
+    "capital": "Whitehorse",
+    "map": "canada-states/map/568px-Yukon_in_Canada_2.svg.png",
+    "tags": [17]
+  },
+  {
+    "id": 382,
+    "name": "Nunavut",
+    "capital": "Iqaluit",
+    "map": "canada-states/map/568px-Nunavut_in_Canada_2.svg.png",
+    "tags": [17]
   }
 ]

@@ -17,7 +17,6 @@ export enum Tag {
   CARIBBEAN,
   USA_STATES,
   CANADA_STATES,
-  AUSTRALIA_STATES,
 }
 
   //   US_STATES
