@@ -72,6 +72,22 @@ Zu allen Diagrammen wird eine Beschreibung erwartet. -->
 
 ### Whitebox Overall System
 
+```mermaid
+C4Context
+  title C4 Model - Context Level
+  Person(user, "User", "Interacts with the system")
+
+  Enterprise_Boundary(b1, "World Quiz") {
+    System(frontend, "Client", "The frontend of the application")
+    System(backend, "Server", "The backend of the application")
+    SystemDb(database, "Database", "Stores quiz data")
+  }
+
+  Rel(user, frontend, "Uses")
+  Rel(frontend, backend, "Communicates with")
+  Rel(backend, database, "Reads/Writes data")
+```
+
 <!--
 
 TODO: Vollständiges System in seinem Kontext beschreiben.
